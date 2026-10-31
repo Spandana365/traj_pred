@@ -1,0 +1,639 @@
+{
+  "configuration": {
+    "frame_step_in_frame_id_units": 10,
+    "history_len": 8,
+    "horizon_len": 12,
+    "stride": 1
+  },
+  "dataset_root": "data/eth/Social-STGCNN/datasets/eth",
+  "issues": [],
+  "overlap_summaries": [
+    {
+      "first_split": "train",
+      "identical_full_observation_rows": 0,
+      "identity_scope": "within_scene_only",
+      "minimum_nearest_frame_distance_for_shared_ids": 10,
+      "scene": "HOTEL",
+      "second_split": "val",
+      "shared_frame_pedestrian_rows": 0,
+      "shared_pedestrian_id_values": [
+        333,
+        334,
+        335
+      ],
+      "shared_pedestrian_ids": 3,
+      "validation_start_minus_train_end_frame": {
+        "max": 10,
+        "min": 10,
+        "validation_after_train_for_all_shared_ids": true
+      }
+    },
+    {
+      "first_split": "train",
+      "identical_full_observation_rows": 0,
+      "identity_scope": "within_scene_only",
+      "minimum_nearest_frame_distance_for_shared_ids": 10,
+      "scene": "STUDENTS001",
+      "second_split": "val",
+      "shared_frame_pedestrian_rows": 0,
+      "shared_pedestrian_id_values": [
+        137,
+        138,
+        139,
+        140,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        168,
+        177,
+        178,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        269,
+        276,
+        301,
+        306,
+        307,
+        311,
+        314,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        389,
+        390,
+        391,
+        392,
+        394,
+        395,
+        396,
+        399,
+        414,
+        415
+      ],
+      "shared_pedestrian_ids": 56,
+      "validation_start_minus_train_end_frame": {
+        "max": 10,
+        "min": 10,
+        "validation_after_train_for_all_shared_ids": true
+      }
+    },
+    {
+      "first_split": "train",
+      "identical_full_observation_rows": 0,
+      "identity_scope": "within_scene_only",
+      "minimum_nearest_frame_distance_for_shared_ids": 10,
+      "scene": "UNIV",
+      "second_split": "val",
+      "shared_frame_pedestrian_rows": 0,
+      "shared_pedestrian_id_values": [
+        142,
+        169,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        287,
+        362,
+        363,
+        364,
+        417,
+        418,
+        432
+      ],
+      "shared_pedestrian_ids": 22,
+      "validation_start_minus_train_end_frame": {
+        "max": 10,
+        "min": 10,
+        "validation_after_train_for_all_shared_ids": true
+      }
+    },
+    {
+      "first_split": "train",
+      "identical_full_observation_rows": 0,
+      "identity_scope": "within_scene_only",
+      "minimum_nearest_frame_distance_for_shared_ids": 10,
+      "scene": "UNI_EXAMPLES",
+      "second_split": "val",
+      "shared_frame_pedestrian_rows": 0,
+      "shared_pedestrian_id_values": [
+        95,
+        96
+      ],
+      "shared_pedestrian_ids": 2,
+      "validation_start_minus_train_end_frame": {
+        "max": 10,
+        "min": 10,
+        "validation_after_train_for_all_shared_ids": true
+      }
+    },
+    {
+      "first_split": "train",
+      "identical_full_observation_rows": 0,
+      "identity_scope": "within_scene_only",
+      "minimum_nearest_frame_distance_for_shared_ids": 10,
+      "scene": "ZARA1",
+      "second_split": "val",
+      "shared_frame_pedestrian_rows": 0,
+      "shared_pedestrian_id_values": [
+        120,
+        121,
+        122,
+        123,
+        124,
+        125
+      ],
+      "shared_pedestrian_ids": 6,
+      "validation_start_minus_train_end_frame": {
+        "max": 10,
+        "min": 10,
+        "validation_after_train_for_all_shared_ids": true
+      }
+    },
+    {
+      "first_split": "train",
+      "identical_full_observation_rows": 0,
+      "identity_scope": "within_scene_only",
+      "minimum_nearest_frame_distance_for_shared_ids": 10,
+      "scene": "ZARA2",
+      "second_split": "val",
+      "shared_frame_pedestrian_rows": 0,
+      "shared_pedestrian_id_values": [
+        69,
+        70,
+        111,
+        112,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171
+      ],
+      "shared_pedestrian_ids": 14,
+      "validation_start_minus_train_end_frame": {
+        "max": 10,
+        "min": 10,
+        "validation_after_train_for_all_shared_ids": true
+      }
+    },
+    {
+      "first_split": "train",
+      "identical_full_observation_rows": 0,
+      "identity_scope": "within_scene_only",
+      "minimum_nearest_frame_distance_for_shared_ids": 10,
+      "scene": "ZARA3",
+      "second_split": "val",
+      "shared_frame_pedestrian_rows": 0,
+      "shared_pedestrian_id_values": [
+        95,
+        106
+      ],
+      "shared_pedestrian_ids": 2,
+      "validation_start_minus_train_end_frame": {
+        "max": 10,
+        "min": 10,
+        "validation_after_train_for_all_shared_ids": true
+      }
+    }
+  ],
+  "split_scene_summaries": [
+    {
+      "candidate_window_count": 364,
+      "coordinate_ranges": {
+        "x_max": 14.42,
+        "x_min": -7.69,
+        "y_max": 13.21,
+        "y_min": -3.17
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 5132
+      },
+      "frame_id_range": {
+        "max": 12380,
+        "min": 780
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 5492,
+      "path": "test/biwi_eth.txt",
+      "rejected_row_count": 0,
+      "scene": "ETH",
+      "split": "test",
+      "unique_pedestrian_count": 360
+    },
+    {
+      "candidate_window_count": 877,
+      "coordinate_ranges": {
+        "x_max": 4.35,
+        "x_min": -3.25,
+        "y_max": 4.31,
+        "y_min": -10.21
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 4635
+      },
+      "frame_id_range": {
+        "max": 14390,
+        "min": 0
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 4946,
+      "path": "train/biwi_hotel_train.txt",
+      "rejected_row_count": 0,
+      "scene": "HOTEL",
+      "split": "train",
+      "unique_pedestrian_count": 311
+    },
+    {
+      "candidate_window_count": 11691,
+      "coordinate_ranges": {
+        "x_max": 15.4691855575,
+        "x_min": -0.461970915628,
+        "y_max": 13.8919096217,
+        "y_min": -0.232215985121
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 17978
+      },
+      "frame_id_range": {
+        "max": 3540,
+        "min": 0
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 18353,
+      "path": "train/students001_train.txt",
+      "rejected_row_count": 0,
+      "scene": "STUDENTS001",
+      "split": "train",
+      "unique_pedestrian_count": 375
+    },
+    {
+      "candidate_window_count": 8988,
+      "coordinate_ranges": {
+        "x_max": 15.4369843957,
+        "x_min": -0.174686040989,
+        "y_max": 13.7377353911,
+        "y_min": -0.222192273533
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 15277
+      },
+      "frame_id_range": {
+        "max": 4310,
+        "min": 0
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 15641,
+      "path": "train/students003_train.txt",
+      "rejected_row_count": 0,
+      "scene": "UNIV",
+      "split": "train",
+      "unique_pedestrian_count": 364
+    },
+    {
+      "candidate_window_count": 538,
+      "coordinate_ranges": {
+        "x_max": 15.6131436925,
+        "x_min": -0.428717428307,
+        "y_max": 13.8589745694,
+        "y_min": 0.0322190729613
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 2170
+      },
+      "frame_id_range": {
+        "max": 5930,
+        "min": 0
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 2266,
+      "path": "train/uni_examples_train.txt",
+      "rejected_row_count": 0,
+      "scene": "UNI_EXAMPLES",
+      "split": "train",
+      "unique_pedestrian_count": 96
+    },
+    {
+      "candidate_window_count": 1976,
+      "coordinate_ranges": {
+        "x_max": 15.4805506734,
+        "x_min": -0.139538367682,
+        "y_max": 12.3864436051,
+        "y_min": -0.334123719599
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 4182
+      },
+      "frame_id_range": {
+        "max": 7100,
+        "min": 0
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 4307,
+      "path": "train/crowds_zara01_train.txt",
+      "rejected_row_count": 0,
+      "scene": "ZARA1",
+      "split": "train",
+      "unique_pedestrian_count": 125
+    },
+    {
+      "candidate_window_count": 4477,
+      "coordinate_ranges": {
+        "x_max": 15.4628716042,
+        "x_min": -0.357790686363,
+        "y_max": 13.9427441591,
+        "y_min": -0.273742790271
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 7450
+      },
+      "frame_id_range": {
+        "max": 8410,
+        "min": 10
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 7621,
+      "path": "train/crowds_zara02_train.txt",
+      "rejected_row_count": 0,
+      "scene": "ZARA2",
+      "split": "train",
+      "unique_pedestrian_count": 171
+    },
+    {
+      "candidate_window_count": 1760,
+      "coordinate_ranges": {
+        "x_max": 15.5638948568,
+        "x_min": -0.342005803141,
+        "y_max": 12.7143621699,
+        "y_min": -0.0677793831186
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 3602
+      },
+      "frame_id_range": {
+        "max": 6020,
+        "min": 0
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 3708,
+      "path": "train/crowds_zara03_train.txt",
+      "rejected_row_count": 0,
+      "scene": "ZARA3",
+      "split": "train",
+      "unique_pedestrian_count": 106
+    },
+    {
+      "candidate_window_count": 318,
+      "coordinate_ranges": {
+        "x_max": 4.27,
+        "x_min": -2.77,
+        "y_max": 4.11,
+        "y_min": -10.31
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 1516
+      },
+      "frame_id_range": {
+        "max": 18060,
+        "min": 14400
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 1597,
+      "path": "val/biwi_hotel_val.txt",
+      "rejected_row_count": 0,
+      "scene": "HOTEL",
+      "split": "val",
+      "unique_pedestrian_count": 81
+    },
+    {
+      "candidate_window_count": 1887,
+      "coordinate_ranges": {
+        "x_max": 15.3443797475,
+        "x_min": -0.384940685505,
+        "y_max": 13.8413137442,
+        "y_min": -0.318372172818
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 3364
+      },
+      "frame_id_range": {
+        "max": 4430,
+        "min": 3550
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 3460,
+      "path": "val/students001_val.txt",
+      "rejected_row_count": 0,
+      "scene": "STUDENTS001",
+      "split": "val",
+      "unique_pedestrian_count": 96
+    },
+    {
+      "candidate_window_count": 834,
+      "coordinate_ranges": {
+        "x_max": 15.337644864,
+        "x_min": 0.0608244166818,
+        "y_max": 13.8542013734,
+        "y_min": -0.111454126466
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 2220
+      },
+      "frame_id_range": {
+        "max": 5400,
+        "min": 4320
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 2312,
+      "path": "val/students003_val.txt",
+      "rejected_row_count": 0,
+      "scene": "UNIV",
+      "split": "val",
+      "unique_pedestrian_count": 92
+    },
+    {
+      "candidate_window_count": 79,
+      "coordinate_ranges": {
+        "x_max": 15.5960960186,
+        "x_min": -0.222672085984,
+        "y_max": 13.7658972475,
+        "y_min": 6.49154655221
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 457
+      },
+      "frame_id_range": {
+        "max": 7410,
+        "min": 5940
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 481,
+      "path": "val/uni_examples_val.txt",
+      "rejected_row_count": 0,
+      "scene": "UNI_EXAMPLES",
+      "split": "val",
+      "unique_pedestrian_count": 24
+    },
+    {
+      "candidate_window_count": 337,
+      "coordinate_ranges": {
+        "x_max": 15.2246251001,
+        "x_min": -0.125437205337,
+        "y_max": 8.95308372645,
+        "y_min": -0.37469588555
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 817
+      },
+      "frame_id_range": {
+        "max": 9010,
+        "min": 7110
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 846,
+      "path": "val/crowds_zara01_val.txt",
+      "rejected_row_count": 0,
+      "scene": "ZARA1",
+      "split": "val",
+      "unique_pedestrian_count": 29
+    },
+    {
+      "candidate_window_count": 1259,
+      "coordinate_ranges": {
+        "x_max": 15.558422764,
+        "x_min": -0.254873247757,
+        "y_max": 10.1091517963,
+        "y_min": -0.0653927851215
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 2054
+      },
+      "frame_id_range": {
+        "max": 10520,
+        "min": 8420
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 2101,
+      "path": "val/crowds_zara02_val.txt",
+      "rejected_row_count": 0,
+      "scene": "ZARA2",
+      "split": "val",
+      "unique_pedestrian_count": 47
+    },
+    {
+      "candidate_window_count": 708,
+      "coordinate_ranges": {
+        "x_max": 15.3881564903,
+        "x_min": -0.256767433743,
+        "y_max": 12.1124621551,
+        "y_min": 0.119329899857
+      },
+      "file_present": true,
+      "frame_gap_distribution": {
+        "10": 1264
+      },
+      "frame_id_range": {
+        "max": 7530,
+        "min": 6030
+      },
+      "invalid_or_rejected_rows": [],
+      "non_finite_value_count": 0,
+      "observation_count": 1297,
+      "path": "val/crowds_zara03_val.txt",
+      "rejected_row_count": 0,
+      "scene": "ZARA3",
+      "split": "val",
+      "unique_pedestrian_count": 33
+    }
+  ],
+  "split_summaries": [
+    {
+      "candidate_window_count": 30307,
+      "candidate_window_count_from_valid_files": 30307,
+      "files_expected": 7,
+      "files_present": 7,
+      "observations": 56842,
+      "split": "train"
+    },
+    {
+      "candidate_window_count": 5422,
+      "candidate_window_count_from_valid_files": 5422,
+      "files_expected": 7,
+      "files_present": 7,
+      "observations": 12094,
+      "split": "val"
+    },
+    {
+      "candidate_window_count": 364,
+      "candidate_window_count_from_valid_files": 364,
+      "files_expected": 1,
+      "files_present": 1,
+      "observations": 5492,
+      "split": "test"
+    }
+  ]
+}

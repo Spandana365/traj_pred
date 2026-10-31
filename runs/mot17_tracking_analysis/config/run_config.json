@@ -1,0 +1,43 @@
+{
+  "training_performed": false,
+  "fine_tuning_performed": false,
+  "detector": {
+    "model_name": "yolov8s",
+    "weights": "runs/mot17_tracking_analysis/weights/yolov8s.pt",
+    "confidence_threshold": 0.05,
+    "iou_threshold": 0.7,
+    "image_size": 1280,
+    "device": "cpu",
+    "max_detections": 1000,
+    "augment": false
+  },
+  "tracker": {
+    "implementation": "ultralytics.trackers.bot_sort.BOTSORT",
+    "name": "botsort",
+    "settings": {
+      "track_high_thresh": 0.25,
+      "track_low_thresh": 0.1,
+      "new_track_thresh": 0.25,
+      "track_buffer": 30,
+      "match_thresh": 0.8,
+      "fuse_score": true,
+      "gmc_method": "sparseOptFlow",
+      "proximity_thresh": 0.5,
+      "appearance_thresh": 0.8,
+      "with_reid": false,
+      "model": "auto"
+    },
+    "settings_source": "Ultralytics botsort.yaml defaults",
+    "detections_reused": true,
+    "state_reset": "A new tracker is built for every sequence.",
+    "omitted_from_official_botsort": "The official demo's filtering of wide boxes and small areas is not part of the Ultralytics implementation."
+  },
+  "evaluation": {
+    "toolkit": "TrackEval",
+    "commit": "12c8791b303e0a0b50f753af204249e622d0281a",
+    "dataset_class": "MotChallenge2DBox",
+    "preprocessing": true,
+    "class": "pedestrian",
+    "iou_threshold": 0.5
+  }
+}

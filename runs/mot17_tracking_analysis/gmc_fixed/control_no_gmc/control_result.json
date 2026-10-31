@@ -1,0 +1,41 @@
+{
+  "purpose": "GMC-off control; proves other code changes did not alter tracking.",
+  "all_identical": true,
+  "sequences": [
+    {
+      "sequence": "MOT17-02",
+      "sha256": "7dbffbeb594be0a9742dfe38b2d2bec715223a5b366ec8deed5781f1193baaf3",
+      "identical_to_archive": true
+    },
+    {
+      "sequence": "MOT17-04",
+      "sha256": "c16209d83926623c483bbeb28681d213bfad7ad64498d36ad213a12af136bb18",
+      "identical_to_archive": true
+    },
+    {
+      "sequence": "MOT17-05",
+      "sha256": "b32fac570b7666e2ebe2fce1f106e514dd93a3dac7a71c877c6f17a7a19455df",
+      "identical_to_archive": true
+    },
+    {
+      "sequence": "MOT17-09",
+      "sha256": "93dd1c66a979466d6b7ae1fd389c12c77c4478ba25f172c30e07ce7236339928",
+      "identical_to_archive": true
+    },
+    {
+      "sequence": "MOT17-10",
+      "sha256": "36b875933ef39b130f6b7fcd5421cec46c9bfdc62f1cafb9432ea8ee8bbc0708",
+      "identical_to_archive": true
+    },
+    {
+      "sequence": "MOT17-11",
+      "sha256": "d3ea44c4c66855d543cce952ab170d9cbba5d6b1feb6e0216a91be72a2b3bce2",
+      "identical_to_archive": true
+    },
+    {
+      "sequence": "MOT17-13",
+      "sha256": "f9f4923e30cce061348954870ea9a66581967f7bf95813ee3ab0f005bf62dbb6",
+      "identical_to_archive": true
+    }
+  ]
+}

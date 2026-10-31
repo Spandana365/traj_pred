@@ -1,0 +1,49 @@
+{
+  "method": "sparseOptFlow",
+  "use": "Global motion compensation stays on for all sequences.",
+  "reason": "MOT17 mixes static and moving cameras. One setting is applied so the configuration is not chosen per sequence.",
+  "measurements": [
+    {
+      "sequence": "MOT17-02",
+      "frames_sampled": 120,
+      "median_translation_pixels": 0.12254219004018106,
+      "p95_translation_pixels": 0.46044945968129297
+    },
+    {
+      "sequence": "MOT17-04",
+      "frames_sampled": 120,
+      "median_translation_pixels": 0.14351628616388376,
+      "p95_translation_pixels": 0.2423421341127158
+    },
+    {
+      "sequence": "MOT17-05",
+      "frames_sampled": 120,
+      "median_translation_pixels": 1.5676185726424754,
+      "p95_translation_pixels": 7.542291001749096
+    },
+    {
+      "sequence": "MOT17-09",
+      "frames_sampled": 120,
+      "median_translation_pixels": 0.26132508980853225,
+      "p95_translation_pixels": 0.7143420141970854
+    },
+    {
+      "sequence": "MOT17-10",
+      "frames_sampled": 120,
+      "median_translation_pixels": 6.579151955760717,
+      "p95_translation_pixels": 16.467556329073552
+    },
+    {
+      "sequence": "MOT17-11",
+      "frames_sampled": 120,
+      "median_translation_pixels": 4.912583316299139,
+      "p95_translation_pixels": 10.384080938088616
+    },
+    {
+      "sequence": "MOT17-13",
+      "frames_sampled": 120,
+      "median_translation_pixels": 7.675499450474435,
+      "p95_translation_pixels": 19.891544967125302
+    }
+  ]
+}

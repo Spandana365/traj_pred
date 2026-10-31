@@ -1,0 +1,9 @@
+{
+  "BoT-SORT_no_GMC": {
+    "tracker_files": "C:\\Users\\LENOVO\\Downloads\\coe1\\TrackVision-New\\runs\\mot17_tracking_analysis\\trackers\\botsort\\data",
+    "note": "Archived run in which GMC failed on all 5,316 frames."
+  },
+  "BoT-SORT_GMC_enabled": {
+    "tracker_files": "C:\\Users\\LENOVO\\Downloads\\coe1\\TrackVision-New\\runs\\mot17_tracking_analysis\\gmc_fixed\\trackers\\BoT-SORT_GMC_enabled\\data"
+  }
+}

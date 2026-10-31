@@ -1,0 +1,112 @@
+{
+  "data_sources": [
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/biwi_hotel_val.txt",
+      "scene": "HOTEL",
+      "sha256": "219c5adf470f576ee74123caa63b8d91b55ffac29f8e311426579fbd21128e9c"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/crowds_zara01_val.txt",
+      "scene": "ZARA1",
+      "sha256": "b3cd9fd328ff06eea04748f74ae4a9620436b1d2ebac6bc08d40c6e6df84e7a7"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/crowds_zara02_val.txt",
+      "scene": "ZARA2",
+      "sha256": "389e6365e390f73f3ea8b9fc9bc34c11ea311b1919b19b51ee50c1710365dceb"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/crowds_zara03_val.txt",
+      "scene": "ZARA3",
+      "sha256": "17c89d22abc32179443d2d28e285ab592990092fee695b6419b9aeed795a4d73"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/students001_val.txt",
+      "scene": "STUDENTS001",
+      "sha256": "18a50b15c8d0eac3dc9ee6fb2a7ce99f2b919067fc40efd06712d007625d4b7f"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/students003_val.txt",
+      "scene": "UNIV",
+      "sha256": "5038cb554e912147bc6abbeef10ce430e7a88580f934aac34449cd09c7e338c8"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/uni_examples_val.txt",
+      "scene": "UNI_EXAMPLES",
+      "sha256": "245fe33a5fdcf786a610db8ff766804aef16a6f3870318a4e025a3b3ce828678"
+    }
+  ],
+  "identity_switch": {
+    "eligibility": "At least three consecutive shared timestamps at frame_step cadence, with the selected three-timestamp interval wholly contained in at least one valid observed history for each pedestrian.",
+    "future_ground_truth_swapped": false,
+    "hypothetical_boundary_frame_id_separation_units_by_severity": {
+      "1": 20,
+      "2": 30,
+      "3": 40
+    },
+    "limitation": "Simplified temporary symmetric position exchange; it is not a complete simulation of real tracker association failures.",
+    "operation": "Symmetric exchange of timestamp-aligned observed x/y positions between two distinct original pedestrian identities for a temporary interval; after the interval each identity returns to its original position.",
+    "position_provenance_key": "(scene, original_pedestrian_id, frame_id)",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "selection": "At most one pair/event per scene and no pedestrian reuse. Select from eligible pair/start candidates with seeded inverse-distance-rank weighted choice; lower interval mean spatial separation ranks receive greater weight. No physical-distance threshold is used. Pair/start is common across severities.",
+    "severities": {
+      "high": 3,
+      "low": 1,
+      "medium": 2
+    },
+    "switch_interval_frame_id_span_units_by_severity": {
+      "1": 0,
+      "2": 10,
+      "3": 20
+    },
+    "synthetic_source_identity_recorded_for_every_observed_input": true,
+    "windows_removed_due_to_switching": false
+  },
+  "model": {
+    "architecture_config": {
+      "dropout": 0.0,
+      "hidden_size": 64,
+      "horizon_len": 12,
+      "input_size": 2,
+      "num_layers": 2,
+      "observation_len": 8
+    },
+    "checkpoint": "runs/prediction/eth/lstm-seed42-h64-l2-scheduler/best_lstm.pt",
+    "checkpoint_sha256": "faa37d31c368882f8434b5e078249fcfe10dfb46bead97d89f97f2e7a484984c",
+    "experiment_dir": "runs/prediction/eth/lstm-seed42-h64-l2-scheduler",
+    "selected_epoch": 100,
+    "selected_validation_ade": 0.4380585208847724,
+    "test_split_opened": false,
+    "training_performed": false
+  },
+  "protocol": {
+    "candidate_window_count": 5422,
+    "candidate_window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da",
+    "frame_step": 10,
+    "observation_len": 8,
+    "prediction_horizon": 12,
+    "split_evaluated": "val",
+    "stride": 1,
+    "test_data_accessed": false,
+    "training_data_accessed": false,
+    "validation_scenes": [
+      "HOTEL",
+      "ZARA1",
+      "ZARA2",
+      "ZARA3",
+      "STUDENTS001",
+      "UNIV",
+      "UNI_EXAMPLES"
+    ]
+  },
+  "software": {
+    "device": "cpu",
+    "numpy": "2.2.3",
+    "python": "3.13.1",
+    "torch": "2.11.0+cpu"
+  }
+}

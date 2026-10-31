@@ -1,0 +1,98 @@
+{
+  "candidate_windows": 364,
+  "checkpoint": {
+    "path": "runs/prediction/eth/lstm-seed42-h64-l1/best_lstm.pt",
+    "selected_epoch": 30,
+    "selected_validation_ade": 0.5187152078821001,
+    "sha256": "2829ccdb64574cb8ce9251f014f045af428fbdc2d252faf491cc59c9157949fa"
+  },
+  "config": {
+    "batch_size": 256,
+    "device": "cpu",
+    "dropout": 0.0,
+    "frame_step": 10,
+    "hidden_size": 64,
+    "horizon_len": 12,
+    "learning_rate": 0.001,
+    "max_epochs": 30,
+    "min_delta": 0.0,
+    "num_layers": 1,
+    "observation_len": 8,
+    "patience": 6,
+    "seed": 42,
+    "stride": 1
+  },
+  "configuration_sha256": "8ffdc7d2d87af50654d0ae061fcd100b2897721ff971104329b1f9420fa62db9",
+  "dataset_source_files": [
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/test/biwi_eth.txt",
+      "scene": "ETH",
+      "sha256": "5869e7ec7b9f19e80557433234c9a625e34185397347f10239897c254a95d78a",
+      "split": "test"
+    }
+  ],
+  "evaluated_windows": 364,
+  "evaluation_type": "limited held-out-scene evaluation",
+  "exclusions": {
+    "invalid_rows": 0,
+    "windows_excluded_after_validation": 0
+  },
+  "normalization": {
+    "fit_observation_count": 56842,
+    "fit_split": "train",
+    "mean": [
+      7.2790792598482845,
+      5.999566365297545
+    ],
+    "method": "per-coordinate population mean/std over unique training-split rows",
+    "scale": [
+      4.495770482467522,
+      4.1254866461157995
+    ]
+  },
+  "results": {
+    "constant_velocity": {
+      "ade": 1.0754581149243088,
+      "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+      "distance_units": "raw dataset coordinate units; physical units unverified",
+      "fde": 2.2818901193344994,
+      "per_scene": {
+        "ETH": {
+          "ade": 1.0754581149243088,
+          "fde": 2.2818901193344994,
+          "window_count": 364
+        }
+      },
+      "window_count": 364,
+      "window_key_sha256": "96cb72c16953db493331f86f2122a1d4bb5edc41dd2e56b2acac8140606d2bbb"
+    },
+    "lstm": {
+      "ade": 1.4265968671945595,
+      "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+      "distance_units": "raw dataset coordinate units; physical units unverified",
+      "fde": 2.8011578285701213,
+      "per_scene": {
+        "ETH": {
+          "ade": 1.4265968671945595,
+          "fde": 2.8011578285701213,
+          "window_count": 364
+        }
+      },
+      "window_count": 364,
+      "window_key_sha256": "96cb72c16953db493331f86f2122a1d4bb5edc41dd2e56b2acac8140606d2bbb"
+    },
+    "window_count": 364,
+    "window_key_sha256": "96cb72c16953db493331f86f2122a1d4bb5edc41dd2e56b2acac8140606d2bbb"
+  },
+  "scene_scope": [
+    "ETH"
+  ],
+  "software": {
+    "device": "cpu",
+    "numpy": "2.2.3",
+    "python": "3.13.1",
+    "torch": "2.11.0+cpu"
+  },
+  "split": "test",
+  "test_used_for_training_or_selection": false
+}

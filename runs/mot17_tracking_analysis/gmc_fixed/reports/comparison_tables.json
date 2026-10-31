@@ -1,0 +1,1860 @@
+{
+  "experiments": {
+    "before": "BoT-SORT_no_GMC",
+    "after": "BoT-SORT_GMC_enabled"
+  },
+  "metrics": {
+    "MOT17-02": {
+      "HOTA": {
+        "no_gmc": 0.3287143395378176,
+        "gmc": 0.32843854227175884,
+        "delta": -0.00027579726605875265
+      },
+      "DetA": {
+        "no_gmc": 0.3017637555743529,
+        "gmc": 0.30066585196055123,
+        "delta": -0.0010979036138016873
+      },
+      "AssA": {
+        "no_gmc": 0.3658352224372341,
+        "gmc": 0.3664637983583206,
+        "delta": 0.000628575921086505
+      },
+      "LocA": {
+        "no_gmc": 0.8312418645743165,
+        "gmc": 0.8314342032601444,
+        "delta": 0.00019233868582790858
+      },
+      "DetRe": {
+        "no_gmc": 0.33428034863003797,
+        "gmc": 0.33351839315203136,
+        "delta": -0.0007619554780066151
+      },
+      "DetPr": {
+        "no_gmc": 0.6894508999772156,
+        "gmc": 0.6871928657305273,
+        "delta": -0.0022580342466883563
+      },
+      "AssRe": {
+        "no_gmc": 0.3874860680837561,
+        "gmc": 0.38811593901141006,
+        "delta": 0.000629870927653986
+      },
+      "AssPr": {
+        "no_gmc": 0.8251797904992695,
+        "gmc": 0.8256351268970875,
+        "delta": 0.00045533639781802915
+      },
+      "MOTA": {
+        "no_gmc": 0.2974543888918788,
+        "gmc": 0.2948172864754319,
+        "delta": -0.0026371024164469348
+      },
+      "MOTP": {
+        "no_gmc": 0.8058467055018035,
+        "gmc": 0.806067920565377,
+        "delta": 0.00022121506357353216
+      },
+      "IDF1": {
+        "no_gmc": 0.39231605654222546,
+        "gmc": 0.3918982571832313,
+        "delta": -0.0004177993589941642
+      },
+      "IDR": {
+        "no_gmc": 0.2912652709757279,
+        "gmc": 0.29104999730907916,
+        "delta": -0.00021527366664875203
+      },
+      "IDP": {
+        "no_gmc": 0.6007326007326007,
+        "gmc": 0.5996895098691506,
+        "delta": -0.0010430908634501135
+      },
+      "IDSW": {
+        "no_gmc": 106.0,
+        "gmc": 104.0,
+        "delta": -2.0
+      },
+      "CLR_TP": {
+        "no_gmc": 7321.0,
+        "gmc": 7300.0,
+        "delta": -21.0
+      },
+      "CLR_FP": {
+        "no_gmc": 1688.0,
+        "gmc": 1718.0,
+        "delta": 30.0
+      },
+      "CLR_FN": {
+        "no_gmc": 11260.0,
+        "gmc": 11281.0,
+        "delta": 21.0
+      },
+      "Frag": {
+        "no_gmc": 188.0,
+        "gmc": 188.0,
+        "delta": 0.0
+      },
+      "MT": {
+        "no_gmc": 10.0,
+        "gmc": 10.0,
+        "delta": 0.0
+      },
+      "PT": {
+        "no_gmc": 26.0,
+        "gmc": 25.0,
+        "delta": -1.0
+      },
+      "ML": {
+        "no_gmc": 26.0,
+        "gmc": 27.0,
+        "delta": 1.0
+      },
+      "IDs": {
+        "no_gmc": 157.0,
+        "gmc": 156.0,
+        "delta": -1.0
+      },
+      "Dets": {
+        "no_gmc": 9009.0,
+        "gmc": 9018.0,
+        "delta": 9.0
+      }
+    },
+    "MOT17-04": {
+      "HOTA": {
+        "no_gmc": 0.4960831164088502,
+        "gmc": 0.49734858584437,
+        "delta": 0.0012654694355197504
+      },
+      "DetA": {
+        "no_gmc": 0.4935224149173337,
+        "gmc": 0.4938419172183367,
+        "delta": 0.00031950230100302734
+      },
+      "AssA": {
+        "no_gmc": 0.5048451808683581,
+        "gmc": 0.5070838919147151,
+        "delta": 0.002238711046357089
+      },
+      "LocA": {
+        "no_gmc": 0.8264191069541384,
+        "gmc": 0.826428696258242,
+        "delta": 9.589304103552188e-06
+      },
+      "DetRe": {
+        "no_gmc": 0.5773847006860466,
+        "gmc": 0.5777975017236934,
+        "delta": 0.00041280103764673726
+      },
+      "DetPr": {
+        "no_gmc": 0.6979660967063959,
+        "gmc": 0.6980038049501788,
+        "delta": 3.7708243782907935e-05
+      },
+      "AssRe": {
+        "no_gmc": 0.5401936661470933,
+        "gmc": 0.5430523746838127,
+        "delta": 0.0028587085367194343
+      },
+      "AssPr": {
+        "no_gmc": 0.82337475517183,
+        "gmc": 0.8192067073231645,
+        "delta": -0.004168047848665535
+      },
+      "MOTA": {
+        "no_gmc": 0.46668208675904704,
+        "gmc": 0.4660302373993313,
+        "delta": -0.0006518493597157393
+      },
+      "MOTP": {
+        "no_gmc": 0.8152816248076252,
+        "gmc": 0.815090550618172,
+        "delta": -0.00019107418945318866
+      },
+      "IDF1": {
+        "no_gmc": 0.5679072015466409,
+        "gmc": 0.575629285352722,
+        "delta": 0.0077220838060810815
+      },
+      "IDR": {
+        "no_gmc": 0.5188510629350043,
+        "gmc": 0.5260634606892781,
+        "delta": 0.007212397754273847
+      },
+      "IDP": {
+        "no_gmc": 0.6272082560178949,
+        "gmc": 0.6355068966393171,
+        "delta": 0.00829864062142227
+      },
+      "IDSW": {
+        "no_gmc": 143.0,
+        "gmc": 144.0,
+        "delta": 1.0
+      },
+      "CLR_TP": {
+        "no_gmc": 30839.0,
+        "gmc": 30837.0,
+        "delta": -2.0
+      },
+      "CLR_FP": {
+        "no_gmc": 8502.0,
+        "gmc": 8530.0,
+        "delta": 28.0
+      },
+      "CLR_FN": {
+        "no_gmc": 16718.0,
+        "gmc": 16720.0,
+        "delta": 2.0
+      },
+      "Frag": {
+        "no_gmc": 306.0,
+        "gmc": 305.0,
+        "delta": -1.0
+      },
+      "MT": {
+        "no_gmc": 30.0,
+        "gmc": 29.0,
+        "delta": -1.0
+      },
+      "PT": {
+        "no_gmc": 35.0,
+        "gmc": 36.0,
+        "delta": 1.0
+      },
+      "ML": {
+        "no_gmc": 18.0,
+        "gmc": 18.0,
+        "delta": 0.0
+      },
+      "IDs": {
+        "no_gmc": 276.0,
+        "gmc": 276.0,
+        "delta": 0.0
+      },
+      "Dets": {
+        "no_gmc": 39341.0,
+        "gmc": 39367.0,
+        "delta": 26.0
+      }
+    },
+    "MOT17-05": {
+      "HOTA": {
+        "no_gmc": 0.37360398764099734,
+        "gmc": 0.3931146432359726,
+        "delta": 0.01951065559497528
+      },
+      "DetA": {
+        "no_gmc": 0.39577310398925913,
+        "gmc": 0.40106861915127573,
+        "delta": 0.005295515162016595
+      },
+      "AssA": {
+        "no_gmc": 0.35818061243834814,
+        "gmc": 0.3940732669414457,
+        "delta": 0.03589265450309753
+      },
+      "LocA": {
+        "no_gmc": 0.7629739489476661,
+        "gmc": 0.7641128827532783,
+        "delta": 0.0011389338056121412
+      },
+      "DetRe": {
+        "no_gmc": 0.48634561682506106,
+        "gmc": 0.4996766167261438,
+        "delta": 0.013330999901082718
+      },
+      "DetPr": {
+        "no_gmc": 0.5719232627641869,
+        "gmc": 0.5657657812890386,
+        "delta": -0.006157481475148274
+      },
+      "AssRe": {
+        "no_gmc": 0.4300500366045561,
+        "gmc": 0.4617098629346363,
+        "delta": 0.03165982633008019
+      },
+      "AssPr": {
+        "no_gmc": 0.615198215116119,
+        "gmc": 0.6475546129492671,
+        "delta": 0.03235639783314803
+      },
+      "MOTA": {
+        "no_gmc": 0.2697701315599248,
+        "gmc": 0.2738181292467833,
+        "delta": 0.004047997686858484
+      },
+      "MOTP": {
+        "no_gmc": 0.7390610575834929,
+        "gmc": 0.7407595162344537,
+        "delta": 0.0016984586509607436
+      },
+      "IDF1": {
+        "no_gmc": 0.46894288616298146,
+        "gmc": 0.4785812989405804,
+        "delta": 0.009638412777598915
+      },
+      "IDR": {
+        "no_gmc": 0.4338586092236519,
+        "gmc": 0.4506288853549227,
+        "delta": 0.0167702761312708
+      },
+      "IDP": {
+        "no_gmc": 0.5102006120367222,
+        "gmc": 0.5102308070060566,
+        "delta": 3.0194969334429445e-05
+      },
+      "IDSW": {
+        "no_gmc": 152.0,
+        "gmc": 131.0,
+        "delta": -21.0
+      },
+      "CLR_TP": {
+        "no_gmc": 3950.0,
+        "gmc": 4067.0,
+        "delta": 117.0
+      },
+      "CLR_FP": {
+        "no_gmc": 1932.0,
+        "gmc": 2042.0,
+        "delta": 110.0
+      },
+      "CLR_FN": {
+        "no_gmc": 2967.0,
+        "gmc": 2850.0,
+        "delta": -117.0
+      },
+      "Frag": {
+        "no_gmc": 220.0,
+        "gmc": 231.0,
+        "delta": 11.0
+      },
+      "MT": {
+        "no_gmc": 29.0,
+        "gmc": 30.0,
+        "delta": 1.0
+      },
+      "PT": {
+        "no_gmc": 80.0,
+        "gmc": 79.0,
+        "delta": -1.0
+      },
+      "ML": {
+        "no_gmc": 24.0,
+        "gmc": 24.0,
+        "delta": 0.0
+      },
+      "IDs": {
+        "no_gmc": 227.0,
+        "gmc": 233.0,
+        "delta": 6.0
+      },
+      "Dets": {
+        "no_gmc": 5882.0,
+        "gmc": 6109.0,
+        "delta": 227.0
+      }
+    },
+    "MOT17-09": {
+      "HOTA": {
+        "no_gmc": 0.4463190400979558,
+        "gmc": 0.45503868726052615,
+        "delta": 0.008719647162570343
+      },
+      "DetA": {
+        "no_gmc": 0.5421729367541038,
+        "gmc": 0.5422863624338263,
+        "delta": 0.00011342567972250084
+      },
+      "AssA": {
+        "no_gmc": 0.37019908357826814,
+        "gmc": 0.38458115881984867,
+        "delta": 0.014382075241580528
+      },
+      "LocA": {
+        "no_gmc": 0.8301002566428476,
+        "gmc": 0.8301234038880546,
+        "delta": 2.3147245207022493e-05
+      },
+      "DetRe": {
+        "no_gmc": 0.634988880652335,
+        "gmc": 0.6350382999752905,
+        "delta": 4.941932295543516e-05
+      },
+      "DetPr": {
+        "no_gmc": 0.7097640196208405,
+        "gmc": 0.7099682862415327,
+        "delta": 0.00020426662069228385
+      },
+      "AssRe": {
+        "no_gmc": 0.41616957341011485,
+        "gmc": 0.431424275366936,
+        "delta": 0.01525470195682116
+      },
+      "AssPr": {
+        "no_gmc": 0.7493673039404591,
+        "gmc": 0.7492318708226945,
+        "delta": -0.0001354331177646495
+      },
+      "MOTA": {
+        "no_gmc": 0.5757746478873239,
+        "gmc": 0.5767136150234742,
+        "delta": 0.0009389671361502705
+      },
+      "MOTP": {
+        "no_gmc": 0.8122990639242492,
+        "gmc": 0.8121533713253547,
+        "delta": -0.00014569259889452013
+      },
+      "IDF1": {
+        "no_gmc": 0.5148181187431856,
+        "gmc": 0.5370737509912767,
+        "delta": 0.02225563224809113
+      },
+      "IDR": {
+        "no_gmc": 0.48769953051643194,
+        "gmc": 0.5087323943661972,
+        "delta": 0.02103286384976527
+      },
+      "IDP": {
+        "no_gmc": 0.5451301427371956,
+        "gmc": 0.5687591853873609,
+        "delta": 0.0236290426501653
+      },
+      "IDSW": {
+        "no_gmc": 56.0,
+        "gmc": 54.0,
+        "delta": -2.0
+      },
+      "CLR_TP": {
+        "no_gmc": 3943.0,
+        "gmc": 3944.0,
+        "delta": 1.0
+      },
+      "CLR_FP": {
+        "no_gmc": 821.0,
+        "gmc": 819.0,
+        "delta": -2.0
+      },
+      "CLR_FN": {
+        "no_gmc": 1382.0,
+        "gmc": 1381.0,
+        "delta": -1.0
+      },
+      "Frag": {
+        "no_gmc": 65.0,
+        "gmc": 66.0,
+        "delta": 1.0
+      },
+      "MT": {
+        "no_gmc": 12.0,
+        "gmc": 12.0,
+        "delta": 0.0
+      },
+      "PT": {
+        "no_gmc": 13.0,
+        "gmc": 13.0,
+        "delta": 0.0
+      },
+      "ML": {
+        "no_gmc": 1.0,
+        "gmc": 1.0,
+        "delta": 0.0
+      },
+      "IDs": {
+        "no_gmc": 92.0,
+        "gmc": 90.0,
+        "delta": -2.0
+      },
+      "Dets": {
+        "no_gmc": 4764.0,
+        "gmc": 4763.0,
+        "delta": -1.0
+      }
+    },
+    "MOT17-10": {
+      "HOTA": {
+        "no_gmc": 0.3614016257508416,
+        "gmc": 0.43962817832725776,
+        "delta": 0.07822655257641614
+      },
+      "DetA": {
+        "no_gmc": 0.4567063864885807,
+        "gmc": 0.4823934733781869,
+        "delta": 0.025687086889606192
+      },
+      "AssA": {
+        "no_gmc": 0.28993049977715246,
+        "gmc": 0.4034120716780065,
+        "delta": 0.11348157190085406
+      },
+      "LocA": {
+        "no_gmc": 0.7894654924715812,
+        "gmc": 0.788458359525162,
+        "delta": -0.001007132946419187
+      },
+      "DetRe": {
+        "no_gmc": 0.5094059629172627,
+        "gmc": 0.5470462119938837,
+        "delta": 0.037640249076621
+      },
+      "DetPr": {
+        "no_gmc": 0.6924577192053718,
+        "gmc": 0.6819619687143872,
+        "delta": -0.010495750490984612
+      },
+      "AssRe": {
+        "no_gmc": 0.3279206595090396,
+        "gmc": 0.45651234162222165,
+        "delta": 0.12859168211318206
+      },
+      "AssPr": {
+        "no_gmc": 0.6951982638625305,
+        "gmc": 0.6935154468200008,
+        "delta": -0.001682817042529705
+      },
+      "MOTA": {
+        "no_gmc": 0.5061141833476127,
+        "gmc": 0.5346989640937768,
+        "delta": 0.028584780746164107
+      },
+      "MOTP": {
+        "no_gmc": 0.7596392812678657,
+        "gmc": 0.75862017841233,
+        "delta": -0.0010191028555357473
+      },
+      "IDF1": {
+        "no_gmc": 0.43430263866451263,
+        "gmc": 0.5588209871207538,
+        "delta": 0.12451834845624116
+      },
+      "IDR": {
+        "no_gmc": 0.3768985123451982,
+        "gmc": 0.5035438897110367,
+        "delta": 0.12664537736583847
+      },
+      "IDP": {
+        "no_gmc": 0.5123345685547909,
+        "gmc": 0.6277308476551121,
+        "delta": 0.11539627910032124
+      },
+      "IDSW": {
+        "no_gmc": 223.0,
+        "gmc": 112.0,
+        "delta": -111.0
+      },
+      "CLR_TP": {
+        "no_gmc": 8083.0,
+        "gmc": 8638.0,
+        "delta": 555.0
+      },
+      "CLR_FP": {
+        "no_gmc": 1362.0,
+        "gmc": 1661.0,
+        "delta": 299.0
+      },
+      "CLR_FN": {
+        "no_gmc": 4756.0,
+        "gmc": 4201.0,
+        "delta": -555.0
+      },
+      "Frag": {
+        "no_gmc": 362.0,
+        "gmc": 365.0,
+        "delta": 3.0
+      },
+      "MT": {
+        "no_gmc": 16.0,
+        "gmc": 21.0,
+        "delta": 5.0
+      },
+      "PT": {
+        "no_gmc": 34.0,
+        "gmc": 30.0,
+        "delta": -4.0
+      },
+      "ML": {
+        "no_gmc": 7.0,
+        "gmc": 6.0,
+        "delta": -1.0
+      },
+      "IDs": {
+        "no_gmc": 254.0,
+        "gmc": 163.0,
+        "delta": -91.0
+      },
+      "Dets": {
+        "no_gmc": 9445.0,
+        "gmc": 10299.0,
+        "delta": 854.0
+      }
+    },
+    "MOT17-11": {
+      "HOTA": {
+        "no_gmc": 0.49747832838959394,
+        "gmc": 0.4854048645981526,
+        "delta": -0.012073463791441363
+      },
+      "DetA": {
+        "no_gmc": 0.4872423489740573,
+        "gmc": 0.4692853123936696,
+        "delta": -0.01795703658038772
+      },
+      "AssA": {
+        "no_gmc": 0.511457648908264,
+        "gmc": 0.5056716348927409,
+        "delta": -0.005786014015523033
+      },
+      "LocA": {
+        "no_gmc": 0.836746265723851,
+        "gmc": 0.8371427525564239,
+        "delta": 0.0003964868325728732
+      },
+      "DetRe": {
+        "no_gmc": 0.6065404609446464,
+        "gmc": 0.6150744070859642,
+        "delta": 0.00853394614131775
+      },
+      "DetPr": {
+        "no_gmc": 0.6555917284620485,
+        "gmc": 0.6156616214345134,
+        "delta": -0.03993010702753508
+      },
+      "AssRe": {
+        "no_gmc": 0.5609513379444223,
+        "gmc": 0.5555722643614992,
+        "delta": -0.005379073582923111
+      },
+      "AssPr": {
+        "no_gmc": 0.8127900812625622,
+        "gmc": 0.8111871278883713,
+        "delta": -0.0016029533741909185
+      },
+      "MOTA": {
+        "no_gmc": 0.4111911827045358,
+        "gmc": 0.3443196269605765,
+        "delta": -0.06687155574395931
+      },
+      "MOTP": {
+        "no_gmc": 0.8339913286749565,
+        "gmc": 0.8373645280822767,
+        "delta": 0.003373199407320171
+      },
+      "IDF1": {
+        "no_gmc": 0.5429924033909501,
+        "gmc": 0.5113714679531358,
+        "delta": -0.0316209354378143
+      },
+      "IDR": {
+        "no_gmc": 0.5226791013141161,
+        "gmc": 0.5111275964391692,
+        "delta": -0.011551504874946938
+      },
+      "IDP": {
+        "no_gmc": 0.5649484536082474,
+        "gmc": 0.5116155722923518,
+        "delta": -0.05333288131589564
+      },
+      "IDSW": {
+        "no_gmc": 28.0,
+        "gmc": 32.0,
+        "delta": 4.0
+      },
+      "CLR_TP": {
+        "no_gmc": 6319.0,
+        "gmc": 6354.0,
+        "delta": 35.0
+      },
+      "CLR_FP": {
+        "no_gmc": 2411.0,
+        "gmc": 3073.0,
+        "delta": 662.0
+      },
+      "CLR_FN": {
+        "no_gmc": 3117.0,
+        "gmc": 3082.0,
+        "delta": -35.0
+      },
+      "Frag": {
+        "no_gmc": 48.0,
+        "gmc": 51.0,
+        "delta": 3.0
+      },
+      "MT": {
+        "no_gmc": 28.0,
+        "gmc": 28.0,
+        "delta": 0.0
+      },
+      "PT": {
+        "no_gmc": 19.0,
+        "gmc": 21.0,
+        "delta": 2.0
+      },
+      "ML": {
+        "no_gmc": 28.0,
+        "gmc": 26.0,
+        "delta": -2.0
+      },
+      "IDs": {
+        "no_gmc": 230.0,
+        "gmc": 220.0,
+        "delta": -10.0
+      },
+      "Dets": {
+        "no_gmc": 8730.0,
+        "gmc": 9427.0,
+        "delta": 697.0
+      }
+    },
+    "MOT17-13": {
+      "HOTA": {
+        "no_gmc": 0.40595427370862786,
+        "gmc": 0.4378216724192196,
+        "delta": 0.03186739871059174
+      },
+      "DetA": {
+        "no_gmc": 0.38023093023903043,
+        "gmc": 0.41624465902231583,
+        "delta": 0.036013728783285404
+      },
+      "AssA": {
+        "no_gmc": 0.4383342291913468,
+        "gmc": 0.4654611077002646,
+        "delta": 0.027126878508917818
+      },
+      "LocA": {
+        "no_gmc": 0.8020757488165573,
+        "gmc": 0.8030392430165808,
+        "delta": 0.0009634942000235069
+      },
+      "DetRe": {
+        "no_gmc": 0.4033580773786381,
+        "gmc": 0.4475537753505909,
+        "delta": 0.044195697971952774
+      },
+      "DetPr": {
+        "no_gmc": 0.7437273894270044,
+        "gmc": 0.7346899397393652,
+        "delta": -0.009037449687639199
+      },
+      "AssRe": {
+        "no_gmc": 0.4781179816667478,
+        "gmc": 0.5104063928003566,
+        "delta": 0.03228841113360881
+      },
+      "AssPr": {
+        "no_gmc": 0.7488704676256419,
+        "gmc": 0.7588733215170479,
+        "delta": 0.010002853891405983
+      },
+      "MOTA": {
+        "no_gmc": 0.4627211819275039,
+        "gmc": 0.49785260264559356,
+        "delta": 0.03513142071808967
+      },
+      "MOTP": {
+        "no_gmc": 0.7672942039217041,
+        "gmc": 0.7697729014975164,
+        "delta": 0.0024786975758123164
+      },
+      "IDF1": {
+        "no_gmc": 0.5343060815326354,
+        "gmc": 0.5753176043557169,
+        "delta": 0.041011522823081514
+      },
+      "IDR": {
+        "no_gmc": 0.4120426043635114,
+        "gmc": 0.46289297371585636,
+        "delta": 0.05085036935234494
+      },
+      "IDP": {
+        "no_gmc": 0.7597402597402597,
+        "gmc": 0.7598702763677383,
+        "delta": 0.00013001662747857967
+      },
+      "IDSW": {
+        "no_gmc": 91.0,
+        "gmc": 66.0,
+        "delta": -25.0
+      },
+      "CLR_TP": {
+        "no_gmc": 5896.0,
+        "gmc": 6477.0,
+        "delta": 581.0
+      },
+      "CLR_FP": {
+        "no_gmc": 418.0,
+        "gmc": 615.0,
+        "delta": 197.0
+      },
+      "CLR_FN": {
+        "no_gmc": 5746.0,
+        "gmc": 5165.0,
+        "delta": -581.0
+      },
+      "Frag": {
+        "no_gmc": 152.0,
+        "gmc": 177.0,
+        "delta": 25.0
+      },
+      "MT": {
+        "no_gmc": 24.0,
+        "gmc": 31.0,
+        "delta": 7.0
+      },
+      "PT": {
+        "no_gmc": 44.0,
+        "gmc": 43.0,
+        "delta": -1.0
+      },
+      "ML": {
+        "no_gmc": 42.0,
+        "gmc": 36.0,
+        "delta": -6.0
+      },
+      "IDs": {
+        "no_gmc": 147.0,
+        "gmc": 143.0,
+        "delta": -4.0
+      },
+      "Dets": {
+        "no_gmc": 6314.0,
+        "gmc": 7092.0,
+        "delta": 778.0
+      }
+    },
+    "COMBINED_SEQ": {
+      "HOTA": {
+        "no_gmc": 0.44156325986582,
+        "gmc": 0.4534843669221912,
+        "delta": 0.011921107056371172
+      },
+      "DetA": {
+        "no_gmc": 0.44267060528130114,
+        "gmc": 0.44763677888251985,
+        "delta": 0.004966173601218704
+      },
+      "AssA": {
+        "no_gmc": 0.44741939226210314,
+        "gmc": 0.46603541115309105,
+        "delta": 0.018616018890987907
+      },
+      "LocA": {
+        "no_gmc": 0.8180196515105997,
+        "gmc": 0.8176363538474574,
+        "delta": -0.000383297663142379
+      },
+      "DetRe": {
+        "no_gmc": 0.5109200555106923,
+        "gmc": 0.5213946288109116,
+        "delta": 0.010474573300219281
+      },
+      "DetPr": {
+        "no_gmc": 0.6872466847180237,
+        "gmc": 0.6802329669657734,
+        "delta": -0.007013717752250348
+      },
+      "AssRe": {
+        "no_gmc": 0.48697701110921443,
+        "gmc": 0.5078780653074919,
+        "delta": 0.02090105419827748
+      },
+      "AssPr": {
+        "no_gmc": 0.7914561609725115,
+        "gmc": 0.7907851014047536,
+        "delta": -0.0006710595677579256
+      },
+      "MOTA": {
+        "no_gmc": 0.4311602268983143,
+        "gmc": 0.4320329127225126,
+        "delta": 0.0008726858241983049
+      },
+      "MOTP": {
+        "no_gmc": 0.8002649890376444,
+        "gmc": 0.8000124136553302,
+        "delta": -0.00025257538231426846
+      },
+      "IDF1": {
+        "no_gmc": 0.5133566926479451,
+        "gmc": 0.5336337789607404,
+        "delta": 0.020277086312795234
+      },
+      "IDR": {
+        "no_gmc": 0.44750082370855854,
+        "gmc": 0.47133048968360686,
+        "delta": 0.02382966597504832
+      },
+      "IDP": {
+        "no_gmc": 0.6019404683476074,
+        "gmc": 0.6149172233517282,
+        "delta": 0.012976755004120766
+      },
+      "IDSW": {
+        "no_gmc": 799.0,
+        "gmc": 643.0,
+        "delta": -156.0
+      },
+      "CLR_TP": {
+        "no_gmc": 66351.0,
+        "gmc": 67617.0,
+        "delta": 1266.0
+      },
+      "CLR_FP": {
+        "no_gmc": 17134.0,
+        "gmc": 18458.0,
+        "delta": 1324.0
+      },
+      "CLR_FN": {
+        "no_gmc": 45946.0,
+        "gmc": 44680.0,
+        "delta": -1266.0
+      },
+      "Frag": {
+        "no_gmc": 1341.0,
+        "gmc": 1383.0,
+        "delta": 42.0
+      },
+      "MT": {
+        "no_gmc": 149.0,
+        "gmc": 161.0,
+        "delta": 12.0
+      },
+      "PT": {
+        "no_gmc": 251.0,
+        "gmc": 247.0,
+        "delta": -4.0
+      },
+      "ML": {
+        "no_gmc": 146.0,
+        "gmc": 138.0,
+        "delta": -8.0
+      },
+      "IDs": {
+        "no_gmc": 1383.0,
+        "gmc": 1281.0,
+        "delta": -102.0
+      },
+      "Dets": {
+        "no_gmc": 83485.0,
+        "gmc": 86075.0,
+        "delta": 2590.0
+      }
+    }
+  },
+  "profile": {
+    "no_gmc": {
+      "overall": {
+        "iou_median": 0.8310130809418547,
+        "center_error_px_median": 4.890411536874981,
+        "center_error_px_p95": 33.382539594171625,
+        "center_error_over_height_median": 0.026849714677318524,
+        "coverage_median": 0.5674242424242424,
+        "interior_gaps": 1341,
+        "interior_gap_seconds_median": 0.2,
+        "interior_gap_seconds_p95": 2.1666666666666665,
+        "window_availability": {
+          "0.5": 0.4878981011645312,
+          "1.0": 0.43111591418507844,
+          "2.0": 0.3645612929365687,
+          "3.0": 0.3181623824136023,
+          "4.8": 0.2631362640038967,
+          "8.0": 0.20786957535669615
+        }
+      },
+      "MOT17-02": {
+        "iou_median": 0.8362626321238492,
+        "center_error_px_median": 4.117951553867486,
+        "center_error_px_p95": 24.02040798987393,
+        "center_error_over_height_median": 0.026622295217558087,
+        "track_span_seconds_median": 1.2333333333333334,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      },
+      "MOT17-04": {
+        "iou_median": 0.8565508946825253,
+        "center_error_px_median": 4.3315268670527916,
+        "center_error_px_p95": 35.594758745724725,
+        "center_error_over_height_median": 0.02322013074882788,
+        "track_span_seconds_median": 1.7,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      },
+      "MOT17-05": {
+        "iou_median": 0.7512684767107148,
+        "center_error_px_median": 6.558187465668778,
+        "center_error_px_p95": 70.9052044255922,
+        "center_error_over_height_median": 0.042129242993366095,
+        "track_span_seconds_median": 0.9642857142857143,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      },
+      "MOT17-09": {
+        "iou_median": 0.8406721809332909,
+        "center_error_px_median": 6.4919661890678695,
+        "center_error_px_p95": 29.19675713409903,
+        "center_error_over_height_median": 0.02134688546756331,
+        "track_span_seconds_median": 0.8333333333333334,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      },
+      "MOT17-10": {
+        "iou_median": 0.775691021091753,
+        "center_error_px_median": 5.095772757884759,
+        "center_error_px_p95": 21.298210213769767,
+        "center_error_over_height_median": 0.038653738054239745,
+        "track_span_seconds_median": 0.6,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      },
+      "MOT17-11": {
+        "iou_median": 0.8656561354518413,
+        "center_error_px_median": 7.240091504946677,
+        "center_error_px_p95": 35.35974498320832,
+        "center_error_over_height_median": 0.01833691522408389,
+        "track_span_seconds_median": 0.43333333333333335,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      },
+      "MOT17-13": {
+        "iou_median": 0.7844069798917449,
+        "center_error_px_median": 4.1708227485745955,
+        "center_error_px_p95": 16.00766066559541,
+        "center_error_over_height_median": 0.0404153702907649,
+        "track_span_seconds_median": 1.24,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      }
+    },
+    "gmc": {
+      "overall": {
+        "iou_median": 0.8307458528555143,
+        "center_error_px_median": 4.7866924906452875,
+        "center_error_px_p95": 33.06999761078861,
+        "center_error_over_height_median": 0.026757231110930375,
+        "coverage_median": 0.6073097463284378,
+        "interior_gaps": 1383,
+        "interior_gap_seconds_median": 0.16666666666666666,
+        "interior_gap_seconds_p95": 2.1299999999999955,
+        "window_availability": {
+          "0.5": 0.4966061963981435,
+          "1.0": 0.43941122318283704,
+          "2.0": 0.37237203439427363,
+          "3.0": 0.3242492077066251,
+          "4.8": 0.26281660983925964,
+          "8.0": 0.20685195785367508
+        }
+      },
+      "MOT17-02": {
+        "iou_median": 0.837030264919012,
+        "center_error_px_median": 4.12219752823003,
+        "center_error_px_p95": 23.9811309143225,
+        "center_error_over_height_median": 0.02655128533880152,
+        "track_span_seconds_median": 1.2,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      },
+      "MOT17-04": {
+        "iou_median": 0.8564388836223432,
+        "center_error_px_median": 4.329457240809757,
+        "center_error_px_p95": 35.62587525621539,
+        "center_error_over_height_median": 0.023193762740007492,
+        "track_span_seconds_median": 1.7,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      },
+      "MOT17-05": {
+        "iou_median": 0.7525380254902847,
+        "center_error_px_median": 6.265790053935761,
+        "center_error_px_p95": 69.63965144265603,
+        "center_error_over_height_median": 0.042014705247849976,
+        "track_span_seconds_median": 1.0,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      },
+      "MOT17-09": {
+        "iou_median": 0.8405252551771961,
+        "center_error_px_median": 6.4883308593346865,
+        "center_error_px_p95": 29.479763541834586,
+        "center_error_over_height_median": 0.02133916145116844,
+        "track_span_seconds_median": 0.8166666666666667,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      },
+      "MOT17-10": {
+        "iou_median": 0.7732593995112451,
+        "center_error_px_median": 4.9007023897895845,
+        "center_error_px_p95": 20.7684895923115,
+        "center_error_over_height_median": 0.03883567903547708,
+        "track_span_seconds_median": 1.4,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      },
+      "MOT17-11": {
+        "iou_median": 0.8698624127120582,
+        "center_error_px_median": 6.878785303989481,
+        "center_error_px_p95": 35.11493566876074,
+        "center_error_over_height_median": 0.01722253173678312,
+        "track_span_seconds_median": 0.5833333333333333,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      },
+      "MOT17-13": {
+        "iou_median": 0.787276428195508,
+        "center_error_px_median": 3.9667619036186372,
+        "center_error_px_p95": 15.788062037505366,
+        "center_error_over_height_median": 0.039314736794079944,
+        "track_span_seconds_median": 1.68,
+        "cross_check_against_trackeval": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 0,
+          "identity_switches": 0,
+          "fragmentations": 0
+        }
+      }
+    }
+  },
+  "availability": {
+    "no_gmc": {
+      "MOT17-02|0.5": {
+        "sequence": "MOT17-02",
+        "window_seconds": "0.5",
+        "window_frames": "15",
+        "possible_windows": "17764",
+        "available_windows": "5116",
+        "availability": "0.287998198603918"
+      },
+      "MOT17-02|1.0": {
+        "sequence": "MOT17-02",
+        "window_seconds": "1.0",
+        "window_frames": "30",
+        "possible_windows": "16913",
+        "available_windows": "3896",
+        "availability": "0.2303553479571927"
+      },
+      "MOT17-02|2.0": {
+        "sequence": "MOT17-02",
+        "window_seconds": "2.0",
+        "window_frames": "60",
+        "possible_windows": "15295",
+        "available_windows": "2520",
+        "availability": "0.16475972540045766"
+      },
+      "MOT17-02|3.0": {
+        "sequence": "MOT17-02",
+        "window_seconds": "3.0",
+        "window_frames": "90",
+        "possible_windows": "13851",
+        "available_windows": "1642",
+        "availability": "0.11854739729983395"
+      },
+      "MOT17-02|4.8": {
+        "sequence": "MOT17-02",
+        "window_seconds": "4.8",
+        "window_frames": "144",
+        "possible_windows": "11399",
+        "available_windows": "732",
+        "availability": "0.06421615931222037"
+      },
+      "MOT17-02|8.0": {
+        "sequence": "MOT17-02",
+        "window_seconds": "8.0",
+        "window_frames": "240",
+        "possible_windows": "7409",
+        "available_windows": "241",
+        "availability": "0.0325280064786071"
+      },
+      "MOT17-04|0.5": {
+        "sequence": "MOT17-04",
+        "window_seconds": "0.5",
+        "window_frames": "15",
+        "possible_windows": "46395",
+        "available_windows": "26994",
+        "availability": "0.5818299385709667"
+      },
+      "MOT17-04|1.0": {
+        "sequence": "MOT17-04",
+        "window_seconds": "1.0",
+        "window_frames": "30",
+        "possible_windows": "45159",
+        "available_windows": "24341",
+        "availability": "0.5390066210500676"
+      },
+      "MOT17-04|2.0": {
+        "sequence": "MOT17-04",
+        "window_seconds": "2.0",
+        "window_frames": "60",
+        "possible_windows": "42815",
+        "available_windows": "20426",
+        "availability": "0.47707579119467475"
+      },
+      "MOT17-04|3.0": {
+        "sequence": "MOT17-04",
+        "window_seconds": "3.0",
+        "window_frames": "90",
+        "possible_windows": "40562",
+        "available_windows": "17510",
+        "availability": "0.4316848281642917"
+      },
+      "MOT17-04|4.8": {
+        "sequence": "MOT17-04",
+        "window_seconds": "4.8",
+        "window_frames": "144",
+        "possible_windows": "36653",
+        "available_windows": "13293",
+        "availability": "0.36267154121081496"
+      },
+      "MOT17-04|8.0": {
+        "sequence": "MOT17-04",
+        "window_seconds": "8.0",
+        "window_frames": "240",
+        "possible_windows": "30102",
+        "available_windows": "8228",
+        "availability": "0.27333731977941667"
+      },
+      "MOT17-05|0.5": {
+        "sequence": "MOT17-05",
+        "window_seconds": "0.5",
+        "window_frames": "7",
+        "possible_windows": "6150",
+        "available_windows": "2450",
+        "availability": "0.3983739837398374"
+      },
+      "MOT17-05|1.0": {
+        "sequence": "MOT17-05",
+        "window_seconds": "1.0",
+        "window_frames": "14",
+        "possible_windows": "5383",
+        "available_windows": "1617",
+        "availability": "0.30039011703511054"
+      },
+      "MOT17-05|2.0": {
+        "sequence": "MOT17-05",
+        "window_seconds": "2.0",
+        "window_frames": "28",
+        "possible_windows": "4200",
+        "available_windows": "862",
+        "availability": "0.20523809523809525"
+      },
+      "MOT17-05|3.0": {
+        "sequence": "MOT17-05",
+        "window_seconds": "3.0",
+        "window_frames": "42",
+        "possible_windows": "3400",
+        "available_windows": "562",
+        "availability": "0.1652941176470588"
+      },
+      "MOT17-05|4.8": {
+        "sequence": "MOT17-05",
+        "window_seconds": "4.8",
+        "window_frames": "67",
+        "possible_windows": "2574",
+        "available_windows": "272",
+        "availability": "0.10567210567210568"
+      },
+      "MOT17-05|8.0": {
+        "sequence": "MOT17-05",
+        "window_seconds": "8.0",
+        "window_frames": "112",
+        "possible_windows": "1648",
+        "available_windows": "97",
+        "availability": "0.058859223300970875"
+      },
+      "MOT17-09|0.5": {
+        "sequence": "MOT17-09",
+        "window_seconds": "0.5",
+        "window_frames": "15",
+        "possible_windows": "4961",
+        "available_windows": "2966",
+        "availability": "0.5978633340052408"
+      },
+      "MOT17-09|1.0": {
+        "sequence": "MOT17-09",
+        "window_seconds": "1.0",
+        "window_frames": "30",
+        "possible_windows": "4595",
+        "available_windows": "2284",
+        "availability": "0.4970620239390642"
+      },
+      "MOT17-09|2.0": {
+        "sequence": "MOT17-09",
+        "window_seconds": "2.0",
+        "window_frames": "60",
+        "possible_windows": "3890",
+        "available_windows": "1401",
+        "availability": "0.36015424164524423"
+      },
+      "MOT17-09|3.0": {
+        "sequence": "MOT17-09",
+        "window_seconds": "3.0",
+        "window_frames": "90",
+        "possible_windows": "3261",
+        "available_windows": "827",
+        "availability": "0.2536031892057651"
+      },
+      "MOT17-09|4.8": {
+        "sequence": "MOT17-09",
+        "window_seconds": "4.8",
+        "window_frames": "144",
+        "possible_windows": "2331",
+        "available_windows": "330",
+        "availability": "0.14157014157014158"
+      },
+      "MOT17-09|8.0": {
+        "sequence": "MOT17-09",
+        "window_seconds": "8.0",
+        "window_frames": "240",
+        "possible_windows": "971",
+        "available_windows": "0",
+        "availability": "0.0"
+      },
+      "MOT17-10|0.5": {
+        "sequence": "MOT17-10",
+        "window_seconds": "0.5",
+        "window_frames": "15",
+        "possible_windows": "12041",
+        "available_windows": "4980",
+        "availability": "0.4135869113860975"
+      },
+      "MOT17-10|1.0": {
+        "sequence": "MOT17-10",
+        "window_seconds": "1.0",
+        "window_frames": "30",
+        "possible_windows": "11216",
+        "available_windows": "3684",
+        "availability": "0.3284593437945792"
+      },
+      "MOT17-10|2.0": {
+        "sequence": "MOT17-10",
+        "window_seconds": "2.0",
+        "window_frames": "60",
+        "possible_windows": "9655",
+        "available_windows": "2506",
+        "availability": "0.2595546349041947"
+      },
+      "MOT17-10|3.0": {
+        "sequence": "MOT17-10",
+        "window_seconds": "3.0",
+        "window_frames": "90",
+        "possible_windows": "8364",
+        "available_windows": "1838",
+        "availability": "0.21975131516021043"
+      },
+      "MOT17-10|4.8": {
+        "sequence": "MOT17-10",
+        "window_seconds": "4.8",
+        "window_frames": "144",
+        "possible_windows": "6455",
+        "available_windows": "1128",
+        "availability": "0.17474825716498837"
+      },
+      "MOT17-10|8.0": {
+        "sequence": "MOT17-10",
+        "window_seconds": "8.0",
+        "window_frames": "240",
+        "possible_windows": "3820",
+        "available_windows": "444",
+        "availability": "0.1162303664921466"
+      },
+      "MOT17-11|0.5": {
+        "sequence": "MOT17-11",
+        "window_seconds": "0.5",
+        "window_frames": "15",
+        "possible_windows": "8446",
+        "available_windows": "5253",
+        "availability": "0.6219512195121951"
+      },
+      "MOT17-11|1.0": {
+        "sequence": "MOT17-11",
+        "window_seconds": "1.0",
+        "window_frames": "30",
+        "possible_windows": "7492",
+        "available_windows": "4427",
+        "availability": "0.5908969567538708"
+      },
+      "MOT17-11|2.0": {
+        "sequence": "MOT17-11",
+        "window_seconds": "2.0",
+        "window_frames": "60",
+        "possible_windows": "6001",
+        "available_windows": "3233",
+        "availability": "0.5387435427428762"
+      },
+      "MOT17-11|3.0": {
+        "sequence": "MOT17-11",
+        "window_seconds": "3.0",
+        "window_frames": "90",
+        "possible_windows": "4844",
+        "available_windows": "2250",
+        "availability": "0.4644921552436003"
+      },
+      "MOT17-11|4.8": {
+        "sequence": "MOT17-11",
+        "window_seconds": "4.8",
+        "window_frames": "144",
+        "possible_windows": "3440",
+        "available_windows": "1354",
+        "availability": "0.3936046511627907"
+      },
+      "MOT17-11|8.0": {
+        "sequence": "MOT17-11",
+        "window_seconds": "8.0",
+        "window_frames": "240",
+        "possible_windows": "2245",
+        "available_windows": "795",
+        "availability": "0.35412026726057905"
+      },
+      "MOT17-13|0.5": {
+        "sequence": "MOT17-13",
+        "window_seconds": "0.5",
+        "window_frames": "12",
+        "possible_windows": "10466",
+        "available_windows": "4067",
+        "availability": "0.3885916300401299"
+      },
+      "MOT17-13|1.0": {
+        "sequence": "MOT17-13",
+        "window_seconds": "1.0",
+        "window_frames": "25",
+        "possible_windows": "9178",
+        "available_windows": "2835",
+        "availability": "0.30889082588799305"
+      },
+      "MOT17-13|2.0": {
+        "sequence": "MOT17-13",
+        "window_seconds": "2.0",
+        "window_frames": "50",
+        "possible_windows": "6996",
+        "available_windows": "1444",
+        "availability": "0.2064036592338479"
+      },
+      "MOT17-13|3.0": {
+        "sequence": "MOT17-13",
+        "window_seconds": "3.0",
+        "window_frames": "75",
+        "possible_windows": "5234",
+        "available_windows": "670",
+        "availability": "0.12800917080626673"
+      },
+      "MOT17-13|4.8": {
+        "sequence": "MOT17-13",
+        "window_seconds": "4.8",
+        "window_frames": "120",
+        "possible_windows": "2844",
+        "available_windows": "178",
+        "availability": "0.06258790436005626"
+      },
+      "MOT17-13|8.0": {
+        "sequence": "MOT17-13",
+        "window_seconds": "8.0",
+        "window_frames": "200",
+        "possible_windows": "974",
+        "available_windows": "0",
+        "availability": "0.0"
+      }
+    },
+    "gmc": {
+      "MOT17-02|0.5": {
+        "sequence": "MOT17-02",
+        "window_seconds": "0.5",
+        "window_frames": "15",
+        "possible_windows": "17764",
+        "available_windows": "5111",
+        "availability": "0.28771673046611124"
+      },
+      "MOT17-02|1.0": {
+        "sequence": "MOT17-02",
+        "window_seconds": "1.0",
+        "window_frames": "30",
+        "possible_windows": "16913",
+        "available_windows": "3894",
+        "availability": "0.2302370957251818"
+      },
+      "MOT17-02|2.0": {
+        "sequence": "MOT17-02",
+        "window_seconds": "2.0",
+        "window_frames": "60",
+        "possible_windows": "15295",
+        "available_windows": "2521",
+        "availability": "0.16482510624387053"
+      },
+      "MOT17-02|3.0": {
+        "sequence": "MOT17-02",
+        "window_seconds": "3.0",
+        "window_frames": "90",
+        "possible_windows": "13851",
+        "available_windows": "1643",
+        "availability": "0.11861959425312252"
+      },
+      "MOT17-02|4.8": {
+        "sequence": "MOT17-02",
+        "window_seconds": "4.8",
+        "window_frames": "144",
+        "possible_windows": "11399",
+        "available_windows": "732",
+        "availability": "0.06421615931222037"
+      },
+      "MOT17-02|8.0": {
+        "sequence": "MOT17-02",
+        "window_seconds": "8.0",
+        "window_frames": "240",
+        "possible_windows": "7409",
+        "available_windows": "241",
+        "availability": "0.0325280064786071"
+      },
+      "MOT17-04|0.5": {
+        "sequence": "MOT17-04",
+        "window_seconds": "0.5",
+        "window_frames": "15",
+        "possible_windows": "46395",
+        "available_windows": "26992",
+        "availability": "0.5817868304774222"
+      },
+      "MOT17-04|1.0": {
+        "sequence": "MOT17-04",
+        "window_seconds": "1.0",
+        "window_frames": "30",
+        "possible_windows": "45159",
+        "available_windows": "24319",
+        "availability": "0.5385194534865697"
+      },
+      "MOT17-04|2.0": {
+        "sequence": "MOT17-04",
+        "window_seconds": "2.0",
+        "window_frames": "60",
+        "possible_windows": "42815",
+        "available_windows": "20373",
+        "availability": "0.4758379072754876"
+      },
+      "MOT17-04|3.0": {
+        "sequence": "MOT17-04",
+        "window_seconds": "3.0",
+        "window_frames": "90",
+        "possible_windows": "40562",
+        "available_windows": "17456",
+        "availability": "0.43035353286327105"
+      },
+      "MOT17-04|4.8": {
+        "sequence": "MOT17-04",
+        "window_seconds": "4.8",
+        "window_frames": "144",
+        "possible_windows": "36653",
+        "available_windows": "13239",
+        "availability": "0.361198264807792"
+      },
+      "MOT17-04|8.0": {
+        "sequence": "MOT17-04",
+        "window_seconds": "8.0",
+        "window_frames": "240",
+        "possible_windows": "30102",
+        "available_windows": "8229",
+        "availability": "0.2733705401634443"
+      },
+      "MOT17-05|0.5": {
+        "sequence": "MOT17-05",
+        "window_seconds": "0.5",
+        "window_frames": "7",
+        "possible_windows": "6150",
+        "available_windows": "2532",
+        "availability": "0.4117073170731707"
+      },
+      "MOT17-05|1.0": {
+        "sequence": "MOT17-05",
+        "window_seconds": "1.0",
+        "window_frames": "14",
+        "possible_windows": "5383",
+        "available_windows": "1697",
+        "availability": "0.31525171837265464"
+      },
+      "MOT17-05|2.0": {
+        "sequence": "MOT17-05",
+        "window_seconds": "2.0",
+        "window_frames": "28",
+        "possible_windows": "4200",
+        "available_windows": "949",
+        "availability": "0.22595238095238096"
+      },
+      "MOT17-05|3.0": {
+        "sequence": "MOT17-05",
+        "window_seconds": "3.0",
+        "window_frames": "42",
+        "possible_windows": "3400",
+        "available_windows": "590",
+        "availability": "0.17352941176470588"
+      },
+      "MOT17-05|4.8": {
+        "sequence": "MOT17-05",
+        "window_seconds": "4.8",
+        "window_frames": "67",
+        "possible_windows": "2574",
+        "available_windows": "297",
+        "availability": "0.11538461538461539"
+      },
+      "MOT17-05|8.0": {
+        "sequence": "MOT17-05",
+        "window_seconds": "8.0",
+        "window_frames": "112",
+        "possible_windows": "1648",
+        "available_windows": "84",
+        "availability": "0.050970873786407765"
+      },
+      "MOT17-09|0.5": {
+        "sequence": "MOT17-09",
+        "window_seconds": "0.5",
+        "window_frames": "15",
+        "possible_windows": "4961",
+        "available_windows": "2978",
+        "availability": "0.6002822011691191"
+      },
+      "MOT17-09|1.0": {
+        "sequence": "MOT17-09",
+        "window_seconds": "1.0",
+        "window_frames": "30",
+        "possible_windows": "4595",
+        "available_windows": "2311",
+        "availability": "0.5029379760609358"
+      },
+      "MOT17-09|2.0": {
+        "sequence": "MOT17-09",
+        "window_seconds": "2.0",
+        "window_frames": "60",
+        "possible_windows": "3890",
+        "available_windows": "1460",
+        "availability": "0.37532133676092544"
+      },
+      "MOT17-09|3.0": {
+        "sequence": "MOT17-09",
+        "window_seconds": "3.0",
+        "window_frames": "90",
+        "possible_windows": "3261",
+        "available_windows": "905",
+        "availability": "0.27752223244403557"
+      },
+      "MOT17-09|4.8": {
+        "sequence": "MOT17-09",
+        "window_seconds": "4.8",
+        "window_frames": "144",
+        "possible_windows": "2331",
+        "available_windows": "359",
+        "availability": "0.154011154011154"
+      },
+      "MOT17-09|8.0": {
+        "sequence": "MOT17-09",
+        "window_seconds": "8.0",
+        "window_frames": "240",
+        "possible_windows": "971",
+        "available_windows": "0",
+        "availability": "0.0"
+      },
+      "MOT17-10|0.5": {
+        "sequence": "MOT17-10",
+        "window_seconds": "0.5",
+        "window_frames": "15",
+        "possible_windows": "12041",
+        "available_windows": "5468",
+        "availability": "0.4541151067187111"
+      },
+      "MOT17-10|1.0": {
+        "sequence": "MOT17-10",
+        "window_seconds": "1.0",
+        "window_frames": "30",
+        "possible_windows": "11216",
+        "available_windows": "4179",
+        "availability": "0.37259272467902993"
+      },
+      "MOT17-10|2.0": {
+        "sequence": "MOT17-10",
+        "window_seconds": "2.0",
+        "window_frames": "60",
+        "possible_windows": "9655",
+        "available_windows": "2879",
+        "availability": "0.2981874676333506"
+      },
+      "MOT17-10|3.0": {
+        "sequence": "MOT17-10",
+        "window_seconds": "3.0",
+        "window_frames": "90",
+        "possible_windows": "8364",
+        "available_windows": "2110",
+        "availability": "0.25227164036346245"
+      },
+      "MOT17-10|4.8": {
+        "sequence": "MOT17-10",
+        "window_seconds": "4.8",
+        "window_frames": "144",
+        "possible_windows": "6455",
+        "available_windows": "1135",
+        "availability": "0.1758326878388846"
+      },
+      "MOT17-10|8.0": {
+        "sequence": "MOT17-10",
+        "window_seconds": "8.0",
+        "window_frames": "240",
+        "possible_windows": "3820",
+        "available_windows": "427",
+        "availability": "0.11178010471204189"
+      },
+      "MOT17-11|0.5": {
+        "sequence": "MOT17-11",
+        "window_seconds": "0.5",
+        "window_frames": "15",
+        "possible_windows": "8446",
+        "available_windows": "5220",
+        "availability": "0.6180440445181151"
+      },
+      "MOT17-11|1.0": {
+        "sequence": "MOT17-11",
+        "window_seconds": "1.0",
+        "window_frames": "30",
+        "possible_windows": "7492",
+        "available_windows": "4387",
+        "availability": "0.5855579284570208"
+      },
+      "MOT17-11|2.0": {
+        "sequence": "MOT17-11",
+        "window_seconds": "2.0",
+        "window_frames": "60",
+        "possible_windows": "6001",
+        "available_windows": "3214",
+        "availability": "0.535577403766039"
+      },
+      "MOT17-11|3.0": {
+        "sequence": "MOT17-11",
+        "window_seconds": "3.0",
+        "window_frames": "90",
+        "possible_windows": "4844",
+        "available_windows": "2230",
+        "availability": "0.4603633360858794"
+      },
+      "MOT17-11|4.8": {
+        "sequence": "MOT17-11",
+        "window_seconds": "4.8",
+        "window_frames": "144",
+        "possible_windows": "3440",
+        "available_windows": "1336",
+        "availability": "0.3883720930232558"
+      },
+      "MOT17-11|8.0": {
+        "sequence": "MOT17-11",
+        "window_seconds": "8.0",
+        "window_frames": "240",
+        "possible_windows": "2245",
+        "available_windows": "776",
+        "availability": "0.34565701559020046"
+      },
+      "MOT17-13|0.5": {
+        "sequence": "MOT17-13",
+        "window_seconds": "0.5",
+        "window_frames": "12",
+        "possible_windows": "10466",
+        "available_windows": "4450",
+        "availability": "0.4251863175998471"
+      },
+      "MOT17-13|1.0": {
+        "sequence": "MOT17-13",
+        "window_seconds": "1.0",
+        "window_frames": "25",
+        "possible_windows": "9178",
+        "available_windows": "3126",
+        "availability": "0.3405970799738505"
+      },
+      "MOT17-13|2.0": {
+        "sequence": "MOT17-13",
+        "window_seconds": "2.0",
+        "window_frames": "50",
+        "possible_windows": "6996",
+        "available_windows": "1690",
+        "availability": "0.24156660949113778"
+      },
+      "MOT17-13|3.0": {
+        "sequence": "MOT17-13",
+        "window_seconds": "3.0",
+        "window_frames": "75",
+        "possible_windows": "5234",
+        "available_windows": "849",
+        "availability": "0.16220863584256784"
+      },
+      "MOT17-13|4.8": {
+        "sequence": "MOT17-13",
+        "window_seconds": "4.8",
+        "window_frames": "120",
+        "possible_windows": "2844",
+        "available_windows": "168",
+        "availability": "0.05907172995780591"
+      },
+      "MOT17-13|8.0": {
+        "sequence": "MOT17-13",
+        "window_seconds": "8.0",
+        "window_frames": "200",
+        "possible_windows": "974",
+        "available_windows": "0",
+        "availability": "0.0"
+      }
+    }
+  }
+}

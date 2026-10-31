@@ -1,0 +1,46 @@
+{
+  "sequences": [
+    {
+      "sequence": "MOT17-02",
+      "detections_complete": true,
+      "tracks_written": true,
+      "trajectories_written": true
+    },
+    {
+      "sequence": "MOT17-04",
+      "detections_complete": true,
+      "tracks_written": true,
+      "trajectories_written": true
+    },
+    {
+      "sequence": "MOT17-05",
+      "detections_complete": true,
+      "tracks_written": true,
+      "trajectories_written": true
+    },
+    {
+      "sequence": "MOT17-09",
+      "detections_complete": true,
+      "tracks_written": true,
+      "trajectories_written": true
+    },
+    {
+      "sequence": "MOT17-10",
+      "detections_complete": true,
+      "tracks_written": true,
+      "trajectories_written": true
+    },
+    {
+      "sequence": "MOT17-11",
+      "detections_complete": true,
+      "tracks_written": true,
+      "trajectories_written": true
+    },
+    {
+      "sequence": "MOT17-13",
+      "detections_complete": true,
+      "tracks_written": true,
+      "trajectories_written": true
+    }
+  ]
+}

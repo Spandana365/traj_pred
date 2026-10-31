@@ -1,0 +1,7 @@
+{
+  "person_class_id": 0,
+  "weights_unchanged_by_run": true,
+  "path": "runs\\mot17_tracking_analysis\\weights\\yolov8s.pt",
+  "sha256": "1f47a78bf100391c2a140b7ac73a1caae18c32779be7d310658112f7ac9aa78a",
+  "size_bytes": 22588772
+}

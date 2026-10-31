@@ -1,0 +1,176 @@
+# ===========================================================================
+# TrackVision .gitignore
+#
+# Policy: source code, tests, docs, lockfiles and the LIGHTWEIGHT saved results
+# that the dashboard API reads (runs/) are committed. Datasets, model weights,
+# environments, build output and secrets are not.
+# ===========================================================================
+
+# ---------------------------------------------------------------------------
+# 1. Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# 2. Virtual environments
+# ---------------------------------------------------------------------------
+.venv/
+venv/
+env/**/*.local.yml
+env/**/*.local.yaml
+
+# ---------------------------------------------------------------------------
+# 3. Frontend dependencies and build output
+#    (these patterns match at any depth, so they cover web/node_modules/ and web/.next/)
+# ---------------------------------------------------------------------------
+node_modules
+.next/
+web/out/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vercel/
+# v0 sandbox internal files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+.snowflake/
+.v0-trash/
+
+# ---------------------------------------------------------------------------
+# 4. Datasets (never committed; see README for where to place them)
+# ---------------------------------------------------------------------------
+/data/
+data/raw/
+data/eth/
+data/interim/
+data/cache/
+data/external/
+**/.cache/
+
+# ---------------------------------------------------------------------------
+# 5. Model weights and large binaries (anywhere in the repository)
+#    YOLO weights, LSTM checkpoints (best_lstm.pt), exported models.
+# ---------------------------------------------------------------------------
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+*.safetensors
+*.torchscript
+*.weights
+*.h5
+*.tflite
+*.mlmodel
+# Generated videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# ---------------------------------------------------------------------------
+# 6. Research outputs: runs/
+#    runs/ is COMMITTED because the FastAPI backend reads it (JSON/CSV/PNG under
+#    runs/audits, runs/prediction, runs/error_injection and
+#    runs/mot17_tracking_analysis, including gmc_fixed/). Only the parts below are
+#    excluded. Model weights are already excluded by section 5.
+# ---------------------------------------------------------------------------
+# Pretrained detector weights directory
+runs/mot17_tracking_analysis/weights/
+# Dataset-derived ground-truth copies (MOT17 data must not be redistributed)
+runs/mot17_tracking_analysis/**/gt_staging/
+runs/mot17_tracking_analysis/**/sanity_ground_truth_as_tracker/
+runs/mot17_tracking_analysis/**/*_ground_truth.csv
+# Pilot run and duplicated control-run tracker files (regenerable intermediates)
+runs/mot17_tracking_analysis/gmc_fixed/pilot/
+runs/mot17_tracking_analysis/gmc_fixed/control_no_gmc/trackers/
+# Run logs and interrupted-run state (these also contain local machine paths)
+runs/mot17_tracking_analysis/gmc_fixed/logs/
+runs/mot17_tracking_analysis/config/full_run_output.txt
+runs/**/*.partial
+runs/**/*.progress.json
+runs/**/*.tmp
+
+# ---------------------------------------------------------------------------
+# 7. Logs and experiment-tracker output
+# ---------------------------------------------------------------------------
+*.log
+wandb/
+mlruns/
+lightning_logs/
+
+# ---------------------------------------------------------------------------
+# 8. Secrets, credentials and environment files
+#    Only a placeholder template (.env.example) may be committed.
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+.env*.local
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+id_rsa*
+id_ed25519*
+*.token
+credentials*.json
+secrets*.json
+service-account*.json
+.pypirc
+.netrc
+
+# ---------------------------------------------------------------------------
+# 9. IDE, tooling and operating-system files
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+.qodo/
+.claude/settings.local.json
+*.swp
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---------------------------------------------------------------------------
+# 10. Governing documents kept locally (see docs/spec/README.md)
+# ---------------------------------------------------------------------------
+docs/spec/*
+!docs/spec/README.md
+
+# ---------------------------------------------------------------------------
+# 11. Approved exceptions (keep this block last; the last matching rule wins)
+#     Use file patterns, not directories: Git cannot re-include a file whose
+#     parent directory is ignored.
+# ---------------------------------------------------------------------------
+# Test fixtures: small data-like fixtures (a tiny log, weights file or video) may be
+# tracked under tests/fixtures/ although these types are ignored elsewhere; size is
+# limited by tests/fixtures/README.md.
+!tests/fixtures/**/*.log
+!tests/fixtures/**/*.pt
+!tests/fixtures/**/*.pth
+!tests/fixtures/**/*.ckpt
+!tests/fixtures/**/*.onnx
+!tests/fixtures/**/*.engine
+!tests/fixtures/**/*.safetensors
+!tests/fixtures/**/*.mp4
+!tests/fixtures/**/*.avi
+!tests/fixtures/**/*.mov
+!tests/fixtures/**/*.mkv

@@ -1,0 +1,178 @@
+{
+  "config": {
+    "batch_size": 256,
+    "device": "cpu",
+    "dropout": 0.0,
+    "frame_step": 10,
+    "hidden_size": 64,
+    "horizon_len": 12,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "min_delta": 0.0,
+    "num_layers": 2,
+    "observation_len": 8,
+    "patience": 15,
+    "seed": 42,
+    "stride": 1
+  },
+  "created_utc": "2026-10-30T04:18:40.184373+00:00",
+  "dataset_source_files": [
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/train/biwi_hotel_train.txt",
+      "scene": "HOTEL",
+      "sha256": "9bce5f6700bd781faf66add291803a6e789a1cb550fae9c4a29e94f7d3938279",
+      "split": "train"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/train/crowds_zara01_train.txt",
+      "scene": "ZARA1",
+      "sha256": "cee454ccf84f966054f246b126f458428d61154dad789718208d74322f2c1460",
+      "split": "train"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/train/crowds_zara02_train.txt",
+      "scene": "ZARA2",
+      "sha256": "03227661f7fcc8f0ab37df4a4ad69db33033f1ab598e71dcdcab07b6ea384582",
+      "split": "train"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/train/crowds_zara03_train.txt",
+      "scene": "ZARA3",
+      "sha256": "bdd8b2b1224d36bac0c7d1ec584b178d529e5e67e0b11eebb9fdc877701ef440",
+      "split": "train"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/train/students001_train.txt",
+      "scene": "STUDENTS001",
+      "sha256": "4673003fd77d94378b79cc738c37a6cb93cc624c1f364d958778f9c7272a2634",
+      "split": "train"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/train/students003_train.txt",
+      "scene": "UNIV",
+      "sha256": "4d5d0eaa46bf7f59d7d44c1c6f2e3b308b1cb88e7cd3a7c71f6677939592c539",
+      "split": "train"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/train/uni_examples_train.txt",
+      "scene": "UNI_EXAMPLES",
+      "sha256": "114b6fd0abbc0d4cda4a2314af7f4be7b2865b6d85c28c394c7764ad9f55ffd8",
+      "split": "train"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/biwi_hotel_val.txt",
+      "scene": "HOTEL",
+      "sha256": "219c5adf470f576ee74123caa63b8d91b55ffac29f8e311426579fbd21128e9c",
+      "split": "val"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/crowds_zara01_val.txt",
+      "scene": "ZARA1",
+      "sha256": "b3cd9fd328ff06eea04748f74ae4a9620436b1d2ebac6bc08d40c6e6df84e7a7",
+      "split": "val"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/crowds_zara02_val.txt",
+      "scene": "ZARA2",
+      "sha256": "389e6365e390f73f3ea8b9fc9bc34c11ea311b1919b19b51ee50c1710365dceb",
+      "split": "val"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/crowds_zara03_val.txt",
+      "scene": "ZARA3",
+      "sha256": "17c89d22abc32179443d2d28e285ab592990092fee695b6419b9aeed795a4d73",
+      "split": "val"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/students001_val.txt",
+      "scene": "STUDENTS001",
+      "sha256": "18a50b15c8d0eac3dc9ee6fb2a7ce99f2b919067fc40efd06712d007625d4b7f",
+      "split": "val"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/students003_val.txt",
+      "scene": "UNIV",
+      "sha256": "5038cb554e912147bc6abbeef10ce430e7a88580f934aac34449cd09c7e338c8",
+      "split": "val"
+    },
+    {
+      "path": "data/eth/Social-STGCNN/datasets/eth/val/uni_examples_val.txt",
+      "scene": "UNI_EXAMPLES",
+      "sha256": "245fe33a5fdcf786a610db8ff766804aef16a6f3870318a4e025a3b3ce828678",
+      "split": "val"
+    }
+  ],
+  "exclusions": {
+    "invalid_rows": 0,
+    "note": "Malformed files fail loading; no rows are silently dropped.",
+    "smoke_subset_applied": false,
+    "windows_excluded_after_validation": 0
+  },
+  "format_version": 1,
+  "model": {
+    "architecture": "batch-first LSTM encoder; final hidden sequence output projected directly to 12 two-dimensional future positions",
+    "config": {
+      "dropout": 0.0,
+      "hidden_size": 64,
+      "horizon_len": 12,
+      "input_size": 2,
+      "num_layers": 2,
+      "observation_len": 8
+    },
+    "loss": "mean squared error over normalized absolute coordinates",
+    "name": "LSTM",
+    "optimizer": "Adam"
+  },
+  "normalization": {
+    "fit_observation_count": 56842,
+    "fit_split": "train",
+    "mean": [
+      7.2790792598482845,
+      5.999566365297545
+    ],
+    "method": "per-coordinate population mean/std over unique training-split rows",
+    "scale": [
+      4.495770482467522,
+      4.1254866461157995
+    ]
+  },
+  "scheduler": {
+    "factor": 0.5,
+    "mode": "min",
+    "monitor": "validation_lstm_ade_raw_coordinate_units",
+    "name": "ReduceLROnPlateau",
+    "patience_epochs": 4
+  },
+  "selection": {
+    "criterion": "minimum validation mean per-window ADE in raw coordinate units",
+    "min_delta": 0.0,
+    "patience_epochs": 15,
+    "selected_epoch": 100,
+    "selected_validation_ade": 0.4380585208847724,
+    "test_used_for_selection": false
+  },
+  "smoke_test_subset": false,
+  "software": {
+    "cuda_available": false,
+    "device": "cpu",
+    "numpy": "2.2.3",
+    "python": "3.13.1",
+    "torch": "2.11.0+cpu"
+  },
+  "splits": {
+    "test": "test; not opened by training or selection",
+    "test_candidate_windows": {
+      "last_audited_reference": 364,
+      "verified_during_model_selection": false
+    },
+    "training": "train",
+    "training_candidate_windows": 30307,
+    "training_windows_sha256": "fa50405c5f7afa47c3923fe0d84d5aec56aeb54f41fccf47634db2eeb922f7de",
+    "training_windows_used": 30307,
+    "validation": "val",
+    "validation_candidate_windows": 5422,
+    "validation_windows_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da",
+    "validation_windows_used": 5422
+  },
+  "status": "selected"
+}

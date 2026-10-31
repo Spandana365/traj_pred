@@ -1,0 +1,658 @@
+{
+  "experiment": "BoT-SORT_GMC_enabled",
+  "kind": "Supplementary analysis, not official TrackEval metrics.",
+  "official_metrics": "C:/Users/LENOVO/Downloads/coe1/TrackVision-New/runs/mot17_tracking_analysis/gmc_fixed/trackeval/metrics.json",
+  "matching": {
+    "iou_threshold": 0.5,
+    "evaluated_ground_truth": "conf == 1 and class == 1",
+    "distractor_classes_removed": [
+      2,
+      7,
+      8,
+      12
+    ],
+    "assignment": "per-frame Hungarian; continuing identities take priority"
+  },
+  "definitions": {
+    "iou": "Overlap of matched tracker and ground-truth boxes; only IoU >= 0.5 can match, so this is a truncated distribution.",
+    "center_error_px": "Euclidean centre distance of matched boxes in image pixels.",
+    "center_error_over_height": "Centre error divided by ground-truth box height.",
+    "interior_gap": "Run of unmatched evaluated ground-truth frames between two matched frames.",
+    "fragmentation": "An interior gap; equal in meaning to TrackEval's Frag.",
+    "window_availability": "Share of ground-truth windows of this duration covered by one unbroken tracker identity.",
+    "identity_run_survival": "Share of unbroken identity runs reaching a duration; runs ended by the video are not treated as censored."
+  },
+  "coordinate_units": "image pixels; no ground-plane or metric conversion",
+  "limitations": [
+    "Pixel errors depend on image size, camera distance and motion, so they are not comparable with ETH coordinates.",
+    "Missed and unmatched boxes contribute no localization error, so localization statistics describe successful matches only.",
+    "Sequences have different frame rates; durations are reported in seconds where they are pooled.",
+    "All seven sequences are training-split videos; nothing was tuned on them, but they are not the official test set."
+  ],
+  "overall": {
+    "true_positives": 67617,
+    "false_positives": 18458,
+    "false_negatives": 44680,
+    "identity_switches": 643,
+    "fragmentations": 1383,
+    "recall": 0.6021265038246792,
+    "precision": 0.7855591054313099,
+    "detector_conf_0.25": {
+      "true_positives": 66799,
+      "false_positives": 19607,
+      "false_negatives": 45498,
+      "recall": 0.59484224867984,
+      "precision": 0.773082887762424
+    },
+    "detector_conf_0.10": {
+      "true_positives": 74479,
+      "false_positives": 49046,
+      "false_negatives": 37818,
+      "recall": 0.663232321433342,
+      "precision": 0.6029467719085205
+    },
+    "iou": {
+      "count": 67617,
+      "mean": 0.8000124136553297,
+      "std": 0.12488381387096947,
+      "median": 0.8307458528555143,
+      "p5": 0.5558602263280119,
+      "p95": 0.9536618940586074,
+      "max": 0.9955771969546251
+    },
+    "center_error_px": {
+      "count": 67617,
+      "mean": 8.957304819176759,
+      "std": 12.505111286594657,
+      "median": 4.7866924906452875,
+      "p5": 1.0077822185373355,
+      "p95": 33.06999761078861,
+      "max": 173.95187380422206
+    },
+    "center_error_over_height": {
+      "count": 67617,
+      "mean": 0.04443599873925837,
+      "std": 0.04660683564384607,
+      "median": 0.026757231110930375,
+      "p5": 0.005221448582794144,
+      "p95": 0.15490795225970613,
+      "max": 0.3906666995269961
+    },
+    "interior_gap_frames": {
+      "count": 1383,
+      "mean": 15.154736080983369,
+      "std": 34.25734016778619,
+      "median": 4.0,
+      "p5": 1.0,
+      "p95": 61.899999999999864,
+      "max": 485.0
+    },
+    "interior_gap_seconds": {
+      "count": 1383,
+      "mean": 0.5563674551527046,
+      "std": 1.1582470292775267,
+      "median": 0.16666666666666666,
+      "p5": 0.03333333333333333,
+      "p95": 2.1299999999999955,
+      "max": 16.166666666666668
+    },
+    "per_pedestrian_coverage": {
+      "count": 546,
+      "mean": 0.530872925885379,
+      "std": 0.3409227005961603,
+      "median": 0.6073097463284378,
+      "p5": 0.0,
+      "p95": 0.9769444444444444,
+      "max": 1.0
+    },
+    "window_availability": {
+      "0.5": 0.4966061963981435,
+      "1.0": 0.43941122318283704,
+      "2.0": 0.37237203439427363,
+      "3.0": 0.3242492077066251,
+      "4.8": 0.26281660983925964,
+      "8.0": 0.20685195785367508
+    }
+  },
+  "sequences": [
+    {
+      "sequence": "MOT17-02",
+      "frame_rate": 30,
+      "image_size": [
+        1920,
+        1080
+      ],
+      "tracker": {
+        "true_positives": 7300,
+        "false_positives": 1718,
+        "false_negatives": 11281,
+        "removed_as_distractor": 1240,
+        "recall": 0.39287444163392715,
+        "precision": 0.8094921268573964
+      },
+      "detector_conf_0.25": {
+        "true_positives": 7061,
+        "false_positives": 1618,
+        "false_negatives": 11520,
+        "removed_as_distractor": 1103,
+        "recall": 0.38001184005166566,
+        "precision": 0.8135729922802166
+      },
+      "detector_conf_0.10": {
+        "true_positives": 8906,
+        "false_positives": 5529,
+        "false_negatives": 9675,
+        "removed_as_distractor": 2091,
+        "recall": 0.4793068187933911,
+        "precision": 0.6169726359542778
+      },
+      "identity_switches": 104,
+      "fragmentations": 188,
+      "iou": {
+        "count": 7300,
+        "mean": 0.8060679205653767,
+        "std": 0.12381836082529771,
+        "median": 0.837030264919012,
+        "p5": 0.5575343058512034,
+        "p95": 0.9587363283433727,
+        "max": 0.9955771969546251
+      },
+      "center_error_px": {
+        "count": 7300,
+        "mean": 7.674685334490338,
+        "std": 13.61220835641582,
+        "median": 4.12219752823003,
+        "p5": 0.8201744683265484,
+        "p95": 23.9811309143225,
+        "max": 173.95187380422206
+      },
+      "center_error_over_height": {
+        "count": 7300,
+        "mean": 0.04116879193980649,
+        "std": 0.04306893225623893,
+        "median": 0.02655128533880152,
+        "p5": 0.0040883699676690175,
+        "p95": 0.12895064155014527,
+        "max": 0.29138398211220023
+      },
+      "track_span_seconds": {
+        "count": 173,
+        "mean": 2.201926782273603,
+        "std": 2.544107276952569,
+        "median": 1.2,
+        "p5": 0.15333333333333332,
+        "p95": 8.093333333333334,
+        "max": 14.633333333333333
+      },
+      "cross_check_against_trackeval": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "identity_switches": 0,
+        "fragmentations": 0
+      }
+    },
+    {
+      "sequence": "MOT17-04",
+      "frame_rate": 30,
+      "image_size": [
+        1920,
+        1080
+      ],
+      "tracker": {
+        "true_positives": 30837,
+        "false_positives": 8530,
+        "false_negatives": 16720,
+        "removed_as_distractor": 2844,
+        "recall": 0.648421893727527,
+        "precision": 0.7833210557065563
+      },
+      "detector_conf_0.25": {
+        "true_positives": 30338,
+        "false_positives": 7851,
+        "false_negatives": 17219,
+        "removed_as_distractor": 2402,
+        "recall": 0.6379292217759741,
+        "precision": 0.7944172405666553
+      },
+      "detector_conf_0.10": {
+        "true_positives": 33049,
+        "false_positives": 17521,
+        "false_negatives": 14508,
+        "removed_as_distractor": 3136,
+        "recall": 0.6949344996530479,
+        "precision": 0.6535297607277042
+      },
+      "identity_switches": 144,
+      "fragmentations": 305,
+      "iou": {
+        "count": 30837,
+        "mean": 0.8150905506181713,
+        "std": 0.1282548044361024,
+        "median": 0.8564388836223432,
+        "p5": 0.5533141912044611,
+        "p95": 0.9576951289326723,
+        "max": 0.9953936997515088
+      },
+      "center_error_px": {
+        "count": 30837,
+        "mean": 8.762883515127172,
+        "std": 11.024608088901283,
+        "median": 4.329457240809757,
+        "p5": 0.9491838420444595,
+        "p95": 35.62587525621539,
+        "max": 94.15067458600606
+      },
+      "center_error_over_height": {
+        "count": 30837,
+        "mean": 0.04707819181588223,
+        "std": 0.05425588825431621,
+        "median": 0.023193762740007492,
+        "p5": 0.004973760190419528,
+        "p95": 0.18115943892282435,
+        "max": 0.3906666995269961
+      },
+      "track_span_seconds": {
+        "count": 279,
+        "mean": 5.249940262843488,
+        "std": 7.5010520300530175,
+        "median": 1.7,
+        "p5": 0.1,
+        "p95": 22.95999999999998,
+        "max": 35.0
+      },
+      "cross_check_against_trackeval": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "identity_switches": 0,
+        "fragmentations": 0
+      }
+    },
+    {
+      "sequence": "MOT17-05",
+      "frame_rate": 14,
+      "image_size": [
+        640,
+        480
+      ],
+      "tracker": {
+        "true_positives": 4067,
+        "false_positives": 2042,
+        "false_negatives": 2850,
+        "removed_as_distractor": 14,
+        "recall": 0.5879716640161919,
+        "precision": 0.6657390734981176
+      },
+      "detector_conf_0.25": {
+        "true_positives": 4135,
+        "false_positives": 2650,
+        "false_negatives": 2782,
+        "removed_as_distractor": 27,
+        "recall": 0.5978025155414197,
+        "precision": 0.6094325718496684
+      },
+      "detector_conf_0.10": {
+        "true_positives": 4495,
+        "false_positives": 5596,
+        "false_negatives": 2422,
+        "removed_as_distractor": 54,
+        "recall": 0.6498482000867428,
+        "precision": 0.4454464374194827
+      },
+      "identity_switches": 131,
+      "fragmentations": 231,
+      "iou": {
+        "count": 4067,
+        "mean": 0.7407595162344535,
+        "std": 0.12581784992666595,
+        "median": 0.7525380254902847,
+        "p5": 0.523659063848654,
+        "p95": 0.9221994654500397,
+        "max": 0.984799360602554
+      },
+      "center_error_px": {
+        "count": 4067,
+        "mean": 16.359694625600614,
+        "std": 22.841721660872604,
+        "median": 6.265790053935761,
+        "p5": 1.0886883705788883,
+        "p95": 69.63965144265603,
+        "max": 121.71273731619053
+      },
+      "center_error_over_height": {
+        "count": 4067,
+        "mean": 0.05497332865193452,
+        "std": 0.04331507778636546,
+        "median": 0.042014705247849976,
+        "p5": 0.008053364824417679,
+        "p95": 0.14316174524856495,
+        "max": 0.26272302637435413
+      },
+      "track_span_seconds": {
+        "count": 233,
+        "mean": 2.2939914163090127,
+        "std": 3.294140128265775,
+        "median": 1.0,
+        "p5": 0.07142857142857142,
+        "p95": 9.528571428571427,
+        "max": 22.642857142857142
+      },
+      "cross_check_against_trackeval": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "identity_switches": 0,
+        "fragmentations": 0
+      }
+    },
+    {
+      "sequence": "MOT17-09",
+      "frame_rate": 30,
+      "image_size": [
+        1920,
+        1080
+      ],
+      "tracker": {
+        "true_positives": 3944,
+        "false_positives": 819,
+        "false_negatives": 1381,
+        "removed_as_distractor": 1098,
+        "recall": 0.7406572769953051,
+        "precision": 0.8280495486038211
+      },
+      "detector_conf_0.25": {
+        "true_positives": 3963,
+        "false_positives": 956,
+        "false_negatives": 1362,
+        "removed_as_distractor": 1067,
+        "recall": 0.744225352112676,
+        "precision": 0.8056515551941451
+      },
+      "detector_conf_0.10": {
+        "true_positives": 4063,
+        "false_positives": 2307,
+        "false_negatives": 1262,
+        "removed_as_distractor": 1248,
+        "recall": 0.7630046948356808,
+        "precision": 0.6378335949764521
+      },
+      "identity_switches": 54,
+      "fragmentations": 66,
+      "iou": {
+        "count": 3944,
+        "mean": 0.812153371325354,
+        "std": 0.11099033846980935,
+        "median": 0.8405252551771961,
+        "p5": 0.5792242192365585,
+        "p95": 0.9448381090229777,
+        "max": 0.9842417288655135
+      },
+      "center_error_px": {
+        "count": 3944,
+        "mean": 10.406943357168554,
+        "std": 12.965135914977893,
+        "median": 6.4883308593346865,
+        "p5": 1.575390724312739,
+        "p95": 29.479763541834586,
+        "max": 164.70945821354647
+      },
+      "center_error_over_height": {
+        "count": 3944,
+        "mean": 0.02825426503095275,
+        "std": 0.022382280995662564,
+        "median": 0.02133916145116844,
+        "p5": 0.0049494673886667,
+        "p95": 0.07320103178075471,
+        "max": 0.17523426245090096
+      },
+      "track_span_seconds": {
+        "count": 110,
+        "mean": 1.9654545454545453,
+        "std": 2.5747606626939343,
+        "median": 0.8166666666666667,
+        "p5": 0.06666666666666667,
+        "p95": 7.4,
+        "max": 11.366666666666667
+      },
+      "cross_check_against_trackeval": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "identity_switches": 0,
+        "fragmentations": 0
+      }
+    },
+    {
+      "sequence": "MOT17-10",
+      "frame_rate": 30,
+      "image_size": [
+        1920,
+        1080
+      ],
+      "tracker": {
+        "true_positives": 8638,
+        "false_positives": 1661,
+        "false_negatives": 4201,
+        "removed_as_distractor": 800,
+        "recall": 0.6727938312952723,
+        "precision": 0.8387222060394213
+      },
+      "detector_conf_0.25": {
+        "true_positives": 8538,
+        "false_positives": 2119,
+        "false_negatives": 4301,
+        "removed_as_distractor": 709,
+        "recall": 0.6650050626995871,
+        "precision": 0.8011635544712395
+      },
+      "detector_conf_0.10": {
+        "true_positives": 9372,
+        "false_positives": 6259,
+        "false_negatives": 3467,
+        "removed_as_distractor": 956,
+        "recall": 0.7299633927876003,
+        "precision": 0.5995777621393384
+      },
+      "identity_switches": 112,
+      "fragmentations": 365,
+      "iou": {
+        "count": 8638,
+        "mean": 0.7586201784123305,
+        "std": 0.11459175254480482,
+        "median": 0.7732593995112451,
+        "p5": 0.5485233890147455,
+        "p95": 0.926359372606737,
+        "max": 0.987394276586706
+      },
+      "center_error_px": {
+        "count": 8638,
+        "mean": 7.078518626105563,
+        "std": 8.173484635796223,
+        "median": 4.9007023897895845,
+        "p5": 1.1709957684450718,
+        "p95": 20.7684895923115,
+        "max": 91.82195666070291
+      },
+      "center_error_over_height": {
+        "count": 8638,
+        "mean": 0.049376800647836915,
+        "std": 0.03948558216575585,
+        "median": 0.03883567903547708,
+        "p5": 0.008198222243961651,
+        "p95": 0.13065440198475503,
+        "max": 0.265228590061761
+      },
+      "track_span_seconds": {
+        "count": 163,
+        "mean": 2.580572597137014,
+        "std": 3.459469908979885,
+        "median": 1.4,
+        "p5": 0.06666666666666667,
+        "p95": 8.410000000000002,
+        "max": 21.8
+      },
+      "cross_check_against_trackeval": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "identity_switches": 0,
+        "fragmentations": 0
+      }
+    },
+    {
+      "sequence": "MOT17-11",
+      "frame_rate": 30,
+      "image_size": [
+        1920,
+        1080
+      ],
+      "tracker": {
+        "true_positives": 6354,
+        "false_positives": 3073,
+        "false_negatives": 3082,
+        "removed_as_distractor": 231,
+        "recall": 0.6733785502331496,
+        "precision": 0.6740214278137265
+      },
+      "detector_conf_0.25": {
+        "true_positives": 6378,
+        "false_positives": 3495,
+        "false_negatives": 3058,
+        "removed_as_distractor": 228,
+        "recall": 0.6759220008478168,
+        "precision": 0.6460042540261319
+      },
+      "detector_conf_0.10": {
+        "true_positives": 6612,
+        "false_positives": 7698,
+        "false_negatives": 2824,
+        "removed_as_distractor": 258,
+        "recall": 0.7007206443408224,
+        "precision": 0.46205450733752623
+      },
+      "identity_switches": 32,
+      "fragmentations": 51,
+      "iou": {
+        "count": 6354,
+        "mean": 0.8373645280822771,
+        "std": 0.11181594827230026,
+        "median": 0.8698624127120582,
+        "p5": 0.5967995373395384,
+        "p95": 0.9614628734537756,
+        "max": 0.9951606528839577
+      },
+      "center_error_px": {
+        "count": 6354,
+        "mean": 11.247153199615735,
+        "std": 14.630914269326174,
+        "median": 6.878785303989481,
+        "p5": 1.5197074298700606,
+        "p95": 35.11493566876074,
+        "max": 163.35313434397273
+      },
+      "center_error_over_height": {
+        "count": 6354,
+        "mean": 0.024079061835884704,
+        "std": 0.022618929592434656,
+        "median": 0.01722253173678312,
+        "p5": 0.0037439984126756763,
+        "p95": 0.06549420091493391,
+        "max": 0.23248923421599244
+      },
+      "track_span_seconds": {
+        "count": 222,
+        "mean": 1.5645645645645645,
+        "std": 2.6307368477191964,
+        "median": 0.5833333333333333,
+        "p5": 0.06666666666666667,
+        "p95": 5.758333333333331,
+        "max": 23.666666666666668
+      },
+      "cross_check_against_trackeval": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "identity_switches": 0,
+        "fragmentations": 0
+      }
+    },
+    {
+      "sequence": "MOT17-13",
+      "frame_rate": 25,
+      "image_size": [
+        1920,
+        1080
+      ],
+      "tracker": {
+        "true_positives": 6477,
+        "false_positives": 615,
+        "false_negatives": 5165,
+        "removed_as_distractor": 95,
+        "recall": 0.5563477065796255,
+        "precision": 0.9132825719120136
+      },
+      "detector_conf_0.25": {
+        "true_positives": 6386,
+        "false_positives": 918,
+        "false_negatives": 5256,
+        "removed_as_distractor": 96,
+        "recall": 0.548531180209586,
+        "precision": 0.874315443592552
+      },
+      "detector_conf_0.10": {
+        "true_positives": 7982,
+        "false_positives": 4136,
+        "false_negatives": 3660,
+        "removed_as_distractor": 112,
+        "recall": 0.6856210273148944,
+        "precision": 0.6586895527314739
+      },
+      "identity_switches": 66,
+      "fragmentations": 177,
+      "iou": {
+        "count": 6477,
+        "mean": 0.7697729014975162,
+        "std": 0.10961628846517264,
+        "median": 0.787276428195508,
+        "p5": 0.5736271858697333,
+        "p95": 0.9274542415790336,
+        "max": 0.9845943925097392
+      },
+      "center_error_px": {
+        "count": 6477,
+        "mean": 6.057020240060254,
+        "std": 7.744177951711028,
+        "median": 3.9667619036186372,
+        "p5": 0.8768179674057711,
+        "p95": 15.788062037505366,
+        "max": 97.4350574741966
+      },
+      "center_error_over_height": {
+        "count": 6477,
+        "mean": 0.0521568678021867,
+        "std": 0.041637761058530315,
+        "median": 0.039314736794079944,
+        "p5": 0.008804673381526901,
+        "p95": 0.14044893054337704,
+        "max": 0.24964727872175918
+      },
+      "track_span_seconds": {
+        "count": 145,
+        "mean": 2.1823448275862063,
+        "std": 2.1391271225925723,
+        "median": 1.68,
+        "p5": 0.08,
+        "p95": 5.847999999999994,
+        "max": 13.4
+      },
+      "cross_check_against_trackeval": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "identity_switches": 0,
+        "fragmentations": 0
+      }
+    }
+  ]
+}

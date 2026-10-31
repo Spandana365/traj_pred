@@ -1,0 +1,156 @@
+{
+  "early_stopped": false,
+  "epochs_completed": 30,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse_normalized_coordinates": 5.589328765869141,
+      "validation_lstm_ade_raw_coordinate_units": 9.120993077256161
+    },
+    {
+      "epoch": 2,
+      "train_mse_normalized_coordinates": 5.523665904998779,
+      "validation_lstm_ade_raw_coordinate_units": 9.060955968447148
+    },
+    {
+      "epoch": 3,
+      "train_mse_normalized_coordinates": 5.45697021484375,
+      "validation_lstm_ade_raw_coordinate_units": 8.998589826946084
+    },
+    {
+      "epoch": 4,
+      "train_mse_normalized_coordinates": 5.388526916503906,
+      "validation_lstm_ade_raw_coordinate_units": 8.933276934364628
+    },
+    {
+      "epoch": 5,
+      "train_mse_normalized_coordinates": 5.317676067352295,
+      "validation_lstm_ade_raw_coordinate_units": 8.864337403056965
+    },
+    {
+      "epoch": 6,
+      "train_mse_normalized_coordinates": 5.2437262535095215,
+      "validation_lstm_ade_raw_coordinate_units": 8.791006977847886
+    },
+    {
+      "epoch": 7,
+      "train_mse_normalized_coordinates": 5.165953159332275,
+      "validation_lstm_ade_raw_coordinate_units": 8.712374977890024
+    },
+    {
+      "epoch": 8,
+      "train_mse_normalized_coordinates": 5.083553791046143,
+      "validation_lstm_ade_raw_coordinate_units": 8.627353124772323
+    },
+    {
+      "epoch": 9,
+      "train_mse_normalized_coordinates": 4.995632171630859,
+      "validation_lstm_ade_raw_coordinate_units": 8.534648409620413
+    },
+    {
+      "epoch": 10,
+      "train_mse_normalized_coordinates": 4.901203632354736,
+      "validation_lstm_ade_raw_coordinate_units": 8.432724652189401
+    },
+    {
+      "epoch": 11,
+      "train_mse_normalized_coordinates": 4.799201488494873,
+      "validation_lstm_ade_raw_coordinate_units": 8.319763515516113
+    },
+    {
+      "epoch": 12,
+      "train_mse_normalized_coordinates": 4.688480854034424,
+      "validation_lstm_ade_raw_coordinate_units": 8.193609535676195
+    },
+    {
+      "epoch": 13,
+      "train_mse_normalized_coordinates": 4.567831039428711,
+      "validation_lstm_ade_raw_coordinate_units": 8.051702706552657
+    },
+    {
+      "epoch": 14,
+      "train_mse_normalized_coordinates": 4.435995578765869,
+      "validation_lstm_ade_raw_coordinate_units": 7.8910299480084
+    },
+    {
+      "epoch": 15,
+      "train_mse_normalized_coordinates": 4.29174280166626,
+      "validation_lstm_ade_raw_coordinate_units": 7.708111184222637
+    },
+    {
+      "epoch": 16,
+      "train_mse_normalized_coordinates": 4.133996486663818,
+      "validation_lstm_ade_raw_coordinate_units": 7.499019752054103
+    },
+    {
+      "epoch": 17,
+      "train_mse_normalized_coordinates": 3.9619855880737305,
+      "validation_lstm_ade_raw_coordinate_units": 7.259452027976708
+    },
+    {
+      "epoch": 18,
+      "train_mse_normalized_coordinates": 3.775428533554077,
+      "validation_lstm_ade_raw_coordinate_units": 6.9848950831919865
+    },
+    {
+      "epoch": 19,
+      "train_mse_normalized_coordinates": 3.5746965408325195,
+      "validation_lstm_ade_raw_coordinate_units": 6.67095687454403
+    },
+    {
+      "epoch": 20,
+      "train_mse_normalized_coordinates": 3.360971450805664,
+      "validation_lstm_ade_raw_coordinate_units": 6.3139081411442755
+    },
+    {
+      "epoch": 21,
+      "train_mse_normalized_coordinates": 3.1363232135772705,
+      "validation_lstm_ade_raw_coordinate_units": 5.911451525137027
+    },
+    {
+      "epoch": 22,
+      "train_mse_normalized_coordinates": 2.9037017822265625,
+      "validation_lstm_ade_raw_coordinate_units": 5.463811945315896
+    },
+    {
+      "epoch": 23,
+      "train_mse_normalized_coordinates": 2.666802406311035,
+      "validation_lstm_ade_raw_coordinate_units": 4.976124245898003
+    },
+    {
+      "epoch": 24,
+      "train_mse_normalized_coordinates": 2.429814577102661,
+      "validation_lstm_ade_raw_coordinate_units": 4.45535623568543
+    },
+    {
+      "epoch": 25,
+      "train_mse_normalized_coordinates": 2.1970884799957275,
+      "validation_lstm_ade_raw_coordinate_units": 3.9122747544878154
+    },
+    {
+      "epoch": 26,
+      "train_mse_normalized_coordinates": 1.9727662801742554,
+      "validation_lstm_ade_raw_coordinate_units": 3.3645554791326546
+    },
+    {
+      "epoch": 27,
+      "train_mse_normalized_coordinates": 1.7604589462280273,
+      "validation_lstm_ade_raw_coordinate_units": 2.8392665586080685
+    },
+    {
+      "epoch": 28,
+      "train_mse_normalized_coordinates": 1.5630306005477905,
+      "validation_lstm_ade_raw_coordinate_units": 2.3798222744451345
+    },
+    {
+      "epoch": 29,
+      "train_mse_normalized_coordinates": 1.3825197219848633,
+      "validation_lstm_ade_raw_coordinate_units": 2.0443946103091566
+    },
+    {
+      "epoch": 30,
+      "train_mse_normalized_coordinates": 1.2201796770095825,
+      "validation_lstm_ade_raw_coordinate_units": 1.883127474221489
+    }
+  ]
+}

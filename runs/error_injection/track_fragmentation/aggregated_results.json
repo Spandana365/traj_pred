@@ -1,0 +1,2969 @@
+{
+  "aggregation": "Per-window ADE is the mean Euclidean error over 12 future positions; FDE is the error at position 12; windows are equally weighted. Seed summaries use population standard deviation.",
+  "candidate_window_count": 5422,
+  "candidate_window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da",
+  "clean_baseline_all_candidate_windows": {
+    "constant_velocity": {
+      "ade": 0.44707046770961645,
+      "ade_by_timestep": [
+        {
+          "ade": 0.025098233522109076,
+          "timestep": 1
+        },
+        {
+          "ade": 0.06990211689344875,
+          "timestep": 2
+        },
+        {
+          "ade": 0.12971256465451944,
+          "timestep": 3
+        },
+        {
+          "ade": 0.20007215090542002,
+          "timestep": 4
+        },
+        {
+          "ade": 0.27900752867806505,
+          "timestep": 5
+        },
+        {
+          "ade": 0.365096366491117,
+          "timestep": 6
+        },
+        {
+          "ade": 0.4575569046517721,
+          "timestep": 7
+        },
+        {
+          "ade": 0.5552550640166243,
+          "timestep": 8
+        },
+        {
+          "ade": 0.657634177255205,
+          "timestep": 9
+        },
+        {
+          "ade": 0.763973747168776,
+          "timestep": 10
+        },
+        {
+          "ade": 0.8738026863622748,
+          "timestep": 11
+        },
+        {
+          "ade": 0.9877340719160668,
+          "timestep": 12
+        }
+      ],
+      "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+      "distance_units": "raw dataset coordinate units; physical units unverified",
+      "fde": 0.9877340719160668,
+      "per_scene": {
+        "HOTEL": {
+          "ade": 0.32951587088798956,
+          "fde": 0.6110383788900297,
+          "window_count": 318
+        },
+        "STUDENTS001": {
+          "ade": 0.4400720587865573,
+          "fde": 0.9713925337835383,
+          "window_count": 1887
+        },
+        "UNIV": {
+          "ade": 0.6975773738865517,
+          "fde": 1.5668392107351126,
+          "window_count": 834
+        },
+        "UNI_EXAMPLES": {
+          "ade": 0.3107076765884076,
+          "fde": 0.6300182027642296,
+          "window_count": 79
+        },
+        "ZARA1": {
+          "ade": 0.42019900675435257,
+          "fde": 0.9303882735777496,
+          "window_count": 337
+        },
+        "ZARA2": {
+          "ade": 0.30381697274540753,
+          "fde": 0.682042250360756,
+          "window_count": 1259
+        },
+        "ZARA3": {
+          "ade": 0.5061807680993969,
+          "fde": 1.1291226568093156,
+          "window_count": 708
+        }
+      },
+      "window_count": 5422,
+      "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+    },
+    "lstm": {
+      "ade": 0.4380585208847724,
+      "ade_by_timestep": [
+        {
+          "ade": 0.055807182286531434,
+          "timestep": 1
+        },
+        {
+          "ade": 0.08756258630315776,
+          "timestep": 2
+        },
+        {
+          "ade": 0.14061426232595226,
+          "timestep": 3
+        },
+        {
+          "ade": 0.20777941448429918,
+          "timestep": 4
+        },
+        {
+          "ade": 0.2839377528662052,
+          "timestep": 5
+        },
+        {
+          "ade": 0.3634026505903465,
+          "timestep": 6
+        },
+        {
+          "ade": 0.45150557654395024,
+          "timestep": 7
+        },
+        {
+          "ade": 0.5397602387147059,
+          "timestep": 8
+        },
+        {
+          "ade": 0.637185656793147,
+          "timestep": 9
+        },
+        {
+          "ade": 0.7316656257684823,
+          "timestep": 10
+        },
+        {
+          "ade": 0.8257828185251966,
+          "timestep": 11
+        },
+        {
+          "ade": 0.9316984854152935,
+          "timestep": 12
+        }
+      ],
+      "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+      "distance_units": "raw dataset coordinate units; physical units unverified",
+      "fde": 0.9316984854152935,
+      "per_scene": {
+        "HOTEL": {
+          "ade": 0.30350210585040044,
+          "fde": 0.5201493735180184,
+          "window_count": 318
+        },
+        "STUDENTS001": {
+          "ade": 0.46116594311908515,
+          "fde": 0.9752206802168011,
+          "window_count": 1887
+        },
+        "UNIV": {
+          "ade": 0.619949258565263,
+          "fde": 1.3290743366512396,
+          "window_count": 834
+        },
+        "UNI_EXAMPLES": {
+          "ade": 0.516231457879147,
+          "fde": 1.1341169077158495,
+          "window_count": 79
+        },
+        "ZARA1": {
+          "ade": 0.38520118709755985,
+          "fde": 0.8184855721811832,
+          "window_count": 337
+        },
+        "ZARA2": {
+          "ade": 0.31251296462310885,
+          "fde": 0.6857531517804796,
+          "window_count": 1259
+        },
+        "ZARA3": {
+          "ade": 0.4623346138175719,
+          "fde": 1.0011075920628796,
+          "window_count": 708
+        }
+      },
+      "window_count": 5422,
+      "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+    },
+    "window_count": 5422,
+    "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+  },
+  "distance_units": "raw dataset coordinate units; physical units unverified",
+  "severity_results": {
+    "high": {
+      "availability_by_scene": {
+        "HOTEL": {
+          "candidate_window_count": {
+            "mean": 318.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 212.33333333333334,
+            "std": 2.6246692913372702
+          },
+          "unusable_window_count": {
+            "mean": 105.66666666666667,
+            "std": 2.6246692913372702
+          },
+          "window_loss_percentage": {
+            "mean": 33.22851153039832,
+            "std": 0.8253677016783882
+          },
+          "window_retention_percentage": {
+            "mean": 66.77148846960168,
+            "std": 0.8253677016783882
+          }
+        },
+        "STUDENTS001": {
+          "candidate_window_count": {
+            "mean": 1887.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 1440.3333333333333,
+            "std": 4.0276819911981905
+          },
+          "unusable_window_count": {
+            "mean": 446.6666666666667,
+            "std": 4.027681991198191
+          },
+          "window_loss_percentage": {
+            "mean": 23.67072955308249,
+            "std": 0.21344366673016293
+          },
+          "window_retention_percentage": {
+            "mean": 76.3292704469175,
+            "std": 0.21344366673016862
+          }
+        },
+        "UNIV": {
+          "candidate_window_count": {
+            "mean": 834.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 517.6666666666666,
+            "std": 8.498365855987975
+          },
+          "unusable_window_count": {
+            "mean": 316.3333333333333,
+            "std": 8.498365855987974
+          },
+          "window_loss_percentage": {
+            "mean": 37.92965627498001,
+            "std": 1.0189887117491572
+          },
+          "window_retention_percentage": {
+            "mean": 62.07034372501999,
+            "std": 1.0189887117491572
+          }
+        },
+        "UNI_EXAMPLES": {
+          "candidate_window_count": {
+            "mean": 79.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 20.333333333333332,
+            "std": 3.299831645537222
+          },
+          "unusable_window_count": {
+            "mean": 58.666666666666664,
+            "std": 3.299831645537222
+          },
+          "window_loss_percentage": {
+            "mean": 74.26160337552743,
+            "std": 4.177002082958514
+          },
+          "window_retention_percentage": {
+            "mean": 25.738396624472575,
+            "std": 4.1770020829585075
+          }
+        },
+        "ZARA1": {
+          "candidate_window_count": {
+            "mean": 337.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 203.66666666666666,
+            "std": 2.0548046676563256
+          },
+          "unusable_window_count": {
+            "mean": 133.33333333333334,
+            "std": 2.0548046676563256
+          },
+          "window_loss_percentage": {
+            "mean": 39.56478733926806,
+            "std": 0.6097343227466826
+          },
+          "window_retention_percentage": {
+            "mean": 60.43521266073194,
+            "std": 0.6097343227466826
+          }
+        },
+        "ZARA2": {
+          "candidate_window_count": {
+            "mean": 1259.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 981.3333333333334,
+            "std": 5.436502143433363
+          },
+          "unusable_window_count": {
+            "mean": 277.6666666666667,
+            "std": 5.436502143433364
+          },
+          "window_loss_percentage": {
+            "mean": 22.05454064072015,
+            "std": 0.43181113132909954
+          },
+          "window_retention_percentage": {
+            "mean": 77.94545935927985,
+            "std": 0.43181113132910004
+          }
+        },
+        "ZARA3": {
+          "candidate_window_count": {
+            "mean": 708.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 513.3333333333334,
+            "std": 2.0548046676563256
+          },
+          "unusable_window_count": {
+            "mean": 194.66666666666666,
+            "std": 2.0548046676563256
+          },
+          "window_loss_percentage": {
+            "mean": 27.49529190207156,
+            "std": 0.2902266479740571
+          },
+          "window_retention_percentage": {
+            "mean": 72.50470809792843,
+            "std": 0.2902266479740571
+          }
+        }
+      },
+      "candidate_window_count": 5422,
+      "candidate_window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da",
+      "clean_baseline_on_retained_windows": {
+        "constant_velocity": {
+          "ade": {
+            "mean": 0.412700685707928,
+            "std": 0.0010247423542595357
+          },
+          "ade_by_timestep": [
+            {
+              "ade": {
+                "mean": 0.022438821564025647,
+                "std": 8.730295597623433e-05
+              },
+              "timestep": 1
+            },
+            {
+              "ade": {
+                "mean": 0.06308238857931892,
+                "std": 0.00028261252672915103
+              },
+              "timestep": 2
+            },
+            {
+              "ade": {
+                "mean": 0.11770841379866091,
+                "std": 0.00036702757309018904
+              },
+              "timestep": 3
+            },
+            {
+              "ade": {
+                "mean": 0.1822880584903549,
+                "std": 0.0004140099769675351
+              },
+              "timestep": 4
+            },
+            {
+              "ade": {
+                "mean": 0.2551860089827578,
+                "std": 0.000504868605834314
+              },
+              "timestep": 5
+            },
+            {
+              "ade": {
+                "mean": 0.33535762955319887,
+                "std": 0.0007980714349471605
+              },
+              "timestep": 6
+            },
+            {
+              "ade": {
+                "mean": 0.42123610125558364,
+                "std": 0.0011837601675910995
+              },
+              "timestep": 7
+            },
+            {
+              "ade": {
+                "mean": 0.5124755885647416,
+                "std": 0.0015110378291134578
+              },
+              "timestep": 8
+            },
+            {
+              "ade": {
+                "mean": 0.6080293444770385,
+                "std": 0.0017937709520489244
+              },
+              "timestep": 9
+            },
+            {
+              "ade": {
+                "mean": 0.7076694847198485,
+                "std": 0.0019072729229632729
+              },
+              "timestep": 10
+            },
+            {
+              "ade": {
+                "mean": 0.8102605874853209,
+                "std": 0.0019413498526077977
+              },
+              "timestep": 11
+            },
+            {
+              "ade": {
+                "mean": 0.9166758010242858,
+                "std": 0.0020656657515023447
+              },
+              "timestep": 12
+            }
+          ],
+          "fde": {
+            "mean": 0.9166758010242858,
+            "std": 0.0020656657515023447
+          },
+          "per_scene": {
+            "HOTEL": {
+              "ade": {
+                "mean": 0.2695993289970114,
+                "std": 0.0023127021860448265
+              },
+              "fde": {
+                "mean": 0.4962639159758225,
+                "std": 0.0035469699491839407
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "mean": 0.41524628458797963,
+                "std": 0.0023004329838239974
+              },
+              "fde": {
+                "mean": 0.920778077568326,
+                "std": 0.005508509115915198
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "mean": 0.6541139622800548,
+                "std": 0.005576592171151828
+              },
+              "fde": {
+                "mean": 1.467167489299649,
+                "std": 0.008191222485550808
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "mean": 0.2896736567016301,
+                "std": 0.013465386333262545
+              },
+              "fde": {
+                "mean": 0.5877002377095123,
+                "std": 0.03862512100158249
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "mean": 0.41035924709773425,
+                "std": 0.006701268029349942
+              },
+              "fde": {
+                "mean": 0.914808584960042,
+                "std": 0.016552431481301588
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "mean": 0.27872061733073555,
+                "std": 0.003477842333384127
+              },
+              "fde": {
+                "mean": 0.6366278810478586,
+                "std": 0.0070077551868796125
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "mean": 0.48321781367594685,
+                "std": 0.0018245602994362683
+              },
+              "fde": {
+                "mean": 1.0731484844311432,
+                "std": 0.003859942522856419
+              }
+            }
+          }
+        },
+        "lstm": {
+          "ade": {
+            "mean": 0.407956640734413,
+            "std": 0.0015800108831867106
+          },
+          "ade_by_timestep": [
+            {
+              "ade": {
+                "mean": 0.0523966458470018,
+                "std": 0.00020190998175118966
+              },
+              "timestep": 1
+            },
+            {
+              "ade": {
+                "mean": 0.08167816861952175,
+                "std": 0.00034160713108180476
+              },
+              "timestep": 2
+            },
+            {
+              "ade": {
+                "mean": 0.1303728391934734,
+                "std": 0.0005524269448241096
+              },
+              "timestep": 3
+            },
+            {
+              "ade": {
+                "mean": 0.19306520640044758,
+                "std": 0.0002728133373229599
+              },
+              "timestep": 4
+            },
+            {
+              "ade": {
+                "mean": 0.26392776560587816,
+                "std": 0.0006517888373621478
+              },
+              "timestep": 5
+            },
+            {
+              "ade": {
+                "mean": 0.33793174026582107,
+                "std": 0.0009359861484365947
+              },
+              "timestep": 6
+            },
+            {
+              "ade": {
+                "mean": 0.42047216716583086,
+                "std": 0.0014826189428539197
+              },
+              "timestep": 7
+            },
+            {
+              "ade": {
+                "mean": 0.5022336990014729,
+                "std": 0.002234106256104768
+              },
+              "timestep": 8
+            },
+            {
+              "ade": {
+                "mean": 0.5942520175776681,
+                "std": 0.002445924259142077
+              },
+              "timestep": 9
+            },
+            {
+              "ade": {
+                "mean": 0.6826692842970639,
+                "std": 0.0030655007097215295
+              },
+              "timestep": 10
+            },
+            {
+              "ade": {
+                "mean": 0.768063286598657,
+                "std": 0.0032593836766833485
+              },
+              "timestep": 11
+            },
+            {
+              "ade": {
+                "mean": 0.8684168682401193,
+                "std": 0.003609877196351297
+              },
+              "timestep": 12
+            }
+          ],
+          "fde": {
+            "mean": 0.8684168682401193,
+            "std": 0.003609877196351297
+          },
+          "per_scene": {
+            "HOTEL": {
+              "ade": {
+                "mean": 0.27018861773418995,
+                "std": 0.0026688012762824107
+              },
+              "fde": {
+                "mean": 0.46007524845228703,
+                "std": 0.003675957251150897
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "mean": 0.43421790367994256,
+                "std": 0.002972945089533081
+              },
+              "fde": {
+                "mean": 0.9076442846974895,
+                "std": 0.00660243784554926
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "mean": 0.5896941685493803,
+                "std": 0.006425810231930217
+              },
+              "fde": {
+                "mean": 1.2843191889897616,
+                "std": 0.009248421537092556
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "mean": 0.5029360482009984,
+                "std": 0.02624384293020006
+              },
+              "fde": {
+                "mean": 1.0475095712121318,
+                "std": 0.058966714783983534
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "mean": 0.36298533290178664,
+                "std": 0.010047704128807823
+              },
+              "fde": {
+                "mean": 0.7711385460751378,
+                "std": 0.02020770603031251
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "mean": 0.29646572128745347,
+                "std": 0.002347176563315399
+              },
+              "fde": {
+                "mean": 0.6603085625375243,
+                "std": 0.0043537873627849345
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "mean": 0.43499891847590777,
+                "std": 0.003163698155612054
+              },
+              "fde": {
+                "mean": 0.9367871969085774,
+                "std": 0.004081895155395243
+              }
+            }
+          }
+        }
+      },
+      "fragmentation_vs_matched_clean": {
+        "constant_velocity": {
+          "ade": {
+            "absolute": {
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "percentage": {
+              "mean": 0.0,
+              "std": 0.0
+            }
+          },
+          "fde": {
+            "absolute": {
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "percentage": {
+              "mean": 0.0,
+              "std": 0.0
+            }
+          }
+        },
+        "lstm": {
+          "ade": {
+            "absolute": {
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "percentage": {
+              "mean": 0.0,
+              "std": 0.0
+            }
+          },
+          "fde": {
+            "absolute": {
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "percentage": {
+              "mean": 0.0,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "fragmented_input_metrics": {
+        "constant_velocity": {
+          "ade": {
+            "mean": 0.412700685707928,
+            "std": 0.0010247423542595357
+          },
+          "ade_by_timestep": [
+            {
+              "ade": {
+                "mean": 0.022438821564025647,
+                "std": 8.730295597623433e-05
+              },
+              "timestep": 1
+            },
+            {
+              "ade": {
+                "mean": 0.06308238857931892,
+                "std": 0.00028261252672915103
+              },
+              "timestep": 2
+            },
+            {
+              "ade": {
+                "mean": 0.11770841379866091,
+                "std": 0.00036702757309018904
+              },
+              "timestep": 3
+            },
+            {
+              "ade": {
+                "mean": 0.1822880584903549,
+                "std": 0.0004140099769675351
+              },
+              "timestep": 4
+            },
+            {
+              "ade": {
+                "mean": 0.2551860089827578,
+                "std": 0.000504868605834314
+              },
+              "timestep": 5
+            },
+            {
+              "ade": {
+                "mean": 0.33535762955319887,
+                "std": 0.0007980714349471605
+              },
+              "timestep": 6
+            },
+            {
+              "ade": {
+                "mean": 0.42123610125558364,
+                "std": 0.0011837601675910995
+              },
+              "timestep": 7
+            },
+            {
+              "ade": {
+                "mean": 0.5124755885647416,
+                "std": 0.0015110378291134578
+              },
+              "timestep": 8
+            },
+            {
+              "ade": {
+                "mean": 0.6080293444770385,
+                "std": 0.0017937709520489244
+              },
+              "timestep": 9
+            },
+            {
+              "ade": {
+                "mean": 0.7076694847198485,
+                "std": 0.0019072729229632729
+              },
+              "timestep": 10
+            },
+            {
+              "ade": {
+                "mean": 0.8102605874853209,
+                "std": 0.0019413498526077977
+              },
+              "timestep": 11
+            },
+            {
+              "ade": {
+                "mean": 0.9166758010242858,
+                "std": 0.0020656657515023447
+              },
+              "timestep": 12
+            }
+          ],
+          "fde": {
+            "mean": 0.9166758010242858,
+            "std": 0.0020656657515023447
+          },
+          "per_scene": {
+            "HOTEL": {
+              "ade": {
+                "mean": 0.2695993289970114,
+                "std": 0.0023127021860448265
+              },
+              "fde": {
+                "mean": 0.4962639159758225,
+                "std": 0.0035469699491839407
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "mean": 0.41524628458797963,
+                "std": 0.0023004329838239974
+              },
+              "fde": {
+                "mean": 0.920778077568326,
+                "std": 0.005508509115915198
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "mean": 0.6541139622800548,
+                "std": 0.005576592171151828
+              },
+              "fde": {
+                "mean": 1.467167489299649,
+                "std": 0.008191222485550808
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "mean": 0.2896736567016301,
+                "std": 0.013465386333262545
+              },
+              "fde": {
+                "mean": 0.5877002377095123,
+                "std": 0.03862512100158249
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "mean": 0.41035924709773425,
+                "std": 0.006701268029349942
+              },
+              "fde": {
+                "mean": 0.914808584960042,
+                "std": 0.016552431481301588
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "mean": 0.27872061733073555,
+                "std": 0.003477842333384127
+              },
+              "fde": {
+                "mean": 0.6366278810478586,
+                "std": 0.0070077551868796125
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "mean": 0.48321781367594685,
+                "std": 0.0018245602994362683
+              },
+              "fde": {
+                "mean": 1.0731484844311432,
+                "std": 0.003859942522856419
+              }
+            }
+          }
+        },
+        "lstm": {
+          "ade": {
+            "mean": 0.407956640734413,
+            "std": 0.0015800108831867106
+          },
+          "ade_by_timestep": [
+            {
+              "ade": {
+                "mean": 0.0523966458470018,
+                "std": 0.00020190998175118966
+              },
+              "timestep": 1
+            },
+            {
+              "ade": {
+                "mean": 0.08167816861952175,
+                "std": 0.00034160713108180476
+              },
+              "timestep": 2
+            },
+            {
+              "ade": {
+                "mean": 0.1303728391934734,
+                "std": 0.0005524269448241096
+              },
+              "timestep": 3
+            },
+            {
+              "ade": {
+                "mean": 0.19306520640044758,
+                "std": 0.0002728133373229599
+              },
+              "timestep": 4
+            },
+            {
+              "ade": {
+                "mean": 0.26392776560587816,
+                "std": 0.0006517888373621478
+              },
+              "timestep": 5
+            },
+            {
+              "ade": {
+                "mean": 0.33793174026582107,
+                "std": 0.0009359861484365947
+              },
+              "timestep": 6
+            },
+            {
+              "ade": {
+                "mean": 0.42047216716583086,
+                "std": 0.0014826189428539197
+              },
+              "timestep": 7
+            },
+            {
+              "ade": {
+                "mean": 0.5022336990014729,
+                "std": 0.002234106256104768
+              },
+              "timestep": 8
+            },
+            {
+              "ade": {
+                "mean": 0.5942520175776681,
+                "std": 0.002445924259142077
+              },
+              "timestep": 9
+            },
+            {
+              "ade": {
+                "mean": 0.6826692842970639,
+                "std": 0.0030655007097215295
+              },
+              "timestep": 10
+            },
+            {
+              "ade": {
+                "mean": 0.768063286598657,
+                "std": 0.0032593836766833485
+              },
+              "timestep": 11
+            },
+            {
+              "ade": {
+                "mean": 0.8684168682401193,
+                "std": 0.003609877196351297
+              },
+              "timestep": 12
+            }
+          ],
+          "fde": {
+            "mean": 0.8684168682401193,
+            "std": 0.003609877196351297
+          },
+          "per_scene": {
+            "HOTEL": {
+              "ade": {
+                "mean": 0.27018861773418995,
+                "std": 0.0026688012762824107
+              },
+              "fde": {
+                "mean": 0.46007524845228703,
+                "std": 0.003675957251150897
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "mean": 0.43421790367994256,
+                "std": 0.002972945089533081
+              },
+              "fde": {
+                "mean": 0.9076442846974895,
+                "std": 0.00660243784554926
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "mean": 0.5896941685493803,
+                "std": 0.006425810231930217
+              },
+              "fde": {
+                "mean": 1.2843191889897616,
+                "std": 0.009248421537092556
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "mean": 0.5029360482009984,
+                "std": 0.02624384293020006
+              },
+              "fde": {
+                "mean": 1.0475095712121318,
+                "std": 0.058966714783983534
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "mean": 0.36298533290178664,
+                "std": 0.010047704128807823
+              },
+              "fde": {
+                "mean": 0.7711385460751378,
+                "std": 0.02020770603031251
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "mean": 0.29646572128745347,
+                "std": 0.002347176563315399
+              },
+              "fde": {
+                "mean": 0.6603085625375243,
+                "std": 0.0043537873627849345
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "mean": 0.43499891847590777,
+                "std": 0.003163698155612054
+              },
+              "fde": {
+                "mean": 0.9367871969085774,
+                "std": 0.004081895155395243
+              }
+            }
+          }
+        }
+      },
+      "fragmented_pedestrian_track_count": {
+        "mean": 251.0,
+        "std": 0.0
+      },
+      "frame_id_gap_between_surrounding_retained_observations": 40,
+      "future_horizon_crossing_fragment_boundary_count": {
+        "mean": 1156.3333333333333,
+        "std": 12.970050972229147
+      },
+      "missing_sampled_observation_count": 3,
+      "resulting_continuous_fragment_count": {
+        "mean": 653.0,
+        "std": 0.0
+      },
+      "retained_window_count": {
+        "mean": 3889.0,
+        "std": 13.366625103842281
+      },
+      "retained_window_key_sha256_by_seed": {
+        "42": "ae7a0610bd66e6b5beaf70c2ab5b47a6874283e022501822a682d6a56cc5f9fb",
+        "43": "e4cc782eeedd95222acf371bba1467f906dccb50ae096e5d2226c021b5e847dc",
+        "44": "d9f991cb1568ef979e5ba5b89e02fd6ffc7d1d859130a7238b6d702e52da5e6d"
+      },
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "unusable_window_count": {
+        "mean": 1533.0,
+        "std": 13.366625103842281
+      },
+      "window_loss_percentage": {
+        "mean": 28.273699741792697,
+        "std": 0.24652573042866607
+      },
+      "window_retention_percentage": {
+        "mean": 71.7263002582073,
+        "std": 0.24652573042866893
+      }
+    },
+    "low": {
+      "availability_by_scene": {
+        "HOTEL": {
+          "candidate_window_count": {
+            "mean": 318.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 224.33333333333334,
+            "std": 2.0548046676563256
+          },
+          "unusable_window_count": {
+            "mean": 93.66666666666667,
+            "std": 2.0548046676563256
+          },
+          "window_loss_percentage": {
+            "mean": 29.454926624737947,
+            "std": 0.6461649898290337
+          },
+          "window_retention_percentage": {
+            "mean": 70.54507337526205,
+            "std": 0.6461649898290278
+          }
+        },
+        "STUDENTS001": {
+          "candidate_window_count": {
+            "mean": 1887.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 1513.3333333333333,
+            "std": 3.6817870057290873
+          },
+          "unusable_window_count": {
+            "mean": 373.6666666666667,
+            "std": 3.6817870057290873
+          },
+          "window_loss_percentage": {
+            "mean": 19.80215509627274,
+            "std": 0.19511324884626804
+          },
+          "window_retention_percentage": {
+            "mean": 80.19784490372724,
+            "std": 0.19511324884626632
+          }
+        },
+        "UNIV": {
+          "candidate_window_count": {
+            "mean": 834.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 563.3333333333334,
+            "std": 7.039570693980959
+          },
+          "unusable_window_count": {
+            "mean": 270.6666666666667,
+            "std": 7.039570693980959
+          },
+          "window_loss_percentage": {
+            "mean": 32.454036770583535,
+            "std": 0.8440732246979554
+          },
+          "window_retention_percentage": {
+            "mean": 67.54596322941647,
+            "std": 0.8440732246979566
+          }
+        },
+        "UNI_EXAMPLES": {
+          "candidate_window_count": {
+            "mean": 79.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 25.333333333333332,
+            "std": 1.247219128924647
+          },
+          "unusable_window_count": {
+            "mean": 53.666666666666664,
+            "std": 1.247219128924647
+          },
+          "window_loss_percentage": {
+            "mean": 67.93248945147678,
+            "std": 1.5787583910438567
+          },
+          "window_retention_percentage": {
+            "mean": 32.06751054852321,
+            "std": 1.5787583910438563
+          }
+        },
+        "ZARA1": {
+          "candidate_window_count": {
+            "mean": 337.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 224.66666666666666,
+            "std": 0.4714045207910317
+          },
+          "unusable_window_count": {
+            "mean": 112.33333333333333,
+            "std": 0.4714045207910317
+          },
+          "window_loss_percentage": {
+            "mean": 33.333333333333336,
+            "std": 0.13988264711899884
+          },
+          "window_retention_percentage": {
+            "mean": 66.66666666666667,
+            "std": 0.13988264711899548
+          }
+        },
+        "ZARA2": {
+          "candidate_window_count": {
+            "mean": 1259.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 1034.0,
+            "std": 5.887840577551898
+          },
+          "unusable_window_count": {
+            "mean": 225.0,
+            "std": 5.887840577551898
+          },
+          "window_loss_percentage": {
+            "mean": 17.871326449563142,
+            "std": 0.46766009353072996
+          },
+          "window_retention_percentage": {
+            "mean": 82.12867355043686,
+            "std": 0.4676600935307279
+          }
+        },
+        "ZARA3": {
+          "candidate_window_count": {
+            "mean": 708.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 544.0,
+            "std": 2.449489742783178
+          },
+          "unusable_window_count": {
+            "mean": 164.0,
+            "std": 2.449489742783178
+          },
+          "window_loss_percentage": {
+            "mean": 23.163841807909606,
+            "std": 0.34597312751174814
+          },
+          "window_retention_percentage": {
+            "mean": 76.8361581920904,
+            "std": 0.34597312751174814
+          }
+        }
+      },
+      "candidate_window_count": 5422,
+      "candidate_window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da",
+      "clean_baseline_on_retained_windows": {
+        "constant_velocity": {
+          "ade": {
+            "mean": 0.42051761234858187,
+            "std": 0.0013697204493183267
+          },
+          "ade_by_timestep": [
+            {
+              "ade": {
+                "mean": 0.022966883692644286,
+                "std": 0.00017075576555697992
+              },
+              "timestep": 1
+            },
+            {
+              "ade": {
+                "mean": 0.06452055938799277,
+                "std": 0.00037833827622202825
+              },
+              "timestep": 2
+            },
+            {
+              "ade": {
+                "mean": 0.1204116987402728,
+                "std": 0.0006144218882984895
+              },
+              "timestep": 3
+            },
+            {
+              "ade": {
+                "mean": 0.18643799236198352,
+                "std": 0.0006979623816770386
+              },
+              "timestep": 4
+            },
+            {
+              "ade": {
+                "mean": 0.2608515894499382,
+                "std": 0.0008271552789507671
+              },
+              "timestep": 5
+            },
+            {
+              "ade": {
+                "mean": 0.34247732511686046,
+                "std": 0.0011392787811024883
+              },
+              "timestep": 6
+            },
+            {
+              "ade": {
+                "mean": 0.4298771972500787,
+                "std": 0.0014929360129800687
+              },
+              "timestep": 7
+            },
+            {
+              "ade": {
+                "mean": 0.5225003048164214,
+                "std": 0.0018383562338013869
+              },
+              "timestep": 8
+            },
+            {
+              "ade": {
+                "mean": 0.6193598619670367,
+                "std": 0.0021522196653061187
+              },
+              "timestep": 9
+            },
+            {
+              "ade": {
+                "mean": 0.720286435261256,
+                "std": 0.0023599297192606543
+              },
+              "timestep": 10
+            },
+            {
+              "ade": {
+                "mean": 0.8243466452720688,
+                "std": 0.0023680704071626485
+              },
+              "timestep": 11
+            },
+            {
+              "ade": {
+                "mean": 0.932174854866429,
+                "std": 0.002403807529321342
+              },
+              "timestep": 12
+            }
+          ],
+          "fde": {
+            "mean": 0.932174854866429,
+            "std": 0.002403807529321342
+          },
+          "per_scene": {
+            "HOTEL": {
+              "ade": {
+                "mean": 0.2775563552545098,
+                "std": 0.005363091354468552
+              },
+              "fde": {
+                "mean": 0.5107972981314919,
+                "std": 0.008893147676568403
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "mean": 0.41781160242508214,
+                "std": 0.0012473931972706177
+              },
+              "fde": {
+                "mean": 0.9258632971345789,
+                "std": 0.0030765608216172125
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "mean": 0.6707100473513602,
+                "std": 0.002982479787339207
+              },
+              "fde": {
+                "mean": 1.5009391073601046,
+                "std": 0.0052169561292205145
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "mean": 0.2864316542518968,
+                "std": 0.011183073432031837
+              },
+              "fde": {
+                "mean": 0.5851143267889256,
+                "std": 0.030824031737856746
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "mean": 0.41432509793896327,
+                "std": 0.004422566784490029
+              },
+              "fde": {
+                "mean": 0.9158122423145928,
+                "std": 0.010103233888441079
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "mean": 0.2875549959660815,
+                "std": 0.0016112614372466637
+              },
+              "fde": {
+                "mean": 0.6530098269880541,
+                "std": 0.0049730336831962565
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "mean": 0.4894099334366322,
+                "std": 0.00163722691168629
+              },
+              "fde": {
+                "mean": 1.0880061601783269,
+                "std": 0.0022742936546031396
+              }
+            }
+          }
+        },
+        "lstm": {
+          "ade": {
+            "mean": 0.4137401254617832,
+            "std": 0.0014963457007212422
+          },
+          "ade_by_timestep": [
+            {
+              "ade": {
+                "mean": 0.05287672370052867,
+                "std": 0.00023511717330507758
+              },
+              "timestep": 1
+            },
+            {
+              "ade": {
+                "mean": 0.08272864680672026,
+                "std": 0.0005028039445402564
+              },
+              "timestep": 2
+            },
+            {
+              "ade": {
+                "mean": 0.13216928111967352,
+                "std": 0.0007542246050176402
+              },
+              "timestep": 3
+            },
+            {
+              "ade": {
+                "mean": 0.1961965190652272,
+                "std": 0.0006104487158646937
+              },
+              "timestep": 4
+            },
+            {
+              "ade": {
+                "mean": 0.26822235311999076,
+                "std": 0.0007570335908490391
+              },
+              "timestep": 5
+            },
+            {
+              "ade": {
+                "mean": 0.3432410345077311,
+                "std": 0.0009732739215995853
+              },
+              "timestep": 6
+            },
+            {
+              "ade": {
+                "mean": 0.42694997380338906,
+                "std": 0.001303057749258317
+              },
+              "timestep": 7
+            },
+            {
+              "ade": {
+                "mean": 0.5096746219262734,
+                "std": 0.002011603097642201
+              },
+              "timestep": 8
+            },
+            {
+              "ade": {
+                "mean": 0.602571653267114,
+                "std": 0.0023247443042994187
+              },
+              "timestep": 9
+            },
+            {
+              "ade": {
+                "mean": 0.6918611547884023,
+                "std": 0.0027465502995315605
+              },
+              "timestep": 10
+            },
+            {
+              "ade": {
+                "mean": 0.7786515524560261,
+                "std": 0.002814070915598605
+              },
+              "timestep": 11
+            },
+            {
+              "ade": {
+                "mean": 0.8797379909803222,
+                "std": 0.0029524381767363304
+              },
+              "timestep": 12
+            }
+          ],
+          "fde": {
+            "mean": 0.8797379909803222,
+            "std": 0.0029524381767363304
+          },
+          "per_scene": {
+            "HOTEL": {
+              "ade": {
+                "mean": 0.27356974062169864,
+                "std": 0.004871357906331153
+              },
+              "fde": {
+                "mean": 0.46475321688942867,
+                "std": 0.009219879660263204
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "mean": 0.43637325726181286,
+                "std": 0.0018559275383346543
+              },
+              "fde": {
+                "mean": 0.9142991933689647,
+                "std": 0.003962548661546664
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "mean": 0.5951904795491282,
+                "std": 0.0052334756340149235
+              },
+              "fde": {
+                "mean": 1.2873419455464232,
+                "std": 0.011459733415983735
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "mean": 0.5172482823561393,
+                "std": 0.01594579003200543
+              },
+              "fde": {
+                "mean": 1.1074300403780082,
+                "std": 0.04748073844060539
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "mean": 0.37059211927232494,
+                "std": 0.007056997441814543
+              },
+              "fde": {
+                "mean": 0.7837013022632732,
+                "std": 0.013130118525290835
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "mean": 0.3036259234935788,
+                "std": 0.0010504945868471428
+              },
+              "fde": {
+                "mean": 0.673429129679373,
+                "std": 0.0032544531396727695
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "mean": 0.442917673000817,
+                "std": 0.00035610806410240703
+              },
+              "fde": {
+                "mean": 0.9537123899595698,
+                "std": 0.0014652795585364425
+              }
+            }
+          }
+        }
+      },
+      "fragmentation_vs_matched_clean": {
+        "constant_velocity": {
+          "ade": {
+            "absolute": {
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "percentage": {
+              "mean": 0.0,
+              "std": 0.0
+            }
+          },
+          "fde": {
+            "absolute": {
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "percentage": {
+              "mean": 0.0,
+              "std": 0.0
+            }
+          }
+        },
+        "lstm": {
+          "ade": {
+            "absolute": {
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "percentage": {
+              "mean": 0.0,
+              "std": 0.0
+            }
+          },
+          "fde": {
+            "absolute": {
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "percentage": {
+              "mean": 0.0,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "fragmented_input_metrics": {
+        "constant_velocity": {
+          "ade": {
+            "mean": 0.42051761234858187,
+            "std": 0.0013697204493183267
+          },
+          "ade_by_timestep": [
+            {
+              "ade": {
+                "mean": 0.022966883692644286,
+                "std": 0.00017075576555697992
+              },
+              "timestep": 1
+            },
+            {
+              "ade": {
+                "mean": 0.06452055938799277,
+                "std": 0.00037833827622202825
+              },
+              "timestep": 2
+            },
+            {
+              "ade": {
+                "mean": 0.1204116987402728,
+                "std": 0.0006144218882984895
+              },
+              "timestep": 3
+            },
+            {
+              "ade": {
+                "mean": 0.18643799236198352,
+                "std": 0.0006979623816770386
+              },
+              "timestep": 4
+            },
+            {
+              "ade": {
+                "mean": 0.2608515894499382,
+                "std": 0.0008271552789507671
+              },
+              "timestep": 5
+            },
+            {
+              "ade": {
+                "mean": 0.34247732511686046,
+                "std": 0.0011392787811024883
+              },
+              "timestep": 6
+            },
+            {
+              "ade": {
+                "mean": 0.4298771972500787,
+                "std": 0.0014929360129800687
+              },
+              "timestep": 7
+            },
+            {
+              "ade": {
+                "mean": 0.5225003048164214,
+                "std": 0.0018383562338013869
+              },
+              "timestep": 8
+            },
+            {
+              "ade": {
+                "mean": 0.6193598619670367,
+                "std": 0.0021522196653061187
+              },
+              "timestep": 9
+            },
+            {
+              "ade": {
+                "mean": 0.720286435261256,
+                "std": 0.0023599297192606543
+              },
+              "timestep": 10
+            },
+            {
+              "ade": {
+                "mean": 0.8243466452720688,
+                "std": 0.0023680704071626485
+              },
+              "timestep": 11
+            },
+            {
+              "ade": {
+                "mean": 0.932174854866429,
+                "std": 0.002403807529321342
+              },
+              "timestep": 12
+            }
+          ],
+          "fde": {
+            "mean": 0.932174854866429,
+            "std": 0.002403807529321342
+          },
+          "per_scene": {
+            "HOTEL": {
+              "ade": {
+                "mean": 0.2775563552545098,
+                "std": 0.005363091354468552
+              },
+              "fde": {
+                "mean": 0.5107972981314919,
+                "std": 0.008893147676568403
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "mean": 0.41781160242508214,
+                "std": 0.0012473931972706177
+              },
+              "fde": {
+                "mean": 0.9258632971345789,
+                "std": 0.0030765608216172125
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "mean": 0.6707100473513602,
+                "std": 0.002982479787339207
+              },
+              "fde": {
+                "mean": 1.5009391073601046,
+                "std": 0.0052169561292205145
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "mean": 0.2864316542518968,
+                "std": 0.011183073432031837
+              },
+              "fde": {
+                "mean": 0.5851143267889256,
+                "std": 0.030824031737856746
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "mean": 0.41432509793896327,
+                "std": 0.004422566784490029
+              },
+              "fde": {
+                "mean": 0.9158122423145928,
+                "std": 0.010103233888441079
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "mean": 0.2875549959660815,
+                "std": 0.0016112614372466637
+              },
+              "fde": {
+                "mean": 0.6530098269880541,
+                "std": 0.0049730336831962565
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "mean": 0.4894099334366322,
+                "std": 0.00163722691168629
+              },
+              "fde": {
+                "mean": 1.0880061601783269,
+                "std": 0.0022742936546031396
+              }
+            }
+          }
+        },
+        "lstm": {
+          "ade": {
+            "mean": 0.4137401254617832,
+            "std": 0.0014963457007212422
+          },
+          "ade_by_timestep": [
+            {
+              "ade": {
+                "mean": 0.05287672370052867,
+                "std": 0.00023511717330507758
+              },
+              "timestep": 1
+            },
+            {
+              "ade": {
+                "mean": 0.08272864680672026,
+                "std": 0.0005028039445402564
+              },
+              "timestep": 2
+            },
+            {
+              "ade": {
+                "mean": 0.13216928111967352,
+                "std": 0.0007542246050176402
+              },
+              "timestep": 3
+            },
+            {
+              "ade": {
+                "mean": 0.1961965190652272,
+                "std": 0.0006104487158646937
+              },
+              "timestep": 4
+            },
+            {
+              "ade": {
+                "mean": 0.26822235311999076,
+                "std": 0.0007570335908490391
+              },
+              "timestep": 5
+            },
+            {
+              "ade": {
+                "mean": 0.3432410345077311,
+                "std": 0.0009732739215995853
+              },
+              "timestep": 6
+            },
+            {
+              "ade": {
+                "mean": 0.42694997380338906,
+                "std": 0.001303057749258317
+              },
+              "timestep": 7
+            },
+            {
+              "ade": {
+                "mean": 0.5096746219262734,
+                "std": 0.002011603097642201
+              },
+              "timestep": 8
+            },
+            {
+              "ade": {
+                "mean": 0.602571653267114,
+                "std": 0.0023247443042994187
+              },
+              "timestep": 9
+            },
+            {
+              "ade": {
+                "mean": 0.6918611547884023,
+                "std": 0.0027465502995315605
+              },
+              "timestep": 10
+            },
+            {
+              "ade": {
+                "mean": 0.7786515524560261,
+                "std": 0.002814070915598605
+              },
+              "timestep": 11
+            },
+            {
+              "ade": {
+                "mean": 0.8797379909803222,
+                "std": 0.0029524381767363304
+              },
+              "timestep": 12
+            }
+          ],
+          "fde": {
+            "mean": 0.8797379909803222,
+            "std": 0.0029524381767363304
+          },
+          "per_scene": {
+            "HOTEL": {
+              "ade": {
+                "mean": 0.27356974062169864,
+                "std": 0.004871357906331153
+              },
+              "fde": {
+                "mean": 0.46475321688942867,
+                "std": 0.009219879660263204
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "mean": 0.43637325726181286,
+                "std": 0.0018559275383346543
+              },
+              "fde": {
+                "mean": 0.9142991933689647,
+                "std": 0.003962548661546664
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "mean": 0.5951904795491282,
+                "std": 0.0052334756340149235
+              },
+              "fde": {
+                "mean": 1.2873419455464232,
+                "std": 0.011459733415983735
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "mean": 0.5172482823561393,
+                "std": 0.01594579003200543
+              },
+              "fde": {
+                "mean": 1.1074300403780082,
+                "std": 0.04748073844060539
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "mean": 0.37059211927232494,
+                "std": 0.007056997441814543
+              },
+              "fde": {
+                "mean": 0.7837013022632732,
+                "std": 0.013130118525290835
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "mean": 0.3036259234935788,
+                "std": 0.0010504945868471428
+              },
+              "fde": {
+                "mean": 0.673429129679373,
+                "std": 0.0032544531396727695
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "mean": 0.442917673000817,
+                "std": 0.00035610806410240703
+              },
+              "fde": {
+                "mean": 0.9537123899595698,
+                "std": 0.0014652795585364425
+              }
+            }
+          }
+        }
+      },
+      "fragmented_pedestrian_track_count": {
+        "mean": 251.0,
+        "std": 0.0
+      },
+      "frame_id_gap_between_surrounding_retained_observations": 20,
+      "future_horizon_crossing_fragment_boundary_count": {
+        "mean": 1156.3333333333333,
+        "std": 12.970050972229147
+      },
+      "missing_sampled_observation_count": 1,
+      "resulting_continuous_fragment_count": {
+        "mean": 653.0,
+        "std": 0.0
+      },
+      "retained_window_count": {
+        "mean": 4129.0,
+        "std": 10.23067283548187
+      },
+      "retained_window_key_sha256_by_seed": {
+        "42": "9ee1927955811f26edb5fddd74ea8a3bac4359f8b2bc73694e34d19f96021758",
+        "43": "44263c47803b44cdcac30bd36cf64c3a1f6377c8c031c3fd0d7f8d6b6f645cfd",
+        "44": "222d086298307832a6d2d27b6e7e5213bf40384418dce29b821133e83133fee7"
+      },
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "unusable_window_count": {
+        "mean": 1293.0,
+        "std": 10.23067283548187
+      },
+      "window_loss_percentage": {
+        "mean": 23.847288823312436,
+        "std": 0.1886881747599024
+      },
+      "window_retention_percentage": {
+        "mean": 76.15271117668757,
+        "std": 0.18868817475989777
+      }
+    },
+    "medium": {
+      "availability_by_scene": {
+        "HOTEL": {
+          "candidate_window_count": {
+            "mean": 318.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 217.0,
+            "std": 1.632993161855452
+          },
+          "unusable_window_count": {
+            "mean": 101.0,
+            "std": 1.632993161855452
+          },
+          "window_loss_percentage": {
+            "mean": 31.761006289308174,
+            "std": 0.5135198622186962
+          },
+          "window_retention_percentage": {
+            "mean": 68.23899371069183,
+            "std": 0.5135198622186948
+          }
+        },
+        "STUDENTS001": {
+          "candidate_window_count": {
+            "mean": 1887.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 1475.6666666666667,
+            "std": 3.8586123009300755
+          },
+          "unusable_window_count": {
+            "mean": 411.3333333333333,
+            "std": 3.8586123009300755
+          },
+          "window_loss_percentage": {
+            "mean": 21.798268857092385,
+            "std": 0.20448395871383498
+          },
+          "window_retention_percentage": {
+            "mean": 78.2017311429076,
+            "std": 0.2044839587138384
+          }
+        },
+        "UNIV": {
+          "candidate_window_count": {
+            "mean": 834.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 539.0,
+            "std": 7.2571803523590805
+          },
+          "unusable_window_count": {
+            "mean": 295.0,
+            "std": 7.2571803523590805
+          },
+          "window_loss_percentage": {
+            "mean": 35.37170263788969,
+            "std": 0.8701655098751888
+          },
+          "window_retention_percentage": {
+            "mean": 64.6282973621103,
+            "std": 0.8701655098751889
+          }
+        },
+        "UNI_EXAMPLES": {
+          "candidate_window_count": {
+            "mean": 79.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 22.0,
+            "std": 2.449489742783178
+          },
+          "unusable_window_count": {
+            "mean": 57.0,
+            "std": 2.449489742783178
+          },
+          "window_loss_percentage": {
+            "mean": 72.15189873417721,
+            "std": 3.100619927573648
+          },
+          "window_retention_percentage": {
+            "mean": 27.848101265822788,
+            "std": 3.1006199275736437
+          }
+        },
+        "ZARA1": {
+          "candidate_window_count": {
+            "mean": 337.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 213.66666666666666,
+            "std": 1.247219128924647
+          },
+          "unusable_window_count": {
+            "mean": 123.33333333333333,
+            "std": 1.247219128924647
+          },
+          "window_loss_percentage": {
+            "mean": 36.59742828882295,
+            "std": 0.37009469701028236
+          },
+          "window_retention_percentage": {
+            "mean": 63.40257171117705,
+            "std": 0.37009469701028236
+          }
+        },
+        "ZARA2": {
+          "candidate_window_count": {
+            "mean": 1259.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 1006.3333333333334,
+            "std": 5.436502143433363
+          },
+          "unusable_window_count": {
+            "mean": 252.66666666666666,
+            "std": 5.436502143433363
+          },
+          "window_loss_percentage": {
+            "mean": 20.0688377018798,
+            "std": 0.43181113132909954
+          },
+          "window_retention_percentage": {
+            "mean": 79.93116229812021,
+            "std": 0.43181113132909715
+          }
+        },
+        "ZARA3": {
+          "candidate_window_count": {
+            "mean": 708.0,
+            "std": 0.0
+          },
+          "retained_window_count": {
+            "mean": 528.0,
+            "std": 2.449489742783178
+          },
+          "unusable_window_count": {
+            "mean": 180.0,
+            "std": 2.449489742783178
+          },
+          "window_loss_percentage": {
+            "mean": 25.423728813559322,
+            "std": 0.34597312751174814
+          },
+          "window_retention_percentage": {
+            "mean": 74.57627118644068,
+            "std": 0.34597312751174814
+          }
+        }
+      },
+      "candidate_window_count": 5422,
+      "candidate_window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da",
+      "clean_baseline_on_retained_windows": {
+        "constant_velocity": {
+          "ade": {
+            "mean": 0.416500394719848,
+            "std": 0.0008564848500098728
+          },
+          "ade_by_timestep": [
+            {
+              "ade": {
+                "mean": 0.022677712170072525,
+                "std": 0.00014441335197938398
+              },
+              "timestep": 1
+            },
+            {
+              "ade": {
+                "mean": 0.06375397350153462,
+                "std": 0.00011145524749504736
+              },
+              "timestep": 2
+            },
+            {
+              "ade": {
+                "mean": 0.11902254747742665,
+                "std": 0.00016484687280821344
+              },
+              "timestep": 3
+            },
+            {
+              "ade": {
+                "mean": 0.18429790425108586,
+                "std": 0.00014289219110538365
+              },
+              "timestep": 4
+            },
+            {
+              "ade": {
+                "mean": 0.2579271824557318,
+                "std": 0.0002448142733452111
+              },
+              "timestep": 5
+            },
+            {
+              "ade": {
+                "mean": 0.33877310638154084,
+                "std": 0.0005715429817841576
+              },
+              "timestep": 6
+            },
+            {
+              "ade": {
+                "mean": 0.42540997731915775,
+                "std": 0.0009351842494124948
+              },
+              "timestep": 7
+            },
+            {
+              "ade": {
+                "mean": 0.5173435418999032,
+                "std": 0.0012861519243525113
+              },
+              "timestep": 8
+            },
+            {
+              "ade": {
+                "mean": 0.6135544861425727,
+                "std": 0.0015972746758469588
+              },
+              "timestep": 9
+            },
+            {
+              "ade": {
+                "mean": 0.7138613925807604,
+                "std": 0.001764282859019888
+              },
+              "timestep": 10
+            },
+            {
+              "ade": {
+                "mean": 0.8171421969607376,
+                "std": 0.0017753914773374695
+              },
+              "timestep": 11
+            },
+            {
+              "ade": {
+                "mean": 0.9242407154976519,
+                "std": 0.001843395126216712
+              },
+              "timestep": 12
+            }
+          ],
+          "fde": {
+            "mean": 0.9242407154976519,
+            "std": 0.001843395126216712
+          },
+          "per_scene": {
+            "HOTEL": {
+              "ade": {
+                "mean": 0.2738193077606014,
+                "std": 0.0034782544383494154
+              },
+              "fde": {
+                "mean": 0.5039822980070214,
+                "std": 0.0045569383519773205
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "mean": 0.41630441077673924,
+                "std": 0.001758500864459795
+              },
+              "fde": {
+                "mean": 0.9228966961064922,
+                "std": 0.004523919960552115
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "mean": 0.6622186471914443,
+                "std": 0.0033251716570248174
+              },
+              "fde": {
+                "mean": 1.483723107903525,
+                "std": 0.005055597279642695
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "mean": 0.2845034175711356,
+                "std": 0.010648794598904679
+              },
+              "fde": {
+                "mean": 0.5795678663725942,
+                "std": 0.03384674053012013
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "mean": 0.410834517218673,
+                "std": 0.005093841217912337
+              },
+              "fde": {
+                "mean": 0.9124471279020948,
+                "std": 0.010838451091527503
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "mean": 0.2833191903971539,
+                "std": 0.002441938013807992
+              },
+              "fde": {
+                "mean": 0.6449202830987737,
+                "std": 0.005096003597132048
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "mean": 0.48646279460202574,
+                "std": 0.0010016183221374215
+              },
+              "fde": {
+                "mean": 1.081131250299327,
+                "std": 0.0013929111518406988
+              }
+            }
+          }
+        },
+        "lstm": {
+          "ade": {
+            "mean": 0.41065625471563466,
+            "std": 0.001558718150325173
+          },
+          "ade_by_timestep": [
+            {
+              "ade": {
+                "mean": 0.05258426262608858,
+                "std": 0.00018116609893733163
+              },
+              "timestep": 1
+            },
+            {
+              "ade": {
+                "mean": 0.08212475674973706,
+                "std": 0.00035460935698430104
+              },
+              "timestep": 2
+            },
+            {
+              "ade": {
+                "mean": 0.13116150976398466,
+                "std": 0.0005117738387470345
+              },
+              "timestep": 3
+            },
+            {
+              "ade": {
+                "mean": 0.19451481680712077,
+                "std": 0.00036533353816478804
+              },
+              "timestep": 4
+            },
+            {
+              "ade": {
+                "mean": 0.26590184136811973,
+                "std": 0.0005406779386741683
+              },
+              "timestep": 5
+            },
+            {
+              "ade": {
+                "mean": 0.3403652369707523,
+                "std": 0.0008841772250603723
+              },
+              "timestep": 6
+            },
+            {
+              "ade": {
+                "mean": 0.42346586109884504,
+                "std": 0.00134543315747683
+              },
+              "timestep": 7
+            },
+            {
+              "ade": {
+                "mean": 0.5057430335651075,
+                "std": 0.0021198572735137353
+              },
+              "timestep": 8
+            },
+            {
+              "ade": {
+                "mean": 0.59819492706825,
+                "std": 0.002532133208752063
+              },
+              "timestep": 9
+            },
+            {
+              "ade": {
+                "mean": 0.6870255990890032,
+                "std": 0.0030959353691538483
+              },
+              "timestep": 10
+            },
+            {
+              "ade": {
+                "mean": 0.7730738530829928,
+                "std": 0.0033638713597291792
+              },
+              "timestep": 11
+            },
+            {
+              "ade": {
+                "mean": 0.8737193583976142,
+                "std": 0.0036819135972650644
+              },
+              "timestep": 12
+            }
+          ],
+          "fde": {
+            "mean": 0.8737193583976142,
+            "std": 0.0036819135972650644
+          },
+          "per_scene": {
+            "HOTEL": {
+              "ade": {
+                "mean": 0.2715440395761554,
+                "std": 0.004697854877594593
+              },
+              "fde": {
+                "mean": 0.46158506595010795,
+                "std": 0.007317137049181825
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "mean": 0.435085159382066,
+                "std": 0.0024875715482766876
+              },
+              "fde": {
+                "mean": 0.9105339536451442,
+                "std": 0.005666429971667929
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "mean": 0.5920947271510878,
+                "std": 0.005390195016217527
+              },
+              "fde": {
+                "mean": 1.2856007024673362,
+                "std": 0.010284101756017412
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "mean": 0.5059948435102685,
+                "std": 0.015142594549824676
+              },
+              "fde": {
+                "mean": 1.0667599021417813,
+                "std": 0.035055019769053786
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "mean": 0.3647923264162636,
+                "std": 0.008758517178822357
+              },
+              "fde": {
+                "mean": 0.7734559324713945,
+                "std": 0.016046048746766635
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "mean": 0.30030415451718256,
+                "std": 0.001596929613903591
+              },
+              "fde": {
+                "mean": 0.6672255757307686,
+                "std": 0.002793360436670198
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "mean": 0.43913864573550687,
+                "std": 0.0013732608812869092
+              },
+              "fde": {
+                "mean": 0.9456631415419952,
+                "std": 0.0012796898195055503
+              }
+            }
+          }
+        }
+      },
+      "fragmentation_vs_matched_clean": {
+        "constant_velocity": {
+          "ade": {
+            "absolute": {
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "percentage": {
+              "mean": 0.0,
+              "std": 0.0
+            }
+          },
+          "fde": {
+            "absolute": {
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "percentage": {
+              "mean": 0.0,
+              "std": 0.0
+            }
+          }
+        },
+        "lstm": {
+          "ade": {
+            "absolute": {
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "percentage": {
+              "mean": 0.0,
+              "std": 0.0
+            }
+          },
+          "fde": {
+            "absolute": {
+              "mean": 0.0,
+              "std": 0.0
+            },
+            "percentage": {
+              "mean": 0.0,
+              "std": 0.0
+            }
+          }
+        }
+      },
+      "fragmented_input_metrics": {
+        "constant_velocity": {
+          "ade": {
+            "mean": 0.416500394719848,
+            "std": 0.0008564848500098728
+          },
+          "ade_by_timestep": [
+            {
+              "ade": {
+                "mean": 0.022677712170072525,
+                "std": 0.00014441335197938398
+              },
+              "timestep": 1
+            },
+            {
+              "ade": {
+                "mean": 0.06375397350153462,
+                "std": 0.00011145524749504736
+              },
+              "timestep": 2
+            },
+            {
+              "ade": {
+                "mean": 0.11902254747742665,
+                "std": 0.00016484687280821344
+              },
+              "timestep": 3
+            },
+            {
+              "ade": {
+                "mean": 0.18429790425108586,
+                "std": 0.00014289219110538365
+              },
+              "timestep": 4
+            },
+            {
+              "ade": {
+                "mean": 0.2579271824557318,
+                "std": 0.0002448142733452111
+              },
+              "timestep": 5
+            },
+            {
+              "ade": {
+                "mean": 0.33877310638154084,
+                "std": 0.0005715429817841576
+              },
+              "timestep": 6
+            },
+            {
+              "ade": {
+                "mean": 0.42540997731915775,
+                "std": 0.0009351842494124948
+              },
+              "timestep": 7
+            },
+            {
+              "ade": {
+                "mean": 0.5173435418999032,
+                "std": 0.0012861519243525113
+              },
+              "timestep": 8
+            },
+            {
+              "ade": {
+                "mean": 0.6135544861425727,
+                "std": 0.0015972746758469588
+              },
+              "timestep": 9
+            },
+            {
+              "ade": {
+                "mean": 0.7138613925807604,
+                "std": 0.001764282859019888
+              },
+              "timestep": 10
+            },
+            {
+              "ade": {
+                "mean": 0.8171421969607376,
+                "std": 0.0017753914773374695
+              },
+              "timestep": 11
+            },
+            {
+              "ade": {
+                "mean": 0.9242407154976519,
+                "std": 0.001843395126216712
+              },
+              "timestep": 12
+            }
+          ],
+          "fde": {
+            "mean": 0.9242407154976519,
+            "std": 0.001843395126216712
+          },
+          "per_scene": {
+            "HOTEL": {
+              "ade": {
+                "mean": 0.2738193077606014,
+                "std": 0.0034782544383494154
+              },
+              "fde": {
+                "mean": 0.5039822980070214,
+                "std": 0.0045569383519773205
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "mean": 0.41630441077673924,
+                "std": 0.001758500864459795
+              },
+              "fde": {
+                "mean": 0.9228966961064922,
+                "std": 0.004523919960552115
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "mean": 0.6622186471914443,
+                "std": 0.0033251716570248174
+              },
+              "fde": {
+                "mean": 1.483723107903525,
+                "std": 0.005055597279642695
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "mean": 0.2845034175711356,
+                "std": 0.010648794598904679
+              },
+              "fde": {
+                "mean": 0.5795678663725942,
+                "std": 0.03384674053012013
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "mean": 0.410834517218673,
+                "std": 0.005093841217912337
+              },
+              "fde": {
+                "mean": 0.9124471279020948,
+                "std": 0.010838451091527503
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "mean": 0.2833191903971539,
+                "std": 0.002441938013807992
+              },
+              "fde": {
+                "mean": 0.6449202830987737,
+                "std": 0.005096003597132048
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "mean": 0.48646279460202574,
+                "std": 0.0010016183221374215
+              },
+              "fde": {
+                "mean": 1.081131250299327,
+                "std": 0.0013929111518406988
+              }
+            }
+          }
+        },
+        "lstm": {
+          "ade": {
+            "mean": 0.41065625471563466,
+            "std": 0.001558718150325173
+          },
+          "ade_by_timestep": [
+            {
+              "ade": {
+                "mean": 0.05258426262608858,
+                "std": 0.00018116609893733163
+              },
+              "timestep": 1
+            },
+            {
+              "ade": {
+                "mean": 0.08212475674973706,
+                "std": 0.00035460935698430104
+              },
+              "timestep": 2
+            },
+            {
+              "ade": {
+                "mean": 0.13116150976398466,
+                "std": 0.0005117738387470345
+              },
+              "timestep": 3
+            },
+            {
+              "ade": {
+                "mean": 0.19451481680712077,
+                "std": 0.00036533353816478804
+              },
+              "timestep": 4
+            },
+            {
+              "ade": {
+                "mean": 0.26590184136811973,
+                "std": 0.0005406779386741683
+              },
+              "timestep": 5
+            },
+            {
+              "ade": {
+                "mean": 0.3403652369707523,
+                "std": 0.0008841772250603723
+              },
+              "timestep": 6
+            },
+            {
+              "ade": {
+                "mean": 0.42346586109884504,
+                "std": 0.00134543315747683
+              },
+              "timestep": 7
+            },
+            {
+              "ade": {
+                "mean": 0.5057430335651075,
+                "std": 0.0021198572735137353
+              },
+              "timestep": 8
+            },
+            {
+              "ade": {
+                "mean": 0.59819492706825,
+                "std": 0.002532133208752063
+              },
+              "timestep": 9
+            },
+            {
+              "ade": {
+                "mean": 0.6870255990890032,
+                "std": 0.0030959353691538483
+              },
+              "timestep": 10
+            },
+            {
+              "ade": {
+                "mean": 0.7730738530829928,
+                "std": 0.0033638713597291792
+              },
+              "timestep": 11
+            },
+            {
+              "ade": {
+                "mean": 0.8737193583976142,
+                "std": 0.0036819135972650644
+              },
+              "timestep": 12
+            }
+          ],
+          "fde": {
+            "mean": 0.8737193583976142,
+            "std": 0.0036819135972650644
+          },
+          "per_scene": {
+            "HOTEL": {
+              "ade": {
+                "mean": 0.2715440395761554,
+                "std": 0.004697854877594593
+              },
+              "fde": {
+                "mean": 0.46158506595010795,
+                "std": 0.007317137049181825
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "mean": 0.435085159382066,
+                "std": 0.0024875715482766876
+              },
+              "fde": {
+                "mean": 0.9105339536451442,
+                "std": 0.005666429971667929
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "mean": 0.5920947271510878,
+                "std": 0.005390195016217527
+              },
+              "fde": {
+                "mean": 1.2856007024673362,
+                "std": 0.010284101756017412
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "mean": 0.5059948435102685,
+                "std": 0.015142594549824676
+              },
+              "fde": {
+                "mean": 1.0667599021417813,
+                "std": 0.035055019769053786
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "mean": 0.3647923264162636,
+                "std": 0.008758517178822357
+              },
+              "fde": {
+                "mean": 0.7734559324713945,
+                "std": 0.016046048746766635
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "mean": 0.30030415451718256,
+                "std": 0.001596929613903591
+              },
+              "fde": {
+                "mean": 0.6672255757307686,
+                "std": 0.002793360436670198
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "mean": 0.43913864573550687,
+                "std": 0.0013732608812869092
+              },
+              "fde": {
+                "mean": 0.9456631415419952,
+                "std": 0.0012796898195055503
+              }
+            }
+          }
+        }
+      },
+      "fragmented_pedestrian_track_count": {
+        "mean": 251.0,
+        "std": 0.0
+      },
+      "frame_id_gap_between_surrounding_retained_observations": 30,
+      "future_horizon_crossing_fragment_boundary_count": {
+        "mean": 1156.3333333333333,
+        "std": 12.970050972229147
+      },
+      "missing_sampled_observation_count": 2,
+      "resulting_continuous_fragment_count": {
+        "mean": 653.0,
+        "std": 0.0
+      },
+      "retained_window_count": {
+        "mean": 4001.6666666666665,
+        "std": 11.08552609887726
+      },
+      "retained_window_key_sha256_by_seed": {
+        "42": "7e60e29bf556ed68cee0ae1e5a68208dfc9095862b77c10d2558a9e001e413d1",
+        "43": "caeff3a3e8da382d32c41f857a1ba81fb2734a6323dd90df24b74b62e48ce9c5",
+        "44": "f062692cf357bd8a77a209cd909d0c55679a9f8622d733decfe2c7a61c91c58d"
+      },
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "unusable_window_count": {
+        "mean": 1420.3333333333333,
+        "std": 11.08552609887726
+      },
+      "window_loss_percentage": {
+        "mean": 26.195745727283906,
+        "std": 0.20445455733820178
+      },
+      "window_retention_percentage": {
+        "mean": 73.8042542727161,
+        "std": 0.2044545573381979
+      }
+    }
+  },
+  "split": "val"
+}

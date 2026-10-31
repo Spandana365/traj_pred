@@ -1,0 +1,23 @@
+{
+  "recorded_at_utc": "2026-10-30T19:16:37.934718+00:00",
+  "python": "3.12.10",
+  "executable": "C:\\Users\\LENOVO\\Downloads\\coe1\\TrackVision-New\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 126 Stepping 5, GenuineIntel",
+  "cuda_available": false,
+  "torch_threads": 4,
+  "packages": {
+    "ultralytics": "8.4.193",
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "opencv-python": "5.0.0.93",
+    "lap": "0.5.13",
+    "trackeval": "1.0.dev1",
+    "matplotlib": "3.11.2",
+    "pandas": "3.1.0"
+  },
+  "trackeval_commit": "12c8791b303e0a0b50f753af204249e622d0281a",
+  "trackeval_note": "NumPy 2 removed np.float/np.int/np.bool; the evaluation module restores them as builtins at runtime. TrackEval is unmodified."
+}

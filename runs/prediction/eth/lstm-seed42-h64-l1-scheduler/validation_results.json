@@ -1,0 +1,199 @@
+{
+  "model_selection": "best LSTM selected by validation ADE",
+  "results": {
+    "constant_velocity": {
+      "ade": 0.44707046770961645,
+      "ade_by_timestep": [
+        {
+          "ade": 0.025098233522109076,
+          "timestep": 1
+        },
+        {
+          "ade": 0.06990211689344875,
+          "timestep": 2
+        },
+        {
+          "ade": 0.12971256465451944,
+          "timestep": 3
+        },
+        {
+          "ade": 0.20007215090542002,
+          "timestep": 4
+        },
+        {
+          "ade": 0.27900752867806505,
+          "timestep": 5
+        },
+        {
+          "ade": 0.365096366491117,
+          "timestep": 6
+        },
+        {
+          "ade": 0.4575569046517721,
+          "timestep": 7
+        },
+        {
+          "ade": 0.5552550640166243,
+          "timestep": 8
+        },
+        {
+          "ade": 0.657634177255205,
+          "timestep": 9
+        },
+        {
+          "ade": 0.763973747168776,
+          "timestep": 10
+        },
+        {
+          "ade": 0.8738026863622748,
+          "timestep": 11
+        },
+        {
+          "ade": 0.9877340719160668,
+          "timestep": 12
+        }
+      ],
+      "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+      "distance_units": "raw dataset coordinate units; physical units unverified",
+      "fde": 0.9877340719160668,
+      "per_scene": {
+        "HOTEL": {
+          "ade": 0.32951587088798956,
+          "fde": 0.6110383788900297,
+          "window_count": 318
+        },
+        "STUDENTS001": {
+          "ade": 0.4400720587865573,
+          "fde": 0.9713925337835383,
+          "window_count": 1887
+        },
+        "UNIV": {
+          "ade": 0.6975773738865517,
+          "fde": 1.5668392107351126,
+          "window_count": 834
+        },
+        "UNI_EXAMPLES": {
+          "ade": 0.3107076765884076,
+          "fde": 0.6300182027642296,
+          "window_count": 79
+        },
+        "ZARA1": {
+          "ade": 0.42019900675435257,
+          "fde": 0.9303882735777496,
+          "window_count": 337
+        },
+        "ZARA2": {
+          "ade": 0.30381697274540753,
+          "fde": 0.682042250360756,
+          "window_count": 1259
+        },
+        "ZARA3": {
+          "ade": 0.5061807680993969,
+          "fde": 1.1291226568093156,
+          "window_count": 708
+        }
+      },
+      "window_count": 5422,
+      "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+    },
+    "lstm": {
+      "ade": 0.47488538075935266,
+      "ade_by_timestep": [
+        {
+          "ade": 0.06304522036521892,
+          "timestep": 1
+        },
+        {
+          "ade": 0.10939565616090599,
+          "timestep": 2
+        },
+        {
+          "ade": 0.1695355806364121,
+          "timestep": 3
+        },
+        {
+          "ade": 0.2436456644216184,
+          "timestep": 4
+        },
+        {
+          "ade": 0.3193682643400824,
+          "timestep": 5
+        },
+        {
+          "ade": 0.40401453251097896,
+          "timestep": 6
+        },
+        {
+          "ade": 0.49193908760632504,
+          "timestep": 7
+        },
+        {
+          "ade": 0.583401519019646,
+          "timestep": 8
+        },
+        {
+          "ade": 0.6806876473138386,
+          "timestep": 9
+        },
+        {
+          "ade": 0.7739858862505193,
+          "timestep": 10
+        },
+        {
+          "ade": 0.8763158010377696,
+          "timestep": 11
+        },
+        {
+          "ade": 0.983289709448917,
+          "timestep": 12
+        }
+      ],
+      "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+      "distance_units": "raw dataset coordinate units; physical units unverified",
+      "fde": 0.983289709448917,
+      "per_scene": {
+        "HOTEL": {
+          "ade": 0.3193721902601005,
+          "fde": 0.57787431304818,
+          "window_count": 318
+        },
+        "STUDENTS001": {
+          "ade": 0.4984479615144881,
+          "fde": 1.0194909095082416,
+          "window_count": 1887
+        },
+        "UNIV": {
+          "ade": 0.6845016424602421,
+          "fde": 1.4381306387541863,
+          "window_count": 834
+        },
+        "UNI_EXAMPLES": {
+          "ade": 0.5220596866778209,
+          "fde": 1.1451218331431423,
+          "window_count": 79
+        },
+        "ZARA1": {
+          "ade": 0.4128939789195013,
+          "fde": 0.8669170846041028,
+          "window_count": 337
+        },
+        "ZARA2": {
+          "ade": 0.3386820362216965,
+          "fde": 0.7131426728886524,
+          "window_count": 1259
+        },
+        "ZARA3": {
+          "ade": 0.5014602189806238,
+          "fde": 1.050833568676495,
+          "window_count": 708
+        }
+      },
+      "window_count": 5422,
+      "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+    },
+    "window_count": 5422,
+    "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+  },
+  "selection_source": "validation",
+  "split": "val"
+}

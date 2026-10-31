@@ -1,0 +1,55 @@
+{
+  "note": "Pixel trajectories kept for a future MOT17-specific prediction stage. Do not feed them to the ETH-trained LSTM.",
+  "coordinates": "MOTChallenge 1-based image pixels",
+  "sequences": [
+    {
+      "sequence": "MOT17-02",
+      "frame_rate": 30,
+      "frames": 600,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "sequence": "MOT17-04",
+      "frame_rate": 30,
+      "frames": 1050,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "sequence": "MOT17-05",
+      "frame_rate": 14,
+      "frames": 837,
+      "width": 640,
+      "height": 480
+    },
+    {
+      "sequence": "MOT17-09",
+      "frame_rate": 30,
+      "frames": 525,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "sequence": "MOT17-10",
+      "frame_rate": 30,
+      "frames": 654,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "sequence": "MOT17-11",
+      "frame_rate": 30,
+      "frames": 900,
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "sequence": "MOT17-13",
+      "frame_rate": 25,
+      "frames": 750,
+      "width": 1920,
+      "height": 1080
+    }
+  ]
+}

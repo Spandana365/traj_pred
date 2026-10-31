@@ -1,0 +1,257 @@
+{
+  "experiment": "BoT-SORT_GMC_enabled",
+  "sequences": [
+    {
+      "sequence": "MOT17-02",
+      "frame_pairs": 599,
+      "analysis_scale": 4,
+      "median_warp_center_motion_pixels": 0.1253739510889232,
+      "median_phase_motion_pixels": 0.4458816895544376,
+      "median_warp_phase_difference_pixels": 0.4070320124446181,
+      "correlation_x": 0.4745676425742412,
+      "correlation_y": 0.2848802354712068,
+      "median_photometric_error_unwarped": 220.96470642089844,
+      "median_photometric_error_warped": 221.39439392089844,
+      "share_of_frame_pairs_improved": 0.16193656093489148,
+      "static_objects": {
+        "anchored_motion_pixels": {
+          "1.0": {
+            "pairs": 450,
+            "median_raw": 0.0,
+            "median_compensated": 1.0718916660805968
+          },
+          "3.0": {
+            "pairs": 139,
+            "median_raw": 0.0,
+            "median_compensated": 2.258501195177408
+          },
+          "8.0": {
+            "pairs": 36,
+            "median_raw": 1.0,
+            "median_compensated": 2.7724631228119607
+          }
+        },
+        "static_objects": 13,
+        "median_raw_spread_pixels": 0.8247148464066009,
+        "median_stabilized_spread_pixels": 4.61538746232748,
+        "objects_with_reduced_spread": 2
+      }
+    },
+    {
+      "sequence": "MOT17-04",
+      "frame_pairs": 1049,
+      "analysis_scale": 4,
+      "median_warp_center_motion_pixels": 0.09965725270056174,
+      "median_phase_motion_pixels": 0.20558947067227834,
+      "median_warp_phase_difference_pixels": 0.17503504628615235,
+      "correlation_x": 0.572241909979229,
+      "correlation_y": 0.356187915210771,
+      "median_photometric_error_unwarped": 540.6856079101562,
+      "median_photometric_error_warped": 540.892822265625,
+      "share_of_frame_pairs_improved": 0.29551954242135364,
+      "static_objects": {
+        "anchored_motion_pixels": {
+          "1.0": {
+            "pairs": 3030,
+            "median_raw": 0.0,
+            "median_compensated": 2.793377711929873
+          },
+          "3.0": {
+            "pairs": 980,
+            "median_raw": 0.0,
+            "median_compensated": 7.419409553589579
+          },
+          "8.0": {
+            "pairs": 311,
+            "median_raw": 0.0,
+            "median_compensated": 16.96162197394257
+          }
+        },
+        "static_objects": 45,
+        "median_raw_spread_pixels": 0.0,
+        "median_stabilized_spread_pixels": 22.19491894643428,
+        "objects_with_reduced_spread": 0
+      }
+    },
+    {
+      "sequence": "MOT17-05",
+      "frame_pairs": 836,
+      "analysis_scale": 2,
+      "median_warp_center_motion_pixels": 3.3129936998265093,
+      "median_phase_motion_pixels": 3.302206029056771,
+      "median_warp_phase_difference_pixels": 0.7814769568485171,
+      "correlation_x": 0.8447219171924258,
+      "correlation_y": 0.9417931707245838,
+      "median_photometric_error_unwarped": 740.8824462890625,
+      "median_photometric_error_warped": 708.497802734375,
+      "share_of_frame_pairs_improved": 0.9150717703349283,
+      "static_objects": {
+        "anchored_motion_pixels": {
+          "1.0": {
+            "pairs": 32,
+            "median_raw": 2.0,
+            "median_compensated": 7.64897863550941
+          },
+          "3.0": {
+            "pairs": 10,
+            "median_raw": 4.5,
+            "median_compensated": 11.636482216087092
+          },
+          "8.0": {
+            "pairs": 3,
+            "median_raw": 7.280109889280518,
+            "median_compensated": 28.07242414541133
+          }
+        },
+        "static_objects": 1,
+        "median_raw_spread_pixels": 38.463087100826115,
+        "median_stabilized_spread_pixels": 44.37685745087382,
+        "objects_with_reduced_spread": 0
+      }
+    },
+    {
+      "sequence": "MOT17-09",
+      "frame_pairs": 524,
+      "analysis_scale": 4,
+      "median_warp_center_motion_pixels": 0.29826483911246277,
+      "median_phase_motion_pixels": 1.476663420323169,
+      "median_warp_phase_difference_pixels": 1.3218585520039,
+      "correlation_x": 0.48326886173050304,
+      "correlation_y": 0.05531245184127806,
+      "median_photometric_error_unwarped": 523.79638671875,
+      "median_photometric_error_warped": 521.4388427734375,
+      "share_of_frame_pairs_improved": 0.75,
+      "static_objects": {
+        "anchored_motion_pixels": {
+          "1.0": {
+            "pairs": 99,
+            "median_raw": 0.0,
+            "median_compensated": 9.880271199514596
+          },
+          "3.0": {
+            "pairs": 30,
+            "median_raw": 0.0,
+            "median_compensated": 30.692787408505623
+          },
+          "8.0": {
+            "pairs": 9,
+            "median_raw": 0.0,
+            "median_compensated": 78.99279606910949
+          }
+        },
+        "static_objects": 3,
+        "median_raw_spread_pixels": 0.0,
+        "median_stabilized_spread_pixels": 50.555263589488824,
+        "objects_with_reduced_spread": 0
+      }
+    },
+    {
+      "sequence": "MOT17-10",
+      "frame_pairs": 653,
+      "analysis_scale": 4,
+      "median_warp_center_motion_pixels": 3.293341390676849,
+      "median_phase_motion_pixels": 3.2382407094417203,
+      "median_warp_phase_difference_pixels": 0.8371149488474777,
+      "correlation_x": 0.9862163900988822,
+      "correlation_y": 0.9731222615126197,
+      "median_photometric_error_unwarped": 628.2874755859375,
+      "median_photometric_error_warped": 589.3489379882812,
+      "share_of_frame_pairs_improved": 0.996937212863706,
+      "static_objects": {
+        "anchored_motion_pixels": {
+          "1.0": {
+            "pairs": 255,
+            "median_raw": 79.05694150420949,
+            "median_compensated": 16.327643980298742
+          },
+          "3.0": {
+            "pairs": 75,
+            "median_raw": 157.8923684032892,
+            "median_compensated": 32.33675535881121
+          },
+          "8.0": {
+            "pairs": 19,
+            "median_raw": 227.05505940189926,
+            "median_compensated": 73.82403812934729
+          }
+        },
+        "static_objects": 12,
+        "median_raw_spread_pixels": 158.29440420735415,
+        "median_stabilized_spread_pixels": 29.48536573890926,
+        "objects_with_reduced_spread": 12
+      }
+    },
+    {
+      "sequence": "MOT17-11",
+      "frame_pairs": 899,
+      "analysis_scale": 4,
+      "median_warp_center_motion_pixels": 3.712949120757268,
+      "median_phase_motion_pixels": 3.602531849090269,
+      "median_warp_phase_difference_pixels": 0.798883519998142,
+      "correlation_x": 0.9852389481580467,
+      "correlation_y": 0.9718530597578925,
+      "median_photometric_error_unwarped": 602.2863159179688,
+      "median_photometric_error_warped": 550.4628295898438,
+      "share_of_frame_pairs_improved": 0.9988876529477196,
+      "static_objects": {
+        "anchored_motion_pixels": {
+          "1.0": {
+            "pairs": 38,
+            "median_raw": 69.30947470792867,
+            "median_compensated": 68.26888640238589
+          },
+          "3.0": {
+            "pairs": 10,
+            "median_raw": 144.82989242015037,
+            "median_compensated": 105.43285315184013
+          },
+          "8.0": {
+            "pairs": 3,
+            "median_raw": 213.35885264033456,
+            "median_compensated": 149.23850144032002
+          }
+        },
+        "static_objects": 3,
+        "median_raw_spread_pixels": 72.38586577057116,
+        "median_stabilized_spread_pixels": 41.6894247157177,
+        "objects_with_reduced_spread": 3
+      }
+    },
+    {
+      "sequence": "MOT17-13",
+      "frame_pairs": 749,
+      "analysis_scale": 4,
+      "median_warp_center_motion_pixels": 4.662960457759939,
+      "median_phase_motion_pixels": 4.443539169666078,
+      "median_warp_phase_difference_pixels": 0.691081894681508,
+      "correlation_x": 0.9964947313496986,
+      "correlation_y": 0.9205540551841368,
+      "median_photometric_error_unwarped": 677.7186889648438,
+      "median_photometric_error_warped": 559.3485717773438,
+      "share_of_frame_pairs_improved": 1.0,
+      "static_objects": {
+        "anchored_motion_pixels": {
+          "1.0": {
+            "pairs": 212,
+            "median_raw": 85.21141075374939,
+            "median_compensated": 19.913932733334146
+          },
+          "3.0": {
+            "pairs": 49,
+            "median_raw": 231.3114783144148,
+            "median_compensated": 51.33625622991139
+          },
+          "8.0": {
+            "pairs": 3,
+            "median_raw": 681.1330633584014,
+            "median_compensated": 226.23927593662026
+          }
+        },
+        "static_objects": 27,
+        "median_raw_spread_pixels": 106.6307088741325,
+        "median_stabilized_spread_pixels": 6.935534684555724,
+        "objects_with_reduced_spread": 27
+      }
+    }
+  ]
+}

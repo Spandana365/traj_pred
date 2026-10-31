@@ -1,0 +1,82 @@
+{
+  "clean_baseline_source": [
+    "runs/error_injection/identity_switch/per_seed/seed-42.json",
+    "runs/error_injection/identity_switch/per_seed/seed-43.json",
+    "runs/error_injection/identity_switch/per_seed/seed-44.json"
+  ],
+  "comparison_policy": {
+    "fragmentation": "Prediction metrics are restricted to surviving windows; candidate-window retention is plotted separately.",
+    "matched_clean": "For each severity, show clean metrics computed on the same retained/evaluated window signatures as the corrupted predictions.",
+    "severity_labels": {
+      "detection_dropout": {
+        "clean": "Clean",
+        "high": "High\n(30%)",
+        "low": "Low\n(10%)",
+        "medium": "Medium\n(20%)"
+      },
+      "identity_switch": {
+        "clean": "Clean",
+        "high": "High\n(3 swapped\nobservations)",
+        "low": "Low\n(1 swapped\nobservation)",
+        "medium": "Medium\n(2 swapped\nobservations)"
+      },
+      "localization_noise": {
+        "clean": "Clean",
+        "high": "High\n(0.50x)",
+        "low": "Low\n(0.10x)",
+        "medium": "Medium\n(0.25x)"
+      },
+      "track_fragmentation": {
+        "clean": "Clean",
+        "high": "High\n(3 observations\nremoved)",
+        "low": "Low\n(1 observation\nremoved)",
+        "medium": "Medium\n(2 observations\nremoved)"
+      }
+    },
+    "severity_order": [
+      "clean",
+      "low",
+      "medium",
+      "high"
+    ]
+  },
+  "generated_files": [
+    "lstm_localization_noise_comparison.png",
+    "lstm_detection_dropout_comparison.png",
+    "lstm_track_fragmentation_comparison.png",
+    "lstm_identity_switch_comparison.png",
+    "lstm_four_error_comparison.csv",
+    "plot_manifest.json"
+  ],
+  "metric_definitions": {
+    "ADE": "Mean Euclidean prediction error over the 12 future timesteps, averaged over evaluated windows.",
+    "FDE": "Mean Euclidean prediction error at the final (12th) future timestep, averaged over evaluated windows.",
+    "uncertainty": "Arithmetic mean and population standard deviation across corruption seeds 42, 43, and 44.",
+    "units": "Raw dataset coordinate units; physical calibration is unverified."
+  },
+  "predictor": "frozen two-layer LSTM; saved prediction metrics only",
+  "seed_ids": [
+    42,
+    43,
+    44
+  ],
+  "source_artifacts": [
+    "runs/error_injection/localization_noise/aggregated_results.json",
+    "runs/error_injection/localization_noise/per_seed/seed-42.json",
+    "runs/error_injection/localization_noise/per_seed/seed-43.json",
+    "runs/error_injection/localization_noise/per_seed/seed-44.json",
+    "runs/error_injection/detection_dropout/aggregated_results.json",
+    "runs/error_injection/detection_dropout/per_seed/seed-42.json",
+    "runs/error_injection/detection_dropout/per_seed/seed-43.json",
+    "runs/error_injection/detection_dropout/per_seed/seed-44.json",
+    "runs/error_injection/track_fragmentation/aggregated_results.json",
+    "runs/error_injection/track_fragmentation/per_seed/seed-42.json",
+    "runs/error_injection/track_fragmentation/per_seed/seed-43.json",
+    "runs/error_injection/track_fragmentation/per_seed/seed-44.json",
+    "runs/error_injection/identity_switch/aggregated_results.json",
+    "runs/error_injection/identity_switch/per_seed/seed-42.json",
+    "runs/error_injection/identity_switch/per_seed/seed-43.json",
+    "runs/error_injection/identity_switch/per_seed/seed-44.json"
+  ],
+  "split": "validation"
+}

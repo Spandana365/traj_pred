@@ -1,0 +1,85 @@
+{
+  "experiment": "BoT-SORT_GMC_enabled",
+  "finished_utc": "2026-10-30T19:19:09.365050+00:00",
+  "all_sequences_complete": true,
+  "failure": null,
+  "sequences": [
+    {
+      "sequence": "MOT17-02",
+      "frames_expected": 600,
+      "status": "complete",
+      "output_boxes": 10258,
+      "track_ids": 173,
+      "frames_with_gmc_result": 600,
+      "seconds": 16.449844399998256,
+      "seconds_per_frame": 0.027416407333330426,
+      "peak_working_set_mb": 302.57421875
+    },
+    {
+      "sequence": "MOT17-04",
+      "frames_expected": 1050,
+      "status": "complete",
+      "output_boxes": 42211,
+      "track_ids": 279,
+      "frames_with_gmc_result": 1050,
+      "seconds": 35.747635799998534,
+      "seconds_per_frame": 0.034045367428570034,
+      "peak_working_set_mb": 314.29296875
+    },
+    {
+      "sequence": "MOT17-05",
+      "frames_expected": 837,
+      "status": "complete",
+      "output_boxes": 6123,
+      "track_ids": 233,
+      "frames_with_gmc_result": 837,
+      "seconds": 9.349441400001524,
+      "seconds_per_frame": 0.011170180884111737,
+      "peak_working_set_mb": 314.29296875
+    },
+    {
+      "sequence": "MOT17-09",
+      "frames_expected": 525,
+      "status": "complete",
+      "output_boxes": 5861,
+      "track_ids": 110,
+      "frames_with_gmc_result": 525,
+      "seconds": 16.53996509999706,
+      "seconds_per_frame": 0.031504695428565835,
+      "peak_working_set_mb": 314.29296875
+    },
+    {
+      "sequence": "MOT17-10",
+      "frames_expected": 654,
+      "status": "complete",
+      "output_boxes": 11099,
+      "track_ids": 163,
+      "frames_with_gmc_result": 654,
+      "seconds": 19.923267099999066,
+      "seconds_per_frame": 0.03046371116207808,
+      "peak_working_set_mb": 314.29296875
+    },
+    {
+      "sequence": "MOT17-11",
+      "frames_expected": 900,
+      "status": "complete",
+      "output_boxes": 9658,
+      "track_ids": 222,
+      "frames_with_gmc_result": 900,
+      "seconds": 28.585057500000403,
+      "seconds_per_frame": 0.03176117500000045,
+      "peak_working_set_mb": 314.29296875
+    },
+    {
+      "sequence": "MOT17-13",
+      "frames_expected": 750,
+      "status": "complete",
+      "output_boxes": 7187,
+      "track_ids": 145,
+      "frames_with_gmc_result": 750,
+      "seconds": 24.64294069999596,
+      "seconds_per_frame": 0.03285725426666128,
+      "peak_working_set_mb": 314.29296875
+    }
+  ]
+}

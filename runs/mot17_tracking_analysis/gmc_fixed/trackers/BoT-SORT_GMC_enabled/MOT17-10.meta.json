@@ -1,0 +1,9 @@
+{
+  "sequence": "MOT17-10",
+  "frames": 654,
+  "input_detections": 22768,
+  "frames_without_detections": 0,
+  "output_boxes": 11099,
+  "track_ids": 163,
+  "frames_with_output": 654
+}

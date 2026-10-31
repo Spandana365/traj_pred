@@ -1,0 +1,21 @@
+{
+  "sequence": "MOT17-02",
+  "frames_processed": 600,
+  "frames_expected": 600,
+  "complete": true,
+  "detections": 25683,
+  "empty_frames": 0,
+  "seconds": 522.2129473999958,
+  "frames_per_second": 1.1489565760238079,
+  "detector": {
+    "model_name": "yolov8s",
+    "weights": "runs/mot17_tracking_analysis/weights/yolov8s.pt",
+    "confidence_threshold": 0.05,
+    "iou_threshold": 0.7,
+    "image_size": 1280,
+    "device": "cpu",
+    "max_detections": 1000,
+    "augment": false
+  },
+  "coordinate_convention": "MOTChallenge 1-based pixels: left, top, width, height"
+}

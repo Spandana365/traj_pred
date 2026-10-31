@@ -1,0 +1,143 @@
+{
+  "dataset_root": "C:\\Users\\LENOVO\\Downloads\\coe1\\TrackVision-New\\data\\MOT17",
+  "split": "train",
+  "canonical_variant": "FRCNN",
+  "variant_policy": "DPM, FRCNN and SDP are one video each; their public detections are not used. The FRCNN directory is the canonical image and gt source.",
+  "sequence_count": 7,
+  "total_frames": 5316,
+  "sequences": [
+    {
+      "sequence": "MOT17-02",
+      "canonical_directory": "MOT17-02-FRCNN",
+      "frames": 600,
+      "frame_rate": "30",
+      "width": 1920,
+      "height": 1080,
+      "gt_rows": 30003,
+      "evaluated_gt_boxes": 18581,
+      "evaluated_gt_identities": 62,
+      "variants_agree": true,
+      "seq_length": "600",
+      "gt_sha256": "2e3ecb488da8886d3200d402b2b08890c6d2879923839444e9b74fa43a551440",
+      "sample_frames_sha256": [
+        "41ff65408c5338f4a83035fd12e9f5f7b658ee82feacf4512655677032636597",
+        "31ebac8dc47402f05204a2ab3bf5afe1b473e54c1090234f04a77000d2788117",
+        "70b9ee9af88602cac0b27019a9e5210f6fe6b4c1ea996d5c13fd860f324a1daa"
+      ]
+    },
+    {
+      "sequence": "MOT17-04",
+      "canonical_directory": "MOT17-04-FRCNN",
+      "frames": 1050,
+      "frame_rate": "30",
+      "width": 1920,
+      "height": 1080,
+      "gt_rows": 108005,
+      "evaluated_gt_boxes": 47557,
+      "evaluated_gt_identities": 83,
+      "variants_agree": true,
+      "seq_length": "1050",
+      "gt_sha256": "f8cfbe36ef38a2e1857d7ebfe7d754b2355a3ffb9e1f9cedea435e86e4fbc948",
+      "sample_frames_sha256": [
+        "53f3d86aad1aa4912b2919bae344919b54d193e72c1c7169ce8bc4685408053c",
+        "f2083e51267a83a01ac9da5c343e680936810e6c18c0a4008b2e61a40b96e401",
+        "01d915628242a779ae16d3e99a2b5a8104bfe3dbee9732fdf907565fa30a3745"
+      ]
+    },
+    {
+      "sequence": "MOT17-05",
+      "canonical_directory": "MOT17-05-FRCNN",
+      "frames": 837,
+      "frame_rate": "14",
+      "width": 640,
+      "height": 480,
+      "gt_rows": 8013,
+      "evaluated_gt_boxes": 6917,
+      "evaluated_gt_identities": 133,
+      "variants_agree": true,
+      "seq_length": "837",
+      "gt_sha256": "ed74c54176b21b38cb690eda79a4755cf16e4c4a9ca2f019b0ba8904636174f5",
+      "sample_frames_sha256": [
+        "9f4f112b29e93846501db27d2bcc2c99795715aa6376d5b5662d75f2e2f196d7",
+        "6d7ec3be5d8c2a1ee328b449d9fcc85d713c61c95ff63d235d3b5229ecd26c95",
+        "93ee8525b2363065eaeeaeac3929759560c090a87c44778703dd9a94d481496a"
+      ]
+    },
+    {
+      "sequence": "MOT17-09",
+      "canonical_directory": "MOT17-09-FRCNN",
+      "frames": 525,
+      "frame_rate": "30",
+      "width": 1920,
+      "height": 1080,
+      "gt_rows": 10411,
+      "evaluated_gt_boxes": 5325,
+      "evaluated_gt_identities": 26,
+      "variants_agree": true,
+      "seq_length": "525",
+      "gt_sha256": "592f0d5b519c03b35bb1578c33d726460f63abb91ea0c515f87e8d6d76be001d",
+      "sample_frames_sha256": [
+        "e4b1c40c44d53489f191e1099156ad57d3963d8c434615750fba0065a8a572af",
+        "ca55a06d24fa0cbfd76b65c8ce9e3f98f842ee992c749a3b0db788ac8f6acf49",
+        "38ba82bdba8518919ee8d6c22872a1710e16b4e43387ebf409adea93f686ebf1"
+      ]
+    },
+    {
+      "sequence": "MOT17-10",
+      "canonical_directory": "MOT17-10-FRCNN",
+      "frames": 654,
+      "frame_rate": "30",
+      "width": 1920,
+      "height": 1080,
+      "gt_rows": 17450,
+      "evaluated_gt_boxes": 12839,
+      "evaluated_gt_identities": 57,
+      "variants_agree": true,
+      "seq_length": "654",
+      "gt_sha256": "f8cca05d98fa36d8b6f2b807e03d32407d00d40299d679e4da320e42862677c0",
+      "sample_frames_sha256": [
+        "bc655b86e7dcd9993df950217534f2f6cbf85217faba544dce956b834fb053a0",
+        "8afde59f7001f90eb97651c05f143d6aa9846d0736cd1f3ac60949533dfc58d5",
+        "c9113976657bcde5adfcb1351a03713a8652b0352d0ac05598fe945f4d248309"
+      ]
+    },
+    {
+      "sequence": "MOT17-11",
+      "canonical_directory": "MOT17-11-FRCNN",
+      "frames": 900,
+      "frame_rate": "30",
+      "width": 1920,
+      "height": 1080,
+      "gt_rows": 10617,
+      "evaluated_gt_boxes": 9436,
+      "evaluated_gt_identities": 75,
+      "variants_agree": true,
+      "seq_length": "900",
+      "gt_sha256": "4952d6e4efc705c90688e434fd138a55ada2c0d5f576ba3847ee102fc18aff93",
+      "sample_frames_sha256": [
+        "45c999f9f2bff3d308cf8cd877ff63b95394f53e7319c1b9c444acff77d73b3c",
+        "8620838d2e2e002a482a42abcd64d1a48d8994f643af0525827fb3488fe8fea5",
+        "7cfe2604d35a177d3ada38658cf0152455ba5e2572ffdb0d40ec048d1b9691f7"
+      ]
+    },
+    {
+      "sequence": "MOT17-13",
+      "canonical_directory": "MOT17-13-FRCNN",
+      "frames": 750,
+      "frame_rate": "25",
+      "width": 1920,
+      "height": 1080,
+      "gt_rows": 20202,
+      "evaluated_gt_boxes": 11642,
+      "evaluated_gt_identities": 110,
+      "variants_agree": true,
+      "seq_length": "750",
+      "gt_sha256": "4827603ef87bbd61123cb4c5f194b3bf23531bd78ed9cd916084e53dca998013",
+      "sample_frames_sha256": [
+        "27e89bfe934685c07452eeac6f44346ef0da54f28587a1001f44ad8ab8f22388",
+        "1c796fd585c3ed6838560b8451bc075f9eb149f98ac2e4ae6d044e310cf88c73",
+        "af6cc6e55aa78b133677e2db2d6219697826a9d147b63543187d2adf225d83fc"
+      ]
+    }
+  ]
+}

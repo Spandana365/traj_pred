@@ -1,0 +1,99 @@
+{
+  "model_selection": "best LSTM selected by validation ADE",
+  "results": {
+    "constant_velocity": {
+      "ade": 0.44707046770961645,
+      "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+      "distance_units": "raw dataset coordinate units; physical units unverified",
+      "fde": 0.9877340719160668,
+      "per_scene": {
+        "HOTEL": {
+          "ade": 0.32951587088798956,
+          "fde": 0.6110383788900297,
+          "window_count": 318
+        },
+        "STUDENTS001": {
+          "ade": 0.4400720587865573,
+          "fde": 0.9713925337835383,
+          "window_count": 1887
+        },
+        "UNIV": {
+          "ade": 0.6975773738865517,
+          "fde": 1.5668392107351126,
+          "window_count": 834
+        },
+        "UNI_EXAMPLES": {
+          "ade": 0.3107076765884076,
+          "fde": 0.6300182027642296,
+          "window_count": 79
+        },
+        "ZARA1": {
+          "ade": 0.42019900675435257,
+          "fde": 0.9303882735777496,
+          "window_count": 337
+        },
+        "ZARA2": {
+          "ade": 0.30381697274540753,
+          "fde": 0.682042250360756,
+          "window_count": 1259
+        },
+        "ZARA3": {
+          "ade": 0.5061807680993969,
+          "fde": 1.1291226568093156,
+          "window_count": 708
+        }
+      },
+      "window_count": 5422,
+      "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+    },
+    "lstm": {
+      "ade": 0.5187152078821001,
+      "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+      "distance_units": "raw dataset coordinate units; physical units unverified",
+      "fde": 1.0411020236065378,
+      "per_scene": {
+        "HOTEL": {
+          "ade": 0.4684242111683917,
+          "fde": 0.8379839322996198,
+          "window_count": 318
+        },
+        "STUDENTS001": {
+          "ade": 0.5150809534125931,
+          "fde": 1.0318013997033464,
+          "window_count": 1887
+        },
+        "UNIV": {
+          "ade": 0.7253350860749422,
+          "fde": 1.4846253934778633,
+          "window_count": 834
+        },
+        "UNI_EXAMPLES": {
+          "ade": 0.5278257704316514,
+          "fde": 1.105885127080355,
+          "window_count": 79
+        },
+        "ZARA1": {
+          "ade": 0.4568636601280079,
+          "fde": 0.908062665470678,
+          "window_count": 337
+        },
+        "ZARA2": {
+          "ade": 0.3917795489333718,
+          "fde": 0.7925310807876246,
+          "window_count": 1259
+        },
+        "ZARA3": {
+          "ade": 0.5617457566027955,
+          "fde": 1.1327835990226427,
+          "window_count": 708
+        }
+      },
+      "window_count": 5422,
+      "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+    },
+    "window_count": 5422,
+    "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+  },
+  "selection_source": "validation",
+  "split": "val"
+}

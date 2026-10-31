@@ -1,0 +1,40 @@
+{
+  "experiment": "BoT-SORT_GMC_enabled",
+  "compared_with": "BoT-SORT_no_GMC",
+  "training_performed": false,
+  "yolo_inference_performed": false,
+  "detections_reused_from": "C:\\Users\\LENOVO\\Downloads\\coe1\\TrackVision-New\\runs\\mot17_tracking_analysis\\detections",
+  "detector_that_produced_detections": {
+    "model_name": "yolov8s",
+    "weights": "runs/mot17_tracking_analysis/weights/yolov8s.pt",
+    "confidence_threshold": 0.05,
+    "iou_threshold": 0.7,
+    "image_size": 1280,
+    "device": "cpu",
+    "max_detections": 1000,
+    "augment": false
+  },
+  "tracker": {
+    "implementation": "ultralytics.trackers.bot_sort.BOTSORT",
+    "settings": {
+      "track_high_thresh": 0.25,
+      "track_low_thresh": 0.1,
+      "new_track_thresh": 0.25,
+      "track_buffer": 30,
+      "match_thresh": 0.8,
+      "fuse_score": true,
+      "gmc_method": "sparseOptFlow",
+      "proximity_thresh": 0.5,
+      "appearance_thresh": 0.8,
+      "with_reid": false,
+      "model": "auto"
+    },
+    "settings_changed_from_no_gmc_run": false
+  },
+  "gmc": {
+    "method": "sparseOptFlow",
+    "failure_policy": "Any exception, malformed warp, skipped frame or run of more than 5 identity warps after frame 1 stops the run.",
+    "warp_convention": "2x3 affine mapping 0-based full-resolution pixels of the previous frame to the current frame.",
+    "boxes_note": "Boxes are passed to GMC, but the installed sparseOptFlow method does not use them, so pedestrians are not masked."
+  }
+}

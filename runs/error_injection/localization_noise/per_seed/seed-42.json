@@ -1,0 +1,1705 @@
+{
+  "clean": {
+    "constant_velocity": {
+      "ade": 0.44707046770961645,
+      "ade_by_timestep": [
+        {
+          "ade": 0.025098233522109076,
+          "timestep": 1
+        },
+        {
+          "ade": 0.06990211689344875,
+          "timestep": 2
+        },
+        {
+          "ade": 0.12971256465451944,
+          "timestep": 3
+        },
+        {
+          "ade": 0.20007215090542002,
+          "timestep": 4
+        },
+        {
+          "ade": 0.27900752867806505,
+          "timestep": 5
+        },
+        {
+          "ade": 0.365096366491117,
+          "timestep": 6
+        },
+        {
+          "ade": 0.4575569046517721,
+          "timestep": 7
+        },
+        {
+          "ade": 0.5552550640166243,
+          "timestep": 8
+        },
+        {
+          "ade": 0.657634177255205,
+          "timestep": 9
+        },
+        {
+          "ade": 0.763973747168776,
+          "timestep": 10
+        },
+        {
+          "ade": 0.8738026863622748,
+          "timestep": 11
+        },
+        {
+          "ade": 0.9877340719160668,
+          "timestep": 12
+        }
+      ],
+      "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+      "distance_units": "raw dataset coordinate units; physical units unverified",
+      "fde": 0.9877340719160668,
+      "per_scene": {
+        "HOTEL": {
+          "ade": 0.32951587088798956,
+          "fde": 0.6110383788900297,
+          "window_count": 318
+        },
+        "STUDENTS001": {
+          "ade": 0.4400720587865573,
+          "fde": 0.9713925337835383,
+          "window_count": 1887
+        },
+        "UNIV": {
+          "ade": 0.6975773738865517,
+          "fde": 1.5668392107351126,
+          "window_count": 834
+        },
+        "UNI_EXAMPLES": {
+          "ade": 0.3107076765884076,
+          "fde": 0.6300182027642296,
+          "window_count": 79
+        },
+        "ZARA1": {
+          "ade": 0.42019900675435257,
+          "fde": 0.9303882735777496,
+          "window_count": 337
+        },
+        "ZARA2": {
+          "ade": 0.30381697274540753,
+          "fde": 0.682042250360756,
+          "window_count": 1259
+        },
+        "ZARA3": {
+          "ade": 0.5061807680993969,
+          "fde": 1.1291226568093156,
+          "window_count": 708
+        }
+      },
+      "window_count": 5422,
+      "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+    },
+    "lstm": {
+      "ade": 0.4380585208847724,
+      "ade_by_timestep": [
+        {
+          "ade": 0.055807182286531434,
+          "timestep": 1
+        },
+        {
+          "ade": 0.08756258630315776,
+          "timestep": 2
+        },
+        {
+          "ade": 0.14061426232595226,
+          "timestep": 3
+        },
+        {
+          "ade": 0.20777941448429918,
+          "timestep": 4
+        },
+        {
+          "ade": 0.2839377528662052,
+          "timestep": 5
+        },
+        {
+          "ade": 0.3634026505903465,
+          "timestep": 6
+        },
+        {
+          "ade": 0.45150557654395024,
+          "timestep": 7
+        },
+        {
+          "ade": 0.5397602387147059,
+          "timestep": 8
+        },
+        {
+          "ade": 0.637185656793147,
+          "timestep": 9
+        },
+        {
+          "ade": 0.7316656257684823,
+          "timestep": 10
+        },
+        {
+          "ade": 0.8257828185251966,
+          "timestep": 11
+        },
+        {
+          "ade": 0.9316984854152935,
+          "timestep": 12
+        }
+      ],
+      "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+      "distance_units": "raw dataset coordinate units; physical units unverified",
+      "fde": 0.9316984854152935,
+      "per_scene": {
+        "HOTEL": {
+          "ade": 0.30350210585040044,
+          "fde": 0.5201493735180184,
+          "window_count": 318
+        },
+        "STUDENTS001": {
+          "ade": 0.46116594311908515,
+          "fde": 0.9752206802168011,
+          "window_count": 1887
+        },
+        "UNIV": {
+          "ade": 0.619949258565263,
+          "fde": 1.3290743366512396,
+          "window_count": 834
+        },
+        "UNI_EXAMPLES": {
+          "ade": 0.516231457879147,
+          "fde": 1.1341169077158495,
+          "window_count": 79
+        },
+        "ZARA1": {
+          "ade": 0.38520118709755985,
+          "fde": 0.8184855721811832,
+          "window_count": 337
+        },
+        "ZARA2": {
+          "ade": 0.31251296462310885,
+          "fde": 0.6857531517804796,
+          "window_count": 1259
+        },
+        "ZARA3": {
+          "ade": 0.4623346138175719,
+          "fde": 1.0011075920628796,
+          "window_count": 708
+        }
+      },
+      "window_count": 5422,
+      "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+    },
+    "window_count": 5422,
+    "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+  },
+  "evaluated_windows": 5422,
+  "seed": 42,
+  "severities": {
+    "high": {
+      "evaluated_windows": 5422,
+      "interpretation": "exploratory relative severity, not a measured tracker-error distribution",
+      "metrics": {
+        "constant_velocity": {
+          "ade": 2.032189082049366,
+          "ade_by_timestep": [
+            {
+              "ade": 0.4409957210789309,
+              "timestep": 1
+            },
+            {
+              "ade": 0.7153810055327375,
+              "timestep": 2
+            },
+            {
+              "ade": 0.9970880499496677,
+              "timestep": 3
+            },
+            {
+              "ade": 1.2838032424176784,
+              "timestep": 4
+            },
+            {
+              "ade": 1.5747913466037484,
+              "timestep": 5
+            },
+            {
+              "ade": 1.8693432672558203,
+              "timestep": 6
+            },
+            {
+              "ade": 2.165749479460403,
+              "timestep": 7
+            },
+            {
+              "ade": 2.4643302781066856,
+              "timestep": 8
+            },
+            {
+              "ade": 2.7644046660737898,
+              "timestep": 9
+            },
+            {
+              "ade": 3.0660897349352165,
+              "timestep": 10
+            },
+            {
+              "ade": 3.3696470362971844,
+              "timestep": 11
+            },
+            {
+              "ade": 3.6746451568805316,
+              "timestep": 12
+            }
+          ],
+          "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+          "degradation_vs_clean": {
+            "ade": {
+              "absolute": 1.5851186143397498,
+              "percentage": 354.55677098522295
+            },
+            "fde": {
+              "absolute": 2.686911084964465,
+              "percentage": 272.0277817036555
+            }
+          },
+          "distance_units": "raw dataset coordinate units; physical units unverified",
+          "fde": 3.6746451568805316,
+          "per_scene": {
+            "HOTEL": {
+              "ade": 2.0442642151716863,
+              "fde": 3.6444426962050063,
+              "window_count": 318
+            },
+            "STUDENTS001": {
+              "ade": 2.018708012449599,
+              "fde": 3.642611660829107,
+              "window_count": 1887
+            },
+            "UNIV": {
+              "ade": 2.0674113183453433,
+              "fde": 3.8074422928992906,
+              "window_count": 834
+            },
+            "UNI_EXAMPLES": {
+              "ade": 1.8710087125019463,
+              "fde": 3.3538536651635473,
+              "window_count": 79
+            },
+            "ZARA1": {
+              "ade": 2.0678591320314954,
+              "fde": 3.7153654544806805,
+              "window_count": 337
+            },
+            "ZARA2": {
+              "ade": 2.007241398350592,
+              "fde": 3.6149194258119617,
+              "window_count": 1259
+            },
+            "ZARA3": {
+              "ade": 2.066574840605924,
+              "fde": 3.739776881561223,
+              "window_count": 708
+            }
+          },
+          "per_scene_degradation_vs_clean": {
+            "HOTEL": {
+              "ade": {
+                "absolute": 1.7147483442836968,
+                "percentage": 520.3841440664876
+              },
+              "fde": {
+                "absolute": 3.0334043173149765,
+                "percentage": 496.4343357327653
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "absolute": 1.5786359536630417,
+                "percentage": 358.72215064413075
+              },
+              "fde": {
+                "absolute": 2.6712191270455685,
+                "percentage": 274.98864096075226
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "absolute": 1.3698339444587915,
+                "percentage": 196.3701799596456
+              },
+              "fde": {
+                "absolute": 2.240603082164178,
+                "percentage": 143.0014686135507
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "absolute": 1.5603010359135387,
+                "percentage": 502.1765323102909
+              },
+              "fde": {
+                "absolute": 2.7238354623993177,
+                "percentage": 432.34234351458144
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "absolute": 1.6476601252771428,
+                "percentage": 392.1142360625239
+              },
+              "fde": {
+                "absolute": 2.784977180902931,
+                "percentage": 299.3349400453508
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "absolute": 1.7034244256051845,
+                "percentage": 560.6745436939823
+              },
+              "fde": {
+                "absolute": 2.9328771754512055,
+                "percentage": 430.0140019038269
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "absolute": 1.560394072506527,
+                "percentage": 308.2681466475862
+              },
+              "fde": {
+                "absolute": 2.6106542247519076,
+                "percentage": 231.2108617259631
+              }
+            }
+          },
+          "per_timestep_degradation_vs_clean": [
+            {
+              "absolute": 0.4158974875568219,
+              "percentage": 1657.0787230521905,
+              "timestep": 1
+            },
+            {
+              "absolute": 0.6454788886392888,
+              "percentage": 923.403921548166,
+              "timestep": 2
+            },
+            {
+              "absolute": 0.8673754852951483,
+              "percentage": 668.6904137662713,
+              "timestep": 3
+            },
+            {
+              "absolute": 1.0837310915122584,
+              "percentage": 541.6701358024436,
+              "timestep": 4
+            },
+            {
+              "absolute": 1.2957838179256833,
+              "percentage": 464.42611210711567,
+              "timestep": 5
+            },
+            {
+              "absolute": 1.5042469007647035,
+              "percentage": 412.0136596323269,
+              "timestep": 6
+            },
+            {
+              "absolute": 1.7081925748086308,
+              "percentage": 373.32899087353223,
+              "timestep": 7
+            },
+            {
+              "absolute": 1.9090752140900613,
+              "percentage": 343.8195052702669,
+              "timestep": 8
+            },
+            {
+              "absolute": 2.1067704888185848,
+              "percentage": 320.3559914741201,
+              "timestep": 9
+            },
+            {
+              "absolute": 2.3021159877664408,
+              "percentage": 301.3344367261171,
+              "timestep": 10
+            },
+            {
+              "absolute": 2.4958443499349094,
+              "percentage": 285.63019877237406,
+              "timestep": 11
+            },
+            {
+              "absolute": 2.686911084964465,
+              "percentage": 272.0277817036555,
+              "timestep": 12
+            }
+          ],
+          "window_count": 5422,
+          "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+        },
+        "lstm": {
+          "ade": 1.9138673361928284,
+          "ade_by_timestep": [
+            {
+              "ade": 0.5653474915559008,
+              "timestep": 1
+            },
+            {
+              "ade": 0.8505576258008869,
+              "timestep": 2
+            },
+            {
+              "ade": 1.1387115595931956,
+              "timestep": 3
+            },
+            {
+              "ade": 1.3672807104050555,
+              "timestep": 4
+            },
+            {
+              "ade": 1.6951533931126874,
+              "timestep": 5
+            },
+            {
+              "ade": 1.874661799211582,
+              "timestep": 6
+            },
+            {
+              "ade": 2.079111843666322,
+              "timestep": 7
+            },
+            {
+              "ade": 2.307533444319932,
+              "timestep": 8
+            },
+            {
+              "ade": 2.49455502534872,
+              "timestep": 9
+            },
+            {
+              "ade": 2.7179088229425674,
+              "timestep": 10
+            },
+            {
+              "ade": 2.8550188702738577,
+              "timestep": 11
+            },
+            {
+              "ade": 3.0205674480832334,
+              "timestep": 12
+            }
+          ],
+          "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+          "degradation_vs_clean": {
+            "ade": {
+              "absolute": 1.475808815308056,
+              "percentage": 336.89763923031984
+            },
+            "fde": {
+              "absolute": 2.0888689626679398,
+              "percentage": 224.2001028623387
+            }
+          },
+          "distance_units": "raw dataset coordinate units; physical units unverified",
+          "fde": 3.0205674480832334,
+          "per_scene": {
+            "HOTEL": {
+              "ade": 1.17977393964929,
+              "fde": 1.829069995028826,
+              "window_count": 318
+            },
+            "STUDENTS001": {
+              "ade": 1.9460915590825603,
+              "fde": 3.066527459636421,
+              "window_count": 1887
+            },
+            "UNIV": {
+              "ade": 1.9566966272808024,
+              "fde": 3.1506111215630948,
+              "window_count": 834
+            },
+            "UNI_EXAMPLES": {
+              "ade": 1.8075026622101862,
+              "fde": 2.8961114673174757,
+              "window_count": 79
+            },
+            "ZARA1": {
+              "ade": 2.0314193472725464,
+              "fde": 3.150455247511253,
+              "window_count": 337
+            },
+            "ZARA2": {
+              "ade": 1.9370055559652999,
+              "fde": 3.039883817982312,
+              "window_count": 1259
+            },
+            "ZARA3": {
+              "ade": 2.0220194909354445,
+              "fde": 3.197762008759149,
+              "window_count": 708
+            }
+          },
+          "per_scene_degradation_vs_clean": {
+            "HOTEL": {
+              "ade": {
+                "absolute": 0.8762718337988895,
+                "percentage": 288.72018246582235
+              },
+              "fde": {
+                "absolute": 1.3089206215108078,
+                "percentage": 251.64321791987427
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "absolute": 1.4849256159634752,
+                "percentage": 321.99377211600125
+              },
+              "fde": {
+                "absolute": 2.09130677941962,
+                "percentage": 214.4444659392069
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "absolute": 1.3367473687155393,
+                "percentage": 215.62206103918066
+              },
+              "fde": {
+                "absolute": 1.8215367849118551,
+                "percentage": 137.05304020100434
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "absolute": 1.2912712043310393,
+                "percentage": 250.13415680555713
+              },
+              "fde": {
+                "absolute": 1.7619945596016262,
+                "percentage": 155.362692118782
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "absolute": 1.6462181601749866,
+                "percentage": 427.3658065747469
+              },
+              "fde": {
+                "absolute": 2.3319696753300696,
+                "percentage": 284.91274062603213
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "absolute": 1.624492591342191,
+                "percentage": 519.8160637275741
+              },
+              "fde": {
+                "absolute": 2.354130666201833,
+                "percentage": 343.2912645154604
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "absolute": 1.5596848771178726,
+                "percentage": 337.34979612261816
+              },
+              "fde": {
+                "absolute": 2.196654416696269,
+                "percentage": 219.4224111486208
+              }
+            }
+          },
+          "per_timestep_degradation_vs_clean": [
+            {
+              "absolute": 0.5095403092693693,
+              "percentage": 913.0371547039068,
+              "timestep": 1
+            },
+            {
+              "absolute": 0.7629950394977292,
+              "percentage": 871.3710634997693,
+              "timestep": 2
+            },
+            {
+              "absolute": 0.9980972972672433,
+              "percentage": 709.8122770459757,
+              "timestep": 3
+            },
+            {
+              "absolute": 1.1595012959207562,
+              "percentage": 558.0443562220038,
+              "timestep": 4
+            },
+            {
+              "absolute": 1.4112156402464822,
+              "percentage": 497.0158515382291,
+              "timestep": 5
+            },
+            {
+              "absolute": 1.5112591486212354,
+              "percentage": 415.8635458949459,
+              "timestep": 6
+            },
+            {
+              "absolute": 1.6276062671223717,
+              "percentage": 360.4842003460699,
+              "timestep": 7
+            },
+            {
+              "absolute": 1.7677732056052258,
+              "percentage": 327.5108240308147,
+              "timestep": 8
+            },
+            {
+              "absolute": 1.857369368555573,
+              "percentage": 291.4957907093224,
+              "timestep": 9
+            },
+            {
+              "absolute": 1.986243197174085,
+              "percentage": 271.46870472258365,
+              "timestep": 10
+            },
+            {
+              "absolute": 2.029236051748661,
+              "percentage": 245.73483562818205,
+              "timestep": 11
+            },
+            {
+              "absolute": 2.0888689626679398,
+              "percentage": 224.2001028623387,
+              "timestep": 12
+            }
+          ],
+          "window_count": 5422,
+          "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+        }
+      },
+      "multiplier": 0.5,
+      "noise_statistics": {
+        "configured_sigma": 0.15455667337262596,
+        "mean_dx": -0.0023994693029512587,
+        "mean_dy": -0.0010700927515533121,
+        "mean_radial_displacement": 0.19422053515698937,
+        "rms_radial_displacement": 0.2194828306827169,
+        "std_dx": 0.15213761321327618,
+        "std_dy": 0.1581769801799017,
+        "std_radial_displacement": 0.10223060543609645,
+        "unique_observation_count": 7179,
+        "window_observation_count": 43376
+      },
+      "severity": "high",
+      "sigma": 0.15455667337262596,
+      "units": "raw dataset coordinate units",
+      "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+    },
+    "low": {
+      "evaluated_windows": 5422,
+      "interpretation": "exploratory relative severity, not a measured tracker-error distribution",
+      "metrics": {
+        "constant_velocity": {
+          "ade": 0.644898613702242,
+          "ade_by_timestep": [
+            {
+              "ade": 0.09689606527604779,
+              "timestep": 1
+            },
+            {
+              "ade": 0.17056741035901718,
+              "timestep": 2
+            },
+            {
+              "ade": 0.25456837279635763,
+              "timestep": 3
+            },
+            {
+              "ade": 0.34773788048758486,
+              "timestep": 4
+            },
+            {
+              "ade": 0.4491831258512855,
+              "timestep": 5
+            },
+            {
+              "ade": 0.5574169896596881,
+              "timestep": 6
+            },
+            {
+              "ade": 0.6706941278740454,
+              "timestep": 7
+            },
+            {
+              "ade": 0.7882283784425606,
+              "timestep": 8
+            },
+            {
+              "ade": 0.9095013405545423,
+              "timestep": 9
+            },
+            {
+              "ade": 1.0345244443428447,
+              "timestep": 10
+            },
+            {
+              "ade": 1.1634953545839728,
+              "timestep": 11
+            },
+            {
+              "ade": 1.295969874198958,
+              "timestep": 12
+            }
+          ],
+          "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+          "degradation_vs_clean": {
+            "ade": {
+              "absolute": 0.19782814599262555,
+              "percentage": 44.249880115346805
+            },
+            "fde": {
+              "absolute": 0.30823580228289127,
+              "percentage": 31.206355136150833
+            }
+          },
+          "distance_units": "raw dataset coordinate units; physical units unverified",
+          "fde": 1.295969874198958,
+          "per_scene": {
+            "HOTEL": {
+              "ade": 0.56509968173944,
+              "fde": 1.020904441955944,
+              "window_count": 318
+            },
+            "STUDENTS001": {
+              "ade": 0.6269459483748603,
+              "fde": 1.2536083929607682,
+              "window_count": 1887
+            },
+            "UNIV": {
+              "ade": 0.8206942719522589,
+              "fde": 1.7365128392179427,
+              "window_count": 834
+            },
+            "UNI_EXAMPLES": {
+              "ade": 0.5006745740554571,
+              "fde": 0.9558364735096558,
+              "window_count": 79
+            },
+            "ZARA1": {
+              "ade": 0.6043815660619096,
+              "fde": 1.199032946815414,
+              "window_count": 337
+            },
+            "ZARA2": {
+              "ade": 0.5664902034397331,
+              "fde": 1.1165153223197812,
+              "window_count": 1259
+            },
+            "ZARA3": {
+              "ade": 0.6963156950070635,
+              "fde": 1.4166840743719842,
+              "window_count": 708
+            }
+          },
+          "per_scene_degradation_vs_clean": {
+            "HOTEL": {
+              "ade": {
+                "absolute": 0.23558381085145047,
+                "percentage": 71.49391931156212
+              },
+              "fde": {
+                "absolute": 0.40986606306591444,
+                "percentage": 67.07697539562884
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "absolute": 0.18687388958830298,
+                "percentage": 42.46438415190093
+              },
+              "fde": {
+                "absolute": 0.2822158591772299,
+                "percentage": 29.052710347485323
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "absolute": 0.12311689806570714,
+                "percentage": 17.649210349206346
+              },
+              "fde": {
+                "absolute": 0.16967362848283019,
+                "percentage": 10.82903895436881
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "absolute": 0.18996689746704953,
+                "percentage": 61.14007209377624
+              },
+              "fde": {
+                "absolute": 0.32581827074542624,
+                "percentage": 51.7156915968278
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "absolute": 0.18418255930755706,
+                "percentage": 43.83222148243434
+              },
+              "fde": {
+                "absolute": 0.2686446732376644,
+                "percentage": 28.874468957417985
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "absolute": 0.2626732306943256,
+                "percentage": 86.45772101561963
+              },
+              "fde": {
+                "absolute": 0.4344730719590252,
+                "percentage": 63.70178265777775
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "absolute": 0.19013492690766653,
+                "percentage": 37.562653283249674
+              },
+              "fde": {
+                "absolute": 0.2875614175626686,
+                "percentage": 25.46768642259488
+              }
+            }
+          },
+          "per_timestep_degradation_vs_clean": [
+            {
+              "absolute": 0.07179783175393871,
+              "percentage": 286.06727119138435,
+              "timestep": 1
+            },
+            {
+              "absolute": 0.10066529346556843,
+              "percentage": 144.0089341199949,
+              "timestep": 2
+            },
+            {
+              "absolute": 0.12485580814183819,
+              "percentage": 96.2557547716238,
+              "timestep": 3
+            },
+            {
+              "absolute": 0.14766572958216484,
+              "percentage": 73.80623885628678,
+              "timestep": 4
+            },
+            {
+              "absolute": 0.17017559717322045,
+              "percentage": 60.99319182514922,
+              "timestep": 5
+            },
+            {
+              "absolute": 0.19232062316857113,
+              "percentage": 52.67667411125835,
+              "timestep": 6
+            },
+            {
+              "absolute": 0.21313722322227324,
+              "percentage": 46.58157729790643,
+              "timestep": 7
+            },
+            {
+              "absolute": 0.23297331442593627,
+              "percentage": 41.95789098088461,
+              "timestep": 8
+            },
+            {
+              "absolute": 0.25186716329933734,
+              "percentage": 38.29897715331124,
+              "timestep": 9
+            },
+            {
+              "absolute": 0.27055069717406877,
+              "percentage": 35.41361181280214,
+              "timestep": 10
+            },
+            {
+              "absolute": 0.28969266822169804,
+              "percentage": 33.153098833755784,
+              "timestep": 11
+            },
+            {
+              "absolute": 0.30823580228289127,
+              "percentage": 31.206355136150833,
+              "timestep": 12
+            }
+          ],
+          "window_count": 5422,
+          "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+        },
+        "lstm": {
+          "ade": 0.6143068998794355,
+          "ade_by_timestep": [
+            {
+              "ade": 0.13151790342234018,
+              "timestep": 1
+            },
+            {
+              "ade": 0.20149620025747564,
+              "timestep": 2
+            },
+            {
+              "ade": 0.28272032045954615,
+              "timestep": 3
+            },
+            {
+              "ade": 0.3636499009994212,
+              "timestep": 4
+            },
+            {
+              "ade": 0.4674912752829582,
+              "timestep": 5
+            },
+            {
+              "ade": 0.5514940894058387,
+              "timestep": 6
+            },
+            {
+              "ade": 0.6455415019503166,
+              "timestep": 7
+            },
+            {
+              "ade": 0.7451332481333971,
+              "timestep": 8
+            },
+            {
+              "ade": 0.8439155217170434,
+              "timestep": 9
+            },
+            {
+              "ade": 0.9481028751621582,
+              "timestep": 10
+            },
+            {
+              "ade": 1.0433486030385917,
+              "timestep": 11
+            },
+            {
+              "ade": 1.1472713587241394,
+              "timestep": 12
+            }
+          ],
+          "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+          "degradation_vs_clean": {
+            "ade": {
+              "absolute": 0.17624837899466317,
+              "percentage": 40.23398029986588
+            },
+            "fde": {
+              "absolute": 0.2155728733088459,
+              "percentage": 23.13762195424809
+            }
+          },
+          "distance_units": "raw dataset coordinate units; physical units unverified",
+          "fde": 1.1472713587241394,
+          "per_scene": {
+            "HOTEL": {
+              "ade": 0.39782090784585583,
+              "fde": 0.6519341407692583,
+              "window_count": 318
+            },
+            "STUDENTS001": {
+              "ade": 0.6289487993132897,
+              "fde": 1.1743448548184434,
+              "window_count": 1887
+            },
+            "UNIV": {
+              "ade": 0.7485727790107154,
+              "fde": 1.4705737978032414,
+              "window_count": 834
+            },
+            "UNI_EXAMPLES": {
+              "ade": 0.6359793273802438,
+              "fde": 1.2571967715463706,
+              "window_count": 79
+            },
+            "ZARA1": {
+              "ade": 0.5734267695378042,
+              "fde": 1.034993989577338,
+              "window_count": 337
+            },
+            "ZARA2": {
+              "ade": 0.5451720960100431,
+              "fde": 0.9921114821424032,
+              "window_count": 1259
+            },
+            "ZARA3": {
+              "ade": 0.6543361912122587,
+              "fde": 1.2338461671897487,
+              "window_count": 708
+            }
+          },
+          "per_scene_degradation_vs_clean": {
+            "HOTEL": {
+              "ade": {
+                "absolute": 0.09431880199545539,
+                "percentage": 31.076819625741305
+              },
+              "fde": {
+                "absolute": 0.1317847672512399,
+                "percentage": 25.33594654933767
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "absolute": 0.16778285619420458,
+                "percentage": 36.38231718921158
+              },
+              "fde": {
+                "absolute": 0.19912417460164233,
+                "percentage": 20.418370799660966
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "absolute": 0.12862352044545244,
+                "percentage": 20.74742709477925
+              },
+              "fde": {
+                "absolute": 0.14149946115200174,
+                "percentage": 10.646467037240852
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "absolute": 0.11974786950109673,
+                "percentage": 23.196546369541554
+              },
+              "fde": {
+                "absolute": 0.12307986383052105,
+                "percentage": 10.852484694757628
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "absolute": 0.1882255824402444,
+                "percentage": 48.86422699226327
+              },
+              "fde": {
+                "absolute": 0.21650841739615467,
+                "percentage": 26.452319351113434
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "absolute": 0.23265913138693428,
+                "percentage": 74.44783344189307
+              },
+              "fde": {
+                "absolute": 0.3063583303619236,
+                "percentage": 44.674724362038916
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "absolute": 0.19200157739468682,
+                "percentage": 41.52870489390761
+              },
+              "fde": {
+                "absolute": 0.23273857512686913,
+                "percentage": 23.248108092686486
+              }
+            }
+          },
+          "per_timestep_degradation_vs_clean": [
+            {
+              "absolute": 0.07571072113580875,
+              "percentage": 135.6648338686701,
+              "timestep": 1
+            },
+            {
+              "absolute": 0.11393361395431788,
+              "percentage": 130.11677562818755,
+              "timestep": 2
+            },
+            {
+              "absolute": 0.1421060581335939,
+              "percentage": 101.06091358228198,
+              "timestep": 3
+            },
+            {
+              "absolute": 0.155870486515122,
+              "percentage": 75.0172902845004,
+              "timestep": 4
+            },
+            {
+              "absolute": 0.183553522416753,
+              "percentage": 64.64569102342848,
+              "timestep": 5
+            },
+            {
+              "absolute": 0.18809143881549217,
+              "percentage": 51.758411368199496,
+              "timestep": 6
+            },
+            {
+              "absolute": 0.19403592540636633,
+              "percentage": 42.9753109344993,
+              "timestep": 7
+            },
+            {
+              "absolute": 0.2053730094186912,
+              "percentage": 38.048932597875655,
+              "timestep": 8
+            },
+            {
+              "absolute": 0.20672986492389644,
+              "percentage": 32.44421193727659,
+              "timestep": 9
+            },
+            {
+              "absolute": 0.21643724939367592,
+              "percentage": 29.58144291203346,
+              "timestep": 10
+            },
+            {
+              "absolute": 0.21756578451339503,
+              "percentage": 26.346610710786614,
+              "timestep": 11
+            },
+            {
+              "absolute": 0.2155728733088459,
+              "percentage": 23.13762195424809,
+              "timestep": 12
+            }
+          ],
+          "window_count": 5422,
+          "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+        }
+      },
+      "multiplier": 0.1,
+      "noise_statistics": {
+        "configured_sigma": 0.030911334674525195,
+        "mean_dx": -0.0004798938605902519,
+        "mean_dy": -0.0002140185503106624,
+        "mean_radial_displacement": 0.038844107031397866,
+        "rms_radial_displacement": 0.04389656613654338,
+        "std_dx": 0.030427522642655237,
+        "std_dy": 0.03163539603598034,
+        "std_radial_displacement": 0.020446121087219292,
+        "unique_observation_count": 7179,
+        "window_observation_count": 43376
+      },
+      "severity": "low",
+      "sigma": 0.030911334674525195,
+      "units": "raw dataset coordinate units",
+      "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+    },
+    "medium": {
+      "evaluated_windows": 5422,
+      "interpretation": "exploratory relative severity, not a measured tracker-error distribution",
+      "metrics": {
+        "constant_velocity": {
+          "ade": 1.1216175576173193,
+          "ade_by_timestep": [
+            {
+              "ade": 0.22386168979567403,
+              "timestep": 1
+            },
+            {
+              "ade": 0.36857375348978855,
+              "timestep": 2
+            },
+            {
+              "ade": 0.5205703894843222,
+              "timestep": 3
+            },
+            {
+              "ade": 0.6790332828428495,
+              "timestep": 4
+            },
+            {
+              "ade": 0.8432744022353741,
+              "timestep": 5
+            },
+            {
+              "ade": 1.0127482125762435,
+              "timestep": 6
+            },
+            {
+              "ade": 1.1856257752854327,
+              "timestep": 7
+            },
+            {
+              "ade": 1.3620228442222402,
+              "timestep": 8
+            },
+            {
+              "ade": 1.5410118281727299,
+              "timestep": 9
+            },
+            {
+              "ade": 1.722411151894378,
+              "timestep": 10
+            },
+            {
+              "ade": 1.9067542856699395,
+              "timestep": 11
+            },
+            {
+              "ade": 2.093523075738859,
+              "timestep": 12
+            }
+          ],
+          "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+          "degradation_vs_clean": {
+            "ade": {
+              "absolute": 0.6745470899077028,
+              "percentage": 150.88160337753246
+            },
+            "fde": {
+              "absolute": 1.1057890038227922,
+              "percentage": 111.95209674985851
+            }
+          },
+          "distance_units": "raw dataset coordinate units; physical units unverified",
+          "fde": 2.093523075738859,
+          "per_scene": {
+            "HOTEL": {
+              "ade": 1.0860523980515138,
+              "fde": 1.9405273829585155,
+              "window_count": 318
+            },
+            "STUDENTS001": {
+              "ade": 1.1038805030882952,
+              "fde": 2.0486905195960534,
+              "window_count": 1887
+            },
+            "UNIV": {
+              "ade": 1.224925673561335,
+              "fde": 2.380304611376115,
+              "window_count": 834
+            },
+            "UNI_EXAMPLES": {
+              "ade": 0.9925227273043702,
+              "fde": 1.8044793773232768,
+              "window_count": 79
+            },
+            "ZARA1": {
+              "ade": 1.1094811483025184,
+              "fde": 2.042161254637844,
+              "window_count": 337
+            },
+            "ZARA2": {
+              "ade": 1.0769085453703062,
+              "fde": 1.9885552003462297,
+              "window_count": 1259
+            },
+            "ZARA3": {
+              "ade": 1.162857221308966,
+              "fde": 2.1872713865147713,
+              "window_count": 708
+            }
+          },
+          "per_scene_degradation_vs_clean": {
+            "HOTEL": {
+              "ade": {
+                "absolute": 0.7565365271635243,
+                "percentage": 229.59031536926773
+              },
+              "fde": {
+                "absolute": 1.3294890040684857,
+                "percentage": 217.57864153861237
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "absolute": 0.6638084443017379,
+                "percentage": 150.84085232134603
+              },
+              "fde": {
+                "absolute": 1.0772979858125151,
+                "percentage": 110.90243628046831
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "absolute": 0.5273482996747832,
+                "percentage": 75.59710498301611
+              },
+              "fde": {
+                "absolute": 0.8134654006410023,
+                "percentage": 51.91760552503338
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "absolute": 0.6818150507159626,
+                "percentage": 219.4393966065919
+              },
+              "fde": {
+                "absolute": 1.1744611745590472,
+                "percentage": 186.4170224615817
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "absolute": 0.6892821415481658,
+                "percentage": 164.03707064236798
+              },
+              "fde": {
+                "absolute": 1.1117729810600943,
+                "percentage": 119.49559260725002
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "absolute": 0.7730915726248987,
+                "percentage": 254.45963918307285
+              },
+              "fde": {
+                "absolute": 1.3065129499854735,
+                "percentage": 191.55894657470455
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "absolute": 0.6566764532095691,
+                "percentage": 129.7316086652703
+              },
+              "fde": {
+                "absolute": 1.0581487297054557,
+                "percentage": 93.71424116982838
+              }
+            }
+          },
+          "per_timestep_degradation_vs_clean": [
+            {
+              "absolute": 0.19876345627356495,
+              "percentage": 791.9420149568451,
+              "timestep": 1
+            },
+            {
+              "absolute": 0.2986716365963398,
+              "percentage": 427.27123278913376,
+              "timestep": 2
+            },
+            {
+              "absolute": 0.3908578248298028,
+              "percentage": 301.32610967243295,
+              "timestep": 3
+            },
+            {
+              "absolute": 0.47896113193742945,
+              "percentage": 239.39420342606726,
+              "timestep": 4
+            },
+            {
+              "absolute": 0.5642668735573091,
+              "percentage": 202.24073387223635,
+              "timestep": 5
+            },
+            {
+              "absolute": 0.6476518460851265,
+              "percentage": 177.39202729120677,
+              "timestep": 6
+            },
+            {
+              "absolute": 0.7280688706336605,
+              "percentage": 159.1209450085261,
+              "timestep": 7
+            },
+            {
+              "absolute": 0.8067677802056159,
+              "percentage": 145.2967892574612,
+              "timestep": 8
+            },
+            {
+              "absolute": 0.8833776509175248,
+              "percentage": 134.32660306745532,
+              "timestep": 9
+            },
+            {
+              "absolute": 0.9584374047256021,
+              "percentage": 125.45423298608002,
+              "timestep": 10
+            },
+            {
+              "absolute": 1.0329515993076648,
+              "percentage": 118.21336961184478,
+              "timestep": 11
+            },
+            {
+              "absolute": 1.1057890038227922,
+              "percentage": 111.95209674985851,
+              "timestep": 12
+            }
+          ],
+          "window_count": 5422,
+          "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+        },
+        "lstm": {
+          "ade": 1.0699064657991342,
+          "ade_by_timestep": [
+            {
+              "ade": 0.2928942573038628,
+              "timestep": 1
+            },
+            {
+              "ade": 0.44230308777374094,
+              "timestep": 2
+            },
+            {
+              "ade": 0.5974647787884172,
+              "timestep": 3
+            },
+            {
+              "ade": 0.7276421474369249,
+              "timestep": 4
+            },
+            {
+              "ade": 0.9095827266357388,
+              "timestep": 5
+            },
+            {
+              "ade": 1.0215404988956573,
+              "timestep": 6
+            },
+            {
+              "ade": 1.1489014780657352,
+              "timestep": 7
+            },
+            {
+              "ade": 1.2898295992155246,
+              "timestep": 8
+            },
+            {
+              "ade": 1.4138914004881689,
+              "timestep": 9
+            },
+            {
+              "ade": 1.555531233884346,
+              "timestep": 10
+            },
+            {
+              "ade": 1.6601456877511847,
+              "timestep": 11
+            },
+            {
+              "ade": 1.779150693350309,
+              "timestep": 12
+            }
+          ],
+          "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+          "degradation_vs_clean": {
+            "ade": {
+              "absolute": 0.6318479449143618,
+              "percentage": 144.2382500945722
+            },
+            "fde": {
+              "absolute": 0.8474522079350154,
+              "percentage": 90.95777455914546
+            }
+          },
+          "distance_units": "raw dataset coordinate units; physical units unverified",
+          "fde": 1.779150693350309,
+          "per_scene": {
+            "HOTEL": {
+              "ade": 0.6638626465445187,
+              "fde": 1.0429944846355779,
+              "window_count": 318
+            },
+            "STUDENTS001": {
+              "ade": 1.086242830264093,
+              "fde": 1.8020808582675485,
+              "window_count": 1887
+            },
+            "UNIV": {
+              "ade": 1.1536755288542802,
+              "fde": 2.002672060561881,
+              "window_count": 834
+            },
+            "UNI_EXAMPLES": {
+              "ade": 1.0428162127028975,
+              "fde": 1.782388281353778,
+              "window_count": 79
+            },
+            "ZARA1": {
+              "ade": 1.092048996787936,
+              "fde": 1.7563313412376997,
+              "window_count": 337
+            },
+            "ZARA2": {
+              "ade": 1.0512545134879496,
+              "fde": 1.7216526759994308,
+              "window_count": 1259
+            },
+            "ZARA3": {
+              "ade": 1.1357153940487907,
+              "fde": 1.8981280789045938,
+              "window_count": 708
+            }
+          },
+          "per_scene_degradation_vs_clean": {
+            "HOTEL": {
+              "ade": {
+                "absolute": 0.3603605406941182,
+                "percentage": 118.73411543040295
+              },
+              "fde": {
+                "absolute": 0.5228451111175595,
+                "percentage": 100.5182622025109
+              }
+            },
+            "STUDENTS001": {
+              "ade": {
+                "absolute": 0.6250768871450079,
+                "percentage": 135.5427252319013
+              },
+              "fde": {
+                "absolute": 0.8268601780507474,
+                "percentage": 84.78698153395683
+              }
+            },
+            "UNIV": {
+              "ade": {
+                "absolute": 0.5337262702890172,
+                "percentage": 86.09192815621878
+              },
+              "fde": {
+                "absolute": 0.6735977239106412,
+                "percentage": 50.68171924889097
+              }
+            },
+            "UNI_EXAMPLES": {
+              "ade": {
+                "absolute": 0.5265847548237504,
+                "percentage": 102.00555328168846
+              },
+              "fde": {
+                "absolute": 0.6482713736379284,
+                "percentage": 57.16089489782577
+              }
+            },
+            "ZARA1": {
+              "ade": {
+                "absolute": 0.7068478096903763,
+                "percentage": 183.50094271940887
+              },
+              "fde": {
+                "absolute": 0.9378457690565165,
+                "percentage": 114.58305447672707
+              }
+            },
+            "ZARA2": {
+              "ade": {
+                "absolute": 0.7387415488648408,
+                "percentage": 236.38748867771432
+              },
+              "fde": {
+                "absolute": 1.0358995242189513,
+                "percentage": 151.0601185761023
+              }
+            },
+            "ZARA3": {
+              "ade": {
+                "absolute": 0.6733807802312188,
+                "percentage": 145.64792687075806
+              },
+              "fde": {
+                "absolute": 0.8970204868417142,
+                "percentage": 89.60280532817818
+              }
+            }
+          },
+          "per_timestep_degradation_vs_clean": [
+            {
+              "absolute": 0.2370870750173314,
+              "percentage": 424.8325489720169,
+              "timestep": 1
+            },
+            {
+              "absolute": 0.35474050147058317,
+              "percentage": 405.12793928037524,
+              "timestep": 2
+            },
+            {
+              "absolute": 0.45685051646246494,
+              "percentage": 324.8962864118706,
+              "timestep": 3
+            },
+            {
+              "absolute": 0.5198627329526258,
+              "percentage": 250.19934445522713,
+              "timestep": 4
+            },
+            {
+              "absolute": 0.6256449737695335,
+              "percentage": 220.3458213830215,
+              "timestep": 5
+            },
+            {
+              "absolute": 0.6581378483053109,
+              "percentage": 181.10430599121057,
+              "timestep": 6
+            },
+            {
+              "absolute": 0.697395901521785,
+              "percentage": 154.4600859329363,
+              "timestep": 7
+            },
+            {
+              "absolute": 0.7500693605008187,
+              "percentage": 138.9634335213182,
+              "timestep": 8
+            },
+            {
+              "absolute": 0.7767057436950219,
+              "percentage": 121.8963006173204,
+              "timestep": 9
+            },
+            {
+              "absolute": 0.8238656081158638,
+              "percentage": 112.60138225716729,
+              "timestep": 10
+            },
+            {
+              "absolute": 0.834362869225988,
+              "percentage": 101.0390202494301,
+              "timestep": 11
+            },
+            {
+              "absolute": 0.8474522079350154,
+              "percentage": 90.95777455914546,
+              "timestep": 12
+            }
+          ],
+          "window_count": 5422,
+          "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+        }
+      },
+      "multiplier": 0.25,
+      "noise_statistics": {
+        "configured_sigma": 0.07727833668631298,
+        "mean_dx": -0.0011997346514756293,
+        "mean_dy": -0.0005350463757766561,
+        "mean_radial_displacement": 0.09711026757849468,
+        "rms_radial_displacement": 0.10974141534135845,
+        "std_dx": 0.07606880660663809,
+        "std_dy": 0.07908849008995085,
+        "std_radial_displacement": 0.051115302718048226,
+        "unique_observation_count": 7179,
+        "window_observation_count": 43376
+      },
+      "severity": "medium",
+      "sigma": 0.07727833668631298,
+      "units": "raw dataset coordinate units",
+      "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+    }
+  },
+  "split": "val",
+  "window_key_sha256": "980dc53a63b7bbfcef84e06e344931e4664bc536197c5cf5b18cbc1629b402da"
+}

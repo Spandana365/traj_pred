@@ -1,0 +1,119 @@
+{
+  "experiment": "BoT-SORT_GMC_enabled",
+  "totals": {
+    "calls_expected": 5316,
+    "calls": 5316,
+    "successful_calls": 5316,
+    "failed_calls": 0,
+    "estimated_warps": 5309,
+    "first_frame_identity_warps": 7,
+    "non_first_identity_warps": 0,
+    "ultralytics_gmc_warnings": {
+      "GMC failed": 0,
+      "not enough matching points": 0,
+      "affine estimation failed": 0
+    }
+  },
+  "complete_without_failure": true,
+  "failure": null,
+  "sequences": [
+    {
+      "sequence": "MOT17-02",
+      "calls": 600,
+      "successful_calls": 600,
+      "failed_calls": 0,
+      "failure_reason": null,
+      "estimated_warps": 599,
+      "first_frame_identity_warps": 1,
+      "non_first_identity_warps": 0,
+      "median_translation_pixels": 0.16129820384979046,
+      "max_translation_pixels": 0.8158816827902644,
+      "min_scale": 0.9998203107072768,
+      "max_scale": 1.0002215895168207
+    },
+    {
+      "sequence": "MOT17-04",
+      "calls": 1050,
+      "successful_calls": 1050,
+      "failed_calls": 0,
+      "failure_reason": null,
+      "estimated_warps": 1049,
+      "first_frame_identity_warps": 1,
+      "non_first_identity_warps": 0,
+      "median_translation_pixels": 0.20172054864370362,
+      "max_translation_pixels": 0.6734440516529475,
+      "min_scale": 0.9996550718138588,
+      "max_scale": 1.0002261773268086
+    },
+    {
+      "sequence": "MOT17-05",
+      "calls": 837,
+      "successful_calls": 837,
+      "failed_calls": 0,
+      "failure_reason": null,
+      "estimated_warps": 836,
+      "first_frame_identity_warps": 1,
+      "non_first_identity_warps": 0,
+      "median_translation_pixels": 4.186628490406381,
+      "max_translation_pixels": 41.93716813878454,
+      "min_scale": 0.9758288159035639,
+      "max_scale": 1.050362761798768
+    },
+    {
+      "sequence": "MOT17-09",
+      "calls": 525,
+      "successful_calls": 525,
+      "failed_calls": 0,
+      "failure_reason": null,
+      "estimated_warps": 524,
+      "first_frame_identity_warps": 1,
+      "non_first_identity_warps": 0,
+      "median_translation_pixels": 0.2876444773718463,
+      "max_translation_pixels": 3.078230152108379,
+      "min_scale": 0.9986097361186317,
+      "max_scale": 1.00228450303664
+    },
+    {
+      "sequence": "MOT17-10",
+      "calls": 654,
+      "successful_calls": 654,
+      "failed_calls": 0,
+      "failure_reason": null,
+      "estimated_warps": 653,
+      "first_frame_identity_warps": 1,
+      "non_first_identity_warps": 0,
+      "median_translation_pixels": 4.123532318257463,
+      "max_translation_pixels": 31.41641072728868,
+      "min_scale": 0.996962363905624,
+      "max_scale": 1.008812088796617
+    },
+    {
+      "sequence": "MOT17-11",
+      "calls": 900,
+      "successful_calls": 900,
+      "failed_calls": 0,
+      "failure_reason": null,
+      "estimated_warps": 899,
+      "first_frame_identity_warps": 1,
+      "non_first_identity_warps": 0,
+      "median_translation_pixels": 4.29574562706544,
+      "max_translation_pixels": 17.13859669201651,
+      "min_scale": 0.9975573702823998,
+      "max_scale": 1.0076909406414525
+    },
+    {
+      "sequence": "MOT17-13",
+      "calls": 750,
+      "successful_calls": 750,
+      "failed_calls": 0,
+      "failure_reason": null,
+      "estimated_warps": 749,
+      "first_frame_identity_warps": 1,
+      "non_first_identity_warps": 0,
+      "median_translation_pixels": 7.733386360357086,
+      "max_translation_pixels": 53.59307110520211,
+      "min_scale": 0.9955390757597737,
+      "max_scale": 1.018393169995561
+    }
+  ]
+}

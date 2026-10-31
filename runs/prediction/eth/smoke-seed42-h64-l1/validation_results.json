@@ -1,0 +1,39 @@
+{
+  "model_selection": "best LSTM selected by validation ADE",
+  "results": {
+    "constant_velocity": {
+      "ade": 0.39668250681015615,
+      "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+      "distance_units": "raw dataset coordinate units; physical units unverified",
+      "fde": 0.7136747096717795,
+      "per_scene": {
+        "HOTEL": {
+          "ade": 0.39668250681015615,
+          "fde": 0.7136747096717795,
+          "window_count": 64
+        }
+      },
+      "window_count": 64,
+      "window_key_sha256": "6115ff2b7b22e075c440474db4e2e3d2c86274b39660847c3e79bd6d59ea386e"
+    },
+    "lstm": {
+      "ade": 1.883127474221489,
+      "aggregation": "Compute ADE per window as the mean Euclidean distance across its 12 positions; compute FDE per window at position 12; average each metric equally over windows.",
+      "distance_units": "raw dataset coordinate units; physical units unverified",
+      "fde": 2.342475808506899,
+      "per_scene": {
+        "HOTEL": {
+          "ade": 1.883127474221489,
+          "fde": 2.342475808506899,
+          "window_count": 64
+        }
+      },
+      "window_count": 64,
+      "window_key_sha256": "6115ff2b7b22e075c440474db4e2e3d2c86274b39660847c3e79bd6d59ea386e"
+    },
+    "window_count": 64,
+    "window_key_sha256": "6115ff2b7b22e075c440474db4e2e3d2c86274b39660847c3e79bd6d59ea386e"
+  },
+  "selection_source": "validation",
+  "split": "val"
+}
